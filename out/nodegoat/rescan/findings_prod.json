@@ -1,0 +1,2114 @@
+[
+ {
+  "finding_id": "nodegoat:npm:marked@0.3.5:GHSA-rrrm-qjm4-v8hf",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "marked",
+  "installed": "0.3.5",
+  "vuln_id": "GHSA-rrrm-qjm4-v8hf",
+  "ghsa": "GHSA-rrrm-qjm4-v8hf",
+  "cve": "CVE-2022-21680",
+  "aliases": [
+   "CVE-2022-21680",
+   "GHSA-rrrm-qjm4-v8hf"
+  ],
+  "summary": "Inefficient Regular Expression Complexity in marked",
+  "fix_versions": [
+   "4.0.10"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<4.0.10",
+  "direct": true,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.5,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-400",
+   "CWE-1333"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-rrrm-qjm4-v8hf",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-rrrm-qjm4-v8hf",
+    "fact": "CVSS 7.5 HIGH, fixed in 4.0.10"
+   },
+   {
+    "id": "epss:CVE-2022-21680",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2022-21680",
+    "fact": "악용 확률 0.0285, 백분위 0.866"
+   },
+   {
+    "id": "code:marked",
+    "source": "code_search",
+    "url": null,
+    "fact": "1st-party 코드 1곳에서 import, 예: server.js:13"
+   }
+  ],
+  "details": "### Impact\n\n_What kind of vulnerability is it?_\n\nDenial of service.\n\nThe regular expression `block.def` may cause catastrophic backtracking against some strings.\nPoC is the following.\n\n```javascript\nimport * as marked from \"marked\";\n\nmarked.parse(`[x]:${' '.repeat(1500)}x ${' '.repeat(1500)} x`);\n```\n\n_Who is impacted?_\n\nAnyone who runs untrusted markdown through marked and does not use a worker with a time limit.\n\n### Patches\n\n_Has the problem been patched?_\n\nYes\n\n_What versions should users upgrade to?_\n\n4.0.10\n\n### Workarounds\n\n_Is there a way for users to fix or remediate the vulnerability without upgrading?_\n\nDo not run untrusted markdown through marked or run marked on a [worker](https://marked.js.org/using_advanced#workers) thread and set a reasonable time limit to prevent draining resources.\n\n### References\n\n_Are there any links users can visit to find out more?_\n\n- https://marked.js.org/using_advanced#workers\n- https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n\n* Open an issue in [marked](https://github.com/markedjs/marked)\n",
+  "published": "2022-01-14T21:04:41Z",
+  "references": [
+   "https://github.com/markedjs/marked/security/advisories/GHSA-rrrm-qjm4-v8hf",
+   "https://nvd.nist.gov/vuln/detail/CVE-2022-21680",
+   "https://github.com/markedjs/marked/commit/c4a3ccd344b6929afa8a1d50ac54a721e57012c0",
+   "https://github.com/markedjs/marked",
+   "https://github.com/markedjs/marked/releases/tag/v4.0.10",
+   "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AIXDMC3CSHYW3YWVSQOXAWLUYQHAO5UX"
+  ],
+  "epss": 0.02852,
+  "epss_percentile": 0.86648,
+  "kev": null,
+  "reach": "direct+imported",
+  "import_sites": [
+   "server.js:13"
+  ],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 1.14,
+   "cvss": 15.0,
+   "reach": 15.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 48.14,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 1
+ },
+ {
+  "finding_id": "nodegoat:npm:marked@0.3.5:GHSA-5v2h-r2cx-5xgj",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "marked",
+  "installed": "0.3.5",
+  "vuln_id": "GHSA-5v2h-r2cx-5xgj",
+  "ghsa": "GHSA-5v2h-r2cx-5xgj",
+  "cve": "CVE-2022-21681",
+  "aliases": [
+   "CVE-2022-21681",
+   "GHSA-5v2h-r2cx-5xgj"
+  ],
+  "summary": "Inefficient Regular Expression Complexity in marked",
+  "fix_versions": [
+   "4.0.10"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<4.0.10",
+  "direct": true,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.5,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-1333"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-5v2h-r2cx-5xgj",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-5v2h-r2cx-5xgj",
+    "fact": "CVSS 7.5 HIGH, fixed in 4.0.10"
+   },
+   {
+    "id": "epss:CVE-2022-21681",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2022-21681",
+    "fact": "악용 확률 0.0277, 백분위 0.862"
+   },
+   {
+    "id": "code:marked",
+    "source": "code_search",
+    "url": null,
+    "fact": "1st-party 코드 1곳에서 import, 예: server.js:13"
+   }
+  ],
+  "details": "### Impact\n\n_What kind of vulnerability is it?_\n\nDenial of service.\n\nThe regular expression `inline.reflinkSearch` may cause catastrophic backtracking against some strings.\nPoC is the following.\n\n```javascript\nimport * as marked from 'marked';\n\nconsole.log(marked.parse(`[x]: x\n\n\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](\\\\[\\\\](`));\n```\n\n_Who is impacted?_\n\nAnyone who runs untrusted markdown through marked and does not use a worker with a time limit.\n\n### Patches\n\n_Has the problem been patched?_\n\nYes\n\n_What versions should users upgrade to?_\n\n4.0.10\n\n### Workarounds\n\n_Is there a way for users to fix or remediate the vulnerability without upgrading?_\n\nDo not run untrusted markdown through marked or run marked on a [worker](https://marked.js.org/using_advanced#workers) thread and set a reasonable time limit to prevent draining resources.\n\n### References\n\n_Are there any links users can visit to find out more?_\n\n- https://marked.js.org/using_advanced#workers\n- https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n\n* Open an issue in [marked](https://github.com/markedjs/marked)\n",
+  "published": "2022-01-14T21:04:46Z",
+  "references": [
+   "https://github.com/markedjs/marked/security/advisories/GHSA-5v2h-r2cx-5xgj",
+   "https://nvd.nist.gov/vuln/detail/CVE-2022-21681",
+   "https://github.com/markedjs/marked/commit/8f806573a3f6c6b7a39b8cdb66ab5ebb8d55a5f5",
+   "https://github.com/markedjs/marked/commit/c4a3ccd344b6929afa8a1d50ac54a721e57012c0",
+   "https://github.com/markedjs/marked",
+   "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/AIXDMC3CSHYW3YWVSQOXAWLUYQHAO5UX"
+  ],
+  "epss": 0.02766,
+  "epss_percentile": 0.8623,
+  "kev": null,
+  "reach": "direct+imported",
+  "import_sites": [
+   "server.js:13"
+  ],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 1.11,
+   "cvss": 15.0,
+   "reach": 15.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 48.11,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 2
+ },
+ {
+  "finding_id": "nodegoat:npm:marked@0.3.5:GHSA-x5pg-88wf-qq4p",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "marked",
+  "installed": "0.3.5",
+  "vuln_id": "GHSA-x5pg-88wf-qq4p",
+  "ghsa": "GHSA-x5pg-88wf-qq4p",
+  "cve": "CVE-2017-16114",
+  "aliases": [
+   "CVE-2017-16114",
+   "GHSA-x5pg-88wf-qq4p"
+  ],
+  "summary": "Regular Expression Denial of Service in marked",
+  "fix_versions": [
+   "0.3.9"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<0.3.9",
+  "direct": true,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.5,
+  "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-400"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-x5pg-88wf-qq4p",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-x5pg-88wf-qq4p",
+    "fact": "CVSS 7.5 HIGH, fixed in 0.3.9"
+   },
+   {
+    "id": "epss:CVE-2017-16114",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2017-16114",
+    "fact": "악용 확률 0.0173, 백분위 0.775"
+   },
+   {
+    "id": "code:marked",
+    "source": "code_search",
+    "url": null,
+    "fact": "1st-party 코드 1곳에서 import, 예: server.js:13"
+   }
+  ],
+  "details": "Affected versions of `marked` are vulnerable to a regular expression denial of service. \n\nThe amplification in this vulnerability is significant, with 1,000 characters resulting in the event loop being blocked for around 6 seconds.\n\n\n## Recommendation\n\nUpdate to version 0.3.9 or later.",
+  "published": "2018-07-24T20:10:52Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2017-16114",
+   "https://github.com/chjj/marked/issues/937",
+   "https://github.com/advisories/GHSA-x5pg-88wf-qq4p",
+   "https://www.npmjs.com/advisories/531"
+  ],
+  "epss": 0.01731,
+  "epss_percentile": 0.77494,
+  "kev": null,
+  "reach": "direct+imported",
+  "import_sites": [
+   "server.js:13"
+  ],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.69,
+   "cvss": 15.0,
+   "reach": 15.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 47.69,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 3
+ },
+ {
+  "finding_id": "nodegoat:npm:marked@0.3.5:GHSA-p9wx-2529-fp83",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "marked",
+  "installed": "0.3.5",
+  "vuln_id": "GHSA-p9wx-2529-fp83",
+  "ghsa": "GHSA-p9wx-2529-fp83",
+  "cve": "CVE-2018-25110",
+  "aliases": [
+   "CVE-2018-25110",
+   "GHSA-p9wx-2529-fp83"
+  ],
+  "summary": "Marked allows Regular Expression Denial of Service (ReDoS) attacks",
+  "fix_versions": [
+   "0.3.17"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<0.3.17",
+  "direct": true,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 6.9,
+  "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+  "severity": "MODERATE",
+  "cwe": [
+   "CWE-1333"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-p9wx-2529-fp83",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-p9wx-2529-fp83",
+    "fact": "CVSS 6.9 MODERATE, fixed in 0.3.17"
+   },
+   {
+    "id": "epss:CVE-2018-25110",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2018-25110",
+    "fact": "악용 확률 0.0061, 백분위 0.490"
+   },
+   {
+    "id": "code:marked",
+    "source": "code_search",
+    "url": null,
+    "fact": "1st-party 코드 1곳에서 import, 예: server.js:13"
+   }
+  ],
+  "details": "Marked prior to version 0.3.17 is vulnerable to a Regular Expression Denial of Service (ReDoS) attack due to catastrophic backtracking in several regular expressions used for parsing HTML tags and markdown links. An attacker can exploit this vulnerability by providing specially crafted markdown input, such as deeply nested or repetitively structured brackets or tag attributes, which cause the parser to hang and lead to a Denial of Service.",
+  "published": "2025-05-23T15:31:16Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2018-25110",
+   "https://github.com/markedjs/marked/issues/1070",
+   "https://github.com/markedjs/marked/pull/1083",
+   "https://github.com/markedjs/marked/commit/20bfc106013ed45713a21672ad4a34df94dcd485",
+   "https://github.com/Checkmarx/Vulnerabilities-Proofs-of-Concept/tree/main/2018/CVE-2018-25110",
+   "https://github.com/markedjs/marked"
+  ],
+  "epss": 0.0061,
+  "epss_percentile": 0.48996,
+  "kev": null,
+  "reach": "direct+imported",
+  "import_sites": [
+   "server.js:13"
+  ],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.24,
+   "cvss": 13.8,
+   "reach": 15.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 46.04,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 4
+ },
+ {
+  "finding_id": "nodegoat:npm:marked@0.3.5:GHSA-7px7-7xjx-hxm8",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "marked",
+  "installed": "0.3.5",
+  "vuln_id": "GHSA-7px7-7xjx-hxm8",
+  "ghsa": "GHSA-7px7-7xjx-hxm8",
+  "cve": "CVE-2017-1000427",
+  "aliases": [
+   "CVE-2017-1000427",
+   "GHSA-7px7-7xjx-hxm8"
+  ],
+  "summary": "Marked vulnerable to XSS from data URIs",
+  "fix_versions": [
+   "0.3.7"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<0.3.7",
+  "direct": true,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 6.1,
+  "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+  "severity": "MODERATE",
+  "cwe": [
+   "CWE-79"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-7px7-7xjx-hxm8",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-7px7-7xjx-hxm8",
+    "fact": "CVSS 6.1 MODERATE, fixed in 0.3.7"
+   },
+   {
+    "id": "epss:CVE-2017-1000427",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2017-1000427",
+    "fact": "악용 확률 0.0151, 백분위 0.743"
+   },
+   {
+    "id": "code:marked",
+    "source": "code_search",
+    "url": null,
+    "fact": "1st-party 코드 1곳에서 import, 예: server.js:13"
+   }
+  ],
+  "details": "marked version 0.3.6 and earlier is vulnerable to an XSS attack in the data: URI parser.",
+  "published": "2018-01-04T21:04:19Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2017-1000427",
+   "https://github.com/advisories/GHSA-7px7-7xjx-hxm8",
+   "https://github.com/markedjs/marked",
+   "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BO2RMVVZVV6NFTU46B5RYRK7ZCXYARZS",
+   "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M6BJG6RGDH7ZWVVAUFBFI5L32RSMQN2S",
+   "https://snyk.io/vuln/npm:marked:20170112"
+  ],
+  "epss": 0.01512,
+  "epss_percentile": 0.74337,
+  "kev": null,
+  "reach": "direct+imported",
+  "import_sites": [
+   "server.js:13"
+  ],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.6,
+   "cvss": 12.2,
+   "reach": 15.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 44.8,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 5
+ },
+ {
+  "finding_id": "nodegoat:npm:marked@0.3.5:GHSA-vfvf-mqq8-rwqc",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "marked",
+  "installed": "0.3.5",
+  "vuln_id": "GHSA-vfvf-mqq8-rwqc",
+  "ghsa": "GHSA-vfvf-mqq8-rwqc",
+  "cve": "CVE-2016-10531",
+  "aliases": [
+   "CVE-2016-10531",
+   "GHSA-vfvf-mqq8-rwqc"
+  ],
+  "summary": "Sanitization bypass using HTML Entities in marked",
+  "fix_versions": [
+   "0.3.6"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<0.3.6",
+  "direct": true,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 6.1,
+  "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+  "severity": "MODERATE",
+  "cwe": [
+   "CWE-79"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-vfvf-mqq8-rwqc",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-vfvf-mqq8-rwqc",
+    "fact": "CVSS 6.1 MODERATE, fixed in 0.3.6"
+   },
+   {
+    "id": "epss:CVE-2016-10531",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2016-10531",
+    "fact": "악용 확률 0.0144, 백분위 0.730"
+   },
+   {
+    "id": "code:marked",
+    "source": "code_search",
+    "url": null,
+    "fact": "1st-party 코드 1곳에서 import, 예: server.js:13"
+   }
+  ],
+  "details": "Affected versions of `marked` are susceptible to a cross-site scripting vulnerability in link components when `sanitize:true` is configured. \n\n## Proof of Concept\n\nThis flaw exists because link URIs containing HTML entities get processed in an abnormal manner. Any HTML Entities get parsed on a best-effort basis and included in the resulting link, while if that parsing fails that character is omitted.\n\nFor example:\n\nA link URI such as\n```\njavascript&#x58document;alert&#40;1&#41;\n```\nRenders a valid link that when clicked will execute `alert(1)`.\n\n\n## Recommendation\n\nUpdate to version 0.3.6 or later.",
+  "published": "2019-02-18T23:58:20Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2016-10531",
+   "https://github.com/chjj/marked/pull/592",
+   "https://github.com/chjj/marked/pull/592/commits/2cff85979be8e7a026a9aca35542c470cf5da523",
+   "https://github.com/advisories/GHSA-vfvf-mqq8-rwqc",
+   "https://www.npmjs.com/advisories/101"
+  ],
+  "epss": 0.0144,
+  "epss_percentile": 0.73045,
+  "kev": null,
+  "reach": "direct+imported",
+  "import_sites": [
+   "server.js:13"
+  ],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.58,
+   "cvss": 12.2,
+   "reach": 15.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 44.78,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 6
+ },
+ {
+  "finding_id": "nodegoat:npm:swig@1.4.2:GHSA-2rq5-699j-x7p6",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "swig",
+  "installed": "1.4.2",
+  "vuln_id": "GHSA-2rq5-699j-x7p6",
+  "ghsa": "GHSA-2rq5-699j-x7p6",
+  "cve": "CVE-2023-25345",
+  "aliases": [
+   "CVE-2023-25345",
+   "GHSA-2rq5-699j-x7p6"
+  ],
+  "summary": "Arbitrary local file read vulnerability during template rendering ",
+  "fix_versions": [],
+  "fix_available": false,
+  "fix_is_major": false,
+  "vulnerable_range": "<=1.4.2",
+  "direct": true,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.5,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-22"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-2rq5-699j-x7p6",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-2rq5-699j-x7p6",
+    "fact": "CVSS 7.5 HIGH, fixed in 없음"
+   },
+   {
+    "id": "epss:CVE-2023-25345",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2023-25345",
+    "fact": "악용 확률 0.0105, 백분위 0.641"
+   },
+   {
+    "id": "code:swig",
+    "source": "code_search",
+    "url": null,
+    "fact": "1st-party 코드 1곳에서 import, 예: server.js:9"
+   }
+  ],
+  "details": "Directory traversal vulnerability in swig-templates thru 2.0.4 and swig thru 1.4.2, allows attackers to read arbitrary files via the include or extends tags.",
+  "published": "2023-03-15T21:30:25Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2023-25345",
+   "https://github.com/node-swig/swig-templates/issues/88"
+  ],
+  "epss": 0.0105,
+  "epss_percentile": 0.64102,
+  "kev": null,
+  "reach": "direct+imported",
+  "import_sites": [
+   "server.js:9"
+  ],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.42,
+   "cvss": 15.0,
+   "reach": 15.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 0.0
+  },
+  "priority": 42.42,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 7
+ },
+ {
+  "finding_id": "nodegoat:npm:minimist@0.0.10:GHSA-xvch-5gv4-984h",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimist",
+  "installed": "0.0.10",
+  "vuln_id": "GHSA-xvch-5gv4-984h",
+  "ghsa": "GHSA-xvch-5gv4-984h",
+  "cve": "CVE-2021-44906",
+  "aliases": [
+   "CVE-2021-44906",
+   "GHSA-xvch-5gv4-984h"
+  ],
+  "summary": "Prototype Pollution in minimist",
+  "fix_versions": [
+   "0.2.4",
+   "1.2.6"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<0.2.4",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 9.8,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "severity": "CRITICAL",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-xvch-5gv4-984h",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-xvch-5gv4-984h",
+    "fact": "CVSS 9.8 CRITICAL, fixed in 0.2.4, 1.2.6"
+   },
+   {
+    "id": "epss:CVE-2021-44906",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2021-44906",
+    "fact": "악용 확률 0.0458, 백분위 0.916"
+   }
+  ],
+  "details": "Minimist prior to 1.2.6 and 0.2.4 is vulnerable to Prototype Pollution via file `index.js`, function `setKey()` (lines 69-95).",
+  "published": "2022-03-18T00:01:09Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2021-44906",
+   "https://github.com/minimistjs/minimist/issues/11",
+   "https://github.com/substack/minimist/issues/164",
+   "https://github.com/minimistjs/minimist/pull/24",
+   "https://github.com/minimistjs/minimist/commit/34e20b8461118608703d6485326abbb8e35e1703",
+   "https://github.com/minimistjs/minimist/commit/bc8ecee43875261f4f17eb20b1243d3ed15e70eb",
+   "https://github.com/minimistjs/minimist/commit/c2b981977fa834b223b408cfb860f933c9811e4d",
+   "https://github.com/minimistjs/minimist/commit/ef9153fc52b6cea0744b2239921c5dcae4697f11"
+  ],
+  "epss": 0.04581,
+  "epss_percentile": 0.91585,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 1.83,
+   "cvss": 19.6,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 41.43,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 8
+ },
+ {
+  "finding_id": "nodegoat:npm:minimist@0.0.8:GHSA-xvch-5gv4-984h",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimist",
+  "installed": "0.0.8",
+  "vuln_id": "GHSA-xvch-5gv4-984h",
+  "ghsa": "GHSA-xvch-5gv4-984h",
+  "cve": "CVE-2021-44906",
+  "aliases": [
+   "CVE-2021-44906",
+   "GHSA-xvch-5gv4-984h"
+  ],
+  "summary": "Prototype Pollution in minimist",
+  "fix_versions": [
+   "0.2.4",
+   "1.2.6"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<0.2.4",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 9.8,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "severity": "CRITICAL",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-xvch-5gv4-984h",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-xvch-5gv4-984h",
+    "fact": "CVSS 9.8 CRITICAL, fixed in 0.2.4, 1.2.6"
+   },
+   {
+    "id": "epss:CVE-2021-44906",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2021-44906",
+    "fact": "악용 확률 0.0458, 백분위 0.916"
+   }
+  ],
+  "details": "Minimist prior to 1.2.6 and 0.2.4 is vulnerable to Prototype Pollution via file `index.js`, function `setKey()` (lines 69-95).",
+  "published": "2022-03-18T00:01:09Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2021-44906",
+   "https://github.com/minimistjs/minimist/issues/11",
+   "https://github.com/substack/minimist/issues/164",
+   "https://github.com/minimistjs/minimist/pull/24",
+   "https://github.com/minimistjs/minimist/commit/34e20b8461118608703d6485326abbb8e35e1703",
+   "https://github.com/minimistjs/minimist/commit/bc8ecee43875261f4f17eb20b1243d3ed15e70eb",
+   "https://github.com/minimistjs/minimist/commit/c2b981977fa834b223b408cfb860f933c9811e4d",
+   "https://github.com/minimistjs/minimist/commit/ef9153fc52b6cea0744b2239921c5dcae4697f11"
+  ],
+  "epss": 0.04581,
+  "epss_percentile": 0.91585,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 1.83,
+   "cvss": 19.6,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 41.43,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 9
+ },
+ {
+  "finding_id": "nodegoat:npm:bson@1.0.9:GHSA-v8w9-2789-6hhr",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "bson",
+  "installed": "1.0.9",
+  "vuln_id": "GHSA-v8w9-2789-6hhr",
+  "ghsa": "GHSA-v8w9-2789-6hhr",
+  "cve": "CVE-2020-7610",
+  "aliases": [
+   "CVE-2020-7610",
+   "GHSA-v8w9-2789-6hhr",
+   "SNYK-JS-BSON-561052"
+  ],
+  "summary": "Deserialization of Untrusted Data in bson",
+  "fix_versions": [
+   "1.1.4"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<1.1.4",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 9.8,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "severity": "CRITICAL",
+  "cwe": [
+   "CWE-502"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-v8w9-2789-6hhr",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-v8w9-2789-6hhr",
+    "fact": "CVSS 9.8 CRITICAL, fixed in 1.1.4"
+   },
+   {
+    "id": "epss:CVE-2020-7610",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2020-7610",
+    "fact": "악용 확률 0.0226, 백분위 0.829"
+   }
+  ],
+  "details": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsontype, leading to cases where an object is serialized as a document rather than the intended BSON type.",
+  "published": "2021-05-07T16:04:54Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2020-7610",
+   "https://github.com/mongodb/js-bson/commit/3809c1313a7b2a8001065f0271199df9fa3d16a8",
+   "https://snyk.io/vuln/SNYK-JS-BSON-561052"
+  ],
+  "epss": 0.02265,
+  "epss_percentile": 0.82918,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.91,
+   "cvss": 19.6,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 40.51,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 10
+ },
+ {
+  "finding_id": "nodegoat:npm:minimatch@3.0.8:GHSA-3ppc-4f35-3m26",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimatch",
+  "installed": "3.0.8",
+  "vuln_id": "GHSA-3ppc-4f35-3m26",
+  "ghsa": "GHSA-3ppc-4f35-3m26",
+  "cve": "CVE-2026-26996",
+  "aliases": [
+   "CVE-2026-26996",
+   "GHSA-3ppc-4f35-3m26"
+  ],
+  "summary": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+  "fix_versions": [
+   "3.1.3",
+   "4.2.4",
+   "5.1.7",
+   "6.2.1",
+   "7.4.7",
+   "8.0.5",
+   "9.0.6",
+   "10.2.1"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<3.1.3",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 8.7,
+  "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-1333"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-3ppc-4f35-3m26",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-3ppc-4f35-3m26",
+    "fact": "CVSS 8.7 HIGH, fixed in 3.1.3, 4.2.4, 5.1.7, 6.2.1, 7.4.7, 8.0.5, 9.0.6, 10.2.1"
+   },
+   {
+    "id": "epss:CVE-2026-26996",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-26996",
+    "fact": "악용 확률 0.0058, 백분위 0.474"
+   }
+  ],
+  "details": "### Summary\n`minimatch` is vulnerable to Regular Expression Denial of Service (ReDoS) when a glob pattern contains many consecutive `*` wildcards followed by a literal character that doesn't appear in the test string. Each `*` compiles to a separate `[^/]*?` regex group, and when the match fails, V8's regex engine backtracks exponentially across all possible splits.\n\nThe time complexity is O(4^N) where N is the number of `*` characters. With N=15, a single `minimatch()` call takes ~2 seconds. With N=34, it hangs effectively forever.\n\n\n### Details\n_Give all details on the vulnerability. Pointing to the incriminated source code is very helpful for the maintainer._\n\n### PoC\nWhen minimatch compiles a glob pattern, each `*` becomes `[^/]*?` in the generated regex. For a pattern like `***************X***`:\n\n```\n/^(?!\\.)[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?[^/]*?X[^/]*?[^/]*?[^/]*?$/\n```\n\nWhen the test string doesn't contain `X`, the regex engine must try every possible way to distribute the characters across all the `[^/]*?` groups before concluding no match exists. With N groups and M characters, this is O(C(N+M, N)) — exponential.\n### Impact\nAny application that passes user-controlled strings to `minimatch()` as the pattern argument is vulnerable to DoS. This includes:\n- File search/filter UIs that accept glob patterns\n- `.gitignore`-style filtering with user-defined rules\n- Build tools that accept glob configuration\n- Any API that e",
+  "published": "2026-02-18T22:38:11Z",
+  "references": [
+   "https://github.com/isaacs/minimatch/security/advisories/GHSA-3ppc-4f35-3m26",
+   "https://nvd.nist.gov/vuln/detail/CVE-2026-26996",
+   "https://github.com/isaacs/minimatch/commit/2e111f3a79abc00fa73110195de2c0f2351904f5",
+   "https://github.com/isaacs/minimatch"
+  ],
+  "epss": 0.00577,
+  "epss_percentile": 0.47365,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.23,
+   "cvss": 17.4,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 37.63,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 11
+ },
+ {
+  "finding_id": "nodegoat:npm:uglify-js@2.4.24:GHSA-c9f4-xj24-8jqx",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "uglify-js",
+  "installed": "2.4.24",
+  "vuln_id": "GHSA-c9f4-xj24-8jqx",
+  "ghsa": "GHSA-c9f4-xj24-8jqx",
+  "cve": "CVE-2015-8858",
+  "aliases": [
+   "CVE-2015-8858",
+   "GHSA-c9f4-xj24-8jqx"
+  ],
+  "summary": "Regular Expression Denial of Service in uglify-js",
+  "fix_versions": [
+   "2.6.0"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<2.6.0",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.5,
+  "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-1333"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-c9f4-xj24-8jqx",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-c9f4-xj24-8jqx",
+    "fact": "CVSS 7.5 HIGH, fixed in 2.6.0"
+   },
+   {
+    "id": "epss:CVE-2015-8858",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2015-8858",
+    "fact": "악용 확률 0.0236, 백분위 0.837"
+   }
+  ],
+  "details": "Versions of `uglify-js` prior to 2.6.0 are affected by a regular expression denial of service vulnerability when malicious inputs are passed into the `parse()` method.\n\n\n### Proof of Concept\n\n```\nvar u = require('uglify-js');\nvar genstr = function (len, chr) {\n    var result = \"\";\n    for (i=0; i<=len; i++) {\n        result = result + chr;\n    }\n\n    return result;\n}\n\nu.parse(\"var a = \" + genstr(process.argv[2], \"1\") + \".1ee7;\");\n```\n\n### Results\n```\n$ time node test.js 10000\nreal\t0m1.091s\nuser\t0m1.047s\nsys\t0m0.039s\n\n$ time node test.js 80000\nreal\t0m6.486s\nuser\t0m6.229s\nsys\t0m0.094s\n```\n\n\n## Recommendation\n\nUpdate to version 2.6.0 or later.",
+  "published": "2017-10-24T18:33:36Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2015-8858",
+   "https://github.com/advisories/GHSA-c9f4-xj24-8jqx",
+   "https://www.npmjs.com/advisories/48",
+   "http://www.openwall.com/lists/oss-security/2016/04/20/11",
+   "http://www.securityfocus.com/bid/96409"
+  ],
+  "epss": 0.02358,
+  "epss_percentile": 0.8367,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.94,
+   "cvss": 15.0,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 35.94,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 12
+ },
+ {
+  "finding_id": "nodegoat:npm:debug@2.2.0:GHSA-9vvw-cc9w-f27h",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "debug",
+  "installed": "2.2.0",
+  "vuln_id": "GHSA-9vvw-cc9w-f27h",
+  "ghsa": "GHSA-9vvw-cc9w-f27h",
+  "cve": "CVE-2017-20165",
+  "aliases": [
+   "CVE-2017-20165",
+   "GHSA-9vvw-cc9w-f27h"
+  ],
+  "summary": "debug Inefficient Regular Expression Complexity vulnerability",
+  "fix_versions": [
+   "2.6.9",
+   "3.1.0"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<2.6.9",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.5,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-1333"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-9vvw-cc9w-f27h",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-9vvw-cc9w-f27h",
+    "fact": "CVSS 7.5 HIGH, fixed in 2.6.9, 3.1.0"
+   },
+   {
+    "id": "epss:CVE-2017-20165",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2017-20165",
+    "fact": "악용 확률 0.0210, 백분위 0.816"
+   }
+  ],
+  "details": "A vulnerability classified as problematic has been found in debug-js debug up to 3.0.x. This affects the function useColors of the file src/node.js. The manipulation of the argument str leads to inefficient regular expression complexity. Upgrading to version 3.1.0 is able to address this issue. The name of the patch is c38a0166c266a679c8de012d4eaccec3f944e685. It is recommended to upgrade the affected component. The identifier VDB-217665 was assigned to this vulnerability. The patch has been backported to the 2.6.x branch in version 2.6.9.",
+  "published": "2023-01-09T12:30:19Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2017-20165",
+   "https://github.com/debug-js/debug/pull/504",
+   "https://github.com/debug-js/debug/commit/c38a0166c266a679c8de012d4eaccec3f944e685",
+   "https://github.com/debug-js/debug/commit/f53962e944a87e6ca9bb622a2a12dffc22a9bb5a",
+   "https://github.com/debug-js/debug",
+   "https://github.com/debug-js/debug/releases/tag/2.6.9",
+   "https://github.com/debug-js/debug/releases/tag/3.1.0",
+   "https://vuldb.com/?ctiid.217665"
+  ],
+  "epss": 0.02105,
+  "epss_percentile": 0.81647,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.84,
+   "cvss": 15.0,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 35.84,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 13
+ },
+ {
+  "finding_id": "nodegoat:npm:braces@2.3.2:GHSA-grv7-fg5c-xmjg",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "braces",
+  "installed": "2.3.2",
+  "vuln_id": "GHSA-grv7-fg5c-xmjg",
+  "ghsa": "GHSA-grv7-fg5c-xmjg",
+  "cve": "CVE-2024-4068",
+  "aliases": [
+   "CVE-2024-4068",
+   "GHSA-grv7-fg5c-xmjg"
+  ],
+  "summary": "Uncontrolled resource consumption in braces",
+  "fix_versions": [
+   "3.0.3"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<3.0.3",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.5,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-400",
+   "CWE-1050"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-grv7-fg5c-xmjg",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-grv7-fg5c-xmjg",
+    "fact": "CVSS 7.5 HIGH, fixed in 3.0.3"
+   },
+   {
+    "id": "epss:CVE-2024-4068",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2024-4068",
+    "fact": "악용 확률 0.0147, 백분위 0.736"
+   }
+  ],
+  "details": "The NPM package `braces` fails to limit the number of characters it can handle, which could lead to Memory Exhaustion. In `lib/parse.js,` if a malicious user sends \"imbalanced braces\" as input, the parsing will enter a loop, which will cause the program to start allocating heap memory without freeing it at any moment of the loop. Eventually, the JavaScript heap limit is reached, and the program will crash.\n",
+  "published": "2024-05-14T18:30:54Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2024-4068",
+   "https://github.com/micromatch/braces/issues/35",
+   "https://github.com/micromatch/braces/pull/37",
+   "https://github.com/micromatch/braces/pull/40",
+   "https://github.com/micromatch/braces/commit/415d660c3002d1ab7e63dbf490c9851da80596ff",
+   "https://devhub.checkmarx.com/cve-details/CVE-2024-4068",
+   "https://github.com/micromatch/braces",
+   "https://github.com/micromatch/braces/blob/98414f9f1fabe021736e26836d8306d5de747e0d/lib/parse.js#L308"
+  ],
+  "epss": 0.01471,
+  "epss_percentile": 0.73631,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.59,
+   "cvss": 15.0,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 35.59,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 14
+ },
+ {
+  "finding_id": "nodegoat:npm:nconf@0.10.0:GHSA-6xwr-q98w-rvg7",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "nconf",
+  "installed": "0.10.0",
+  "vuln_id": "GHSA-6xwr-q98w-rvg7",
+  "ghsa": "GHSA-6xwr-q98w-rvg7",
+  "cve": "CVE-2022-21803",
+  "aliases": [
+   "CVE-2022-21803",
+   "GHSA-6xwr-q98w-rvg7"
+  ],
+  "summary": "Prototype Pollution in nconf",
+  "fix_versions": [
+   "0.11.4"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<0.11.4",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.3,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-6xwr-q98w-rvg7",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-6xwr-q98w-rvg7",
+    "fact": "CVSS 7.3 HIGH, fixed in 0.11.4"
+   },
+   {
+    "id": "epss:CVE-2022-21803",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2022-21803",
+    "fact": "악용 확률 0.0178, 백분위 0.781"
+   }
+  ],
+  "details": "nconf before 0.11.4. When using the memory engine, it is possible to store a nested JSON representation of the configuration. The .set() function, that is responsible for setting the configuration properties, is vulnerable to Prototype Pollution. By providing a crafted property, it is possible to modify the properties on the Object.prototype.",
+  "published": "2022-04-13T00:00:30Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2022-21803",
+   "https://github.com/indexzero/nconf/pull/397",
+   "https://github.com/indexzero/nconf",
+   "https://github.com/indexzero/nconf/releases/tag/v0.11.4",
+   "https://snyk.io/vuln/SNYK-JS-NCONF-2395478"
+  ],
+  "epss": 0.0178,
+  "epss_percentile": 0.78136,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.71,
+   "cvss": 14.6,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 35.31,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 15
+ },
+ {
+  "finding_id": "nodegoat:npm:nconf@0.6.9:GHSA-6xwr-q98w-rvg7",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "nconf",
+  "installed": "0.6.9",
+  "vuln_id": "GHSA-6xwr-q98w-rvg7",
+  "ghsa": "GHSA-6xwr-q98w-rvg7",
+  "cve": "CVE-2022-21803",
+  "aliases": [
+   "CVE-2022-21803",
+   "GHSA-6xwr-q98w-rvg7"
+  ],
+  "summary": "Prototype Pollution in nconf",
+  "fix_versions": [
+   "0.11.4"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<0.11.4",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.3,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-6xwr-q98w-rvg7",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-6xwr-q98w-rvg7",
+    "fact": "CVSS 7.3 HIGH, fixed in 0.11.4"
+   },
+   {
+    "id": "epss:CVE-2022-21803",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2022-21803",
+    "fact": "악용 확률 0.0178, 백분위 0.781"
+   }
+  ],
+  "details": "nconf before 0.11.4. When using the memory engine, it is possible to store a nested JSON representation of the configuration. The .set() function, that is responsible for setting the configuration properties, is vulnerable to Prototype Pollution. By providing a crafted property, it is possible to modify the properties on the Object.prototype.",
+  "published": "2022-04-13T00:00:30Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2022-21803",
+   "https://github.com/indexzero/nconf/pull/397",
+   "https://github.com/indexzero/nconf",
+   "https://github.com/indexzero/nconf/releases/tag/v0.11.4",
+   "https://snyk.io/vuln/SNYK-JS-NCONF-2395478"
+  ],
+  "epss": 0.0178,
+  "epss_percentile": 0.78136,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.71,
+   "cvss": 14.6,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 35.31,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 16
+ },
+ {
+  "finding_id": "nodegoat:npm:minimatch@3.0.8:GHSA-7r86-cg39-jmmj",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimatch",
+  "installed": "3.0.8",
+  "vuln_id": "GHSA-7r86-cg39-jmmj",
+  "ghsa": "GHSA-7r86-cg39-jmmj",
+  "cve": "CVE-2026-27903",
+  "aliases": [
+   "CVE-2026-27903",
+   "GHSA-7r86-cg39-jmmj"
+  ],
+  "summary": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+  "fix_versions": [
+   "3.1.3",
+   "4.2.5",
+   "5.1.8",
+   "6.2.2",
+   "7.4.8",
+   "8.0.6",
+   "9.0.7",
+   "10.2.3"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<3.1.3",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.5,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-407"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-7r86-cg39-jmmj",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-7r86-cg39-jmmj",
+    "fact": "CVSS 7.5 HIGH, fixed in 3.1.3, 4.2.5, 5.1.8, 6.2.2, 7.4.8, 8.0.6, 9.0.7, 10.2.3"
+   },
+   {
+    "id": "epss:CVE-2026-27903",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-27903",
+    "fact": "악용 확률 0.0058, 백분위 0.473"
+   }
+  ],
+  "details": "### Summary\n\n`matchOne()` performs unbounded recursive backtracking when a glob pattern contains multiple non-adjacent `**` (GLOBSTAR) segments and the input path does not match. The time complexity is O(C(n, k)) -- binomial -- where `n` is the number of path segments and `k` is the number of globstars. With k=11 and n=30, a call to the default `minimatch()` API stalls for roughly 5 seconds. With k=13, it exceeds 15 seconds. No memoization or call budget exists to bound this behavior.\n\n---\n\n### Details\n\nThe vulnerable loop is in `matchOne()` at [`src/index.ts#L960`](https://github.com/isaacs/minimatch/blob/v10.2.2/src/index.ts#L960):\n\n```typescript\nwhile (fr < fl) {\n  ..\n  if (this.matchOne(file.slice(fr), pattern.slice(pr), partial)) {\n    ..\n    return true\n  }\n  ..\n  fr++\n}\n```\n\nWhen a GLOBSTAR is encountered, the function tries to match the remaining pattern against every suffix of the remaining file segments. Each `**` multiplies the number of recursive calls by the number of remaining segments. With k non-adjacent globstars and n file segments, the total number of calls is C(n, k).\n\nThere is no depth counter, visited-state cache, or budget limit applied to this recursion. The call tree is fully explored before returning `false` on a non-matching input.\n\nMeasured timing with n=30 path segments:\n\n| k (globstars) | Pattern size | Time     |\n|---------------|--------------|----------|\n| 7             | 36 bytes     | ~154ms   |\n| 9             | 46 bytes     | ~1.2s    |\n| ",
+  "published": "2026-02-26T22:10:18Z",
+  "references": [
+   "https://github.com/isaacs/minimatch/security/advisories/GHSA-7r86-cg39-jmmj",
+   "https://nvd.nist.gov/vuln/detail/CVE-2026-27903",
+   "https://github.com/isaacs/minimatch/commit/0bf499aa45f5059b56809cc3b75ff3eafeb8d748",
+   "https://github.com/isaacs/minimatch"
+  ],
+  "epss": 0.00576,
+  "epss_percentile": 0.47284,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.23,
+   "cvss": 15.0,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 35.23,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 17
+ },
+ {
+  "finding_id": "nodegoat:npm:minimatch@3.0.8:GHSA-23c5-xmqv-rm74",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimatch",
+  "installed": "3.0.8",
+  "vuln_id": "GHSA-23c5-xmqv-rm74",
+  "ghsa": "GHSA-23c5-xmqv-rm74",
+  "cve": "CVE-2026-27904",
+  "aliases": [
+   "CVE-2026-27904",
+   "GHSA-23c5-xmqv-rm74"
+  ],
+  "summary": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+  "fix_versions": [
+   "3.1.4",
+   "4.2.5",
+   "5.1.8",
+   "6.2.2",
+   "7.4.8",
+   "8.0.6",
+   "9.0.7",
+   "10.2.3"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<3.1.4",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 7.5,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "severity": "HIGH",
+  "cwe": [
+   "CWE-1333"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-23c5-xmqv-rm74",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-23c5-xmqv-rm74",
+    "fact": "CVSS 7.5 HIGH, fixed in 3.1.4, 4.2.5, 5.1.8, 6.2.2, 7.4.8, 8.0.6, 9.0.7, 10.2.3"
+   },
+   {
+    "id": "epss:CVE-2026-27904",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-27904",
+    "fact": "악용 확률 0.0053, 백분위 0.443"
+   }
+  ],
+  "details": "### Summary\n\nNested `*()` extglobs produce regexps with nested unbounded quantifiers (e.g. `(?:(?:a|b)*)*`), which exhibit catastrophic backtracking in V8. With a 12-byte pattern `*(*(*(a|b)))` and an 18-byte non-matching input, `minimatch()` stalls for over 7 seconds. Adding a single nesting level or a few input characters pushes this to minutes. This is the most severe finding: it is triggered by the default `minimatch()` API with no special options, and the minimum viable pattern is only 12 bytes. The same issue affects `+()` extglobs equally.\n\n---\n\n### Details\n\nThe root cause is in `AST.toRegExpSource()` at [`src/ast.ts#L598`](https://github.com/isaacs/minimatch/blob/v10.2.2/src/ast.ts#L598). For the `*` extglob type, the close token emitted is `)*` or `)?`, wrapping the recursive body in `(?:...)*`. When extglobs are nested, each level adds another `*` quantifier around the previous group:\n\n```typescript\n: this.type === '*' && bodyDotAllowed ? `)?`\n: `)${this.type}`\n```\n\nThis produces the following regexps:\n\n| Pattern              | Generated regex                          |\n|----------------------|------------------------------------------|\n| `*(a\\|b)`            | `/^(?:a\\|b)*$/`                          |\n| `*(*(a\\|b))`         | `/^(?:(?:a\\|b)*)*$/`                     |\n| `*(*(*(a\\|b)))`      | `/^(?:(?:(?:a\\|b)*)*)*$/`               |\n| `*(*(*(*(a\\|b))))` | `/^(?:(?:(?:(?:a\\|b)*)*)*)*$/`          |\n\nThese are textbook nested-quantifier patterns. Against an input of",
+  "published": "2026-02-26T22:07:15Z",
+  "references": [
+   "https://github.com/isaacs/minimatch/security/advisories/GHSA-23c5-xmqv-rm74",
+   "https://nvd.nist.gov/vuln/detail/CVE-2026-27904",
+   "https://github.com/isaacs/minimatch/commit/11d0df6165d15a955462316b26d52e5efae06fce",
+   "https://github.com/isaacs/minimatch"
+  ],
+  "epss": 0.00525,
+  "epss_percentile": 0.44314,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.21,
+   "cvss": 15.0,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 35.21,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 18
+ },
+ {
+  "finding_id": "nodegoat:npm:decode-uri-component@0.2.2:GHSA-vcc3-ghjq-m6fr",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "decode-uri-component",
+  "installed": "0.2.2",
+  "vuln_id": "GHSA-vcc3-ghjq-m6fr",
+  "ghsa": "GHSA-vcc3-ghjq-m6fr",
+  "cve": "CVE-2026-45822",
+  "aliases": [
+   "CVE-2026-45822",
+   "GHSA-vcc3-ghjq-m6fr"
+  ],
+  "summary": "decode-uri-component: Denial of service via exponential decoding of malformed percent-encoded input",
+  "fix_versions": [
+   "0.5.0"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<=0.4.2",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 6.6,
+  "cvss_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:U/S:N/AU:Y/R:U/V:D/RE:M/U:Amber",
+  "severity": "MODERATE",
+  "cwe": [
+   "CWE-400",
+   "CWE-405",
+   "CWE-407",
+   "CWE-1176"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-vcc3-ghjq-m6fr",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-vcc3-ghjq-m6fr",
+    "fact": "CVSS 6.6 MODERATE, fixed in 0.5.0"
+   },
+   {
+    "id": "epss:CVE-2026-45822",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-45822",
+    "fact": "악용 확률 0.0051, 백분위 0.430"
+   }
+  ],
+  "details": "### Impact\nAn attacker who can supply input to `decodeUriComponent()` (directly or via a dependency that uses this package on URL/query/path data) can cause excessive CPU usage and application unresponsiveness. This is an availability issue; there is no known memory corruption, data disclosure, or remote code execution impact.\n\n### Patches\nUpgrade to `decode-uri-component@0.5.0`.\n\n### Workarounds\nLimit the size of the input.",
+  "published": "2026-08-31T22:10:20Z",
+  "references": [
+   "https://github.com/SamVerschueren/decode-uri-component/security/advisories/GHSA-vcc3-ghjq-m6fr",
+   "https://nvd.nist.gov/vuln/detail/CVE-2026-45822",
+   "https://github.com/SamVerschueren/decode-uri-component/commit/fa479dafeede7bedf04e5c89aa78f2a78c664005",
+   "https://github.com/SamVerschueren/decode-uri-component",
+   "https://github.com/SamVerschueren/decode-uri-component/blob/00662938dc7c6241547ae8abce7785cc13ffd3f6/index.js",
+   "https://github.com/SamVerschueren/decode-uri-component/releases/tag/v0.5.0",
+   "https://www.npmjs.com/package/decode-uri-component"
+  ],
+  "epss": 0.00507,
+  "epss_percentile": 0.43041,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.2,
+   "cvss": 13.2,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 33.4,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 19
+ },
+ {
+  "finding_id": "nodegoat:npm:helmet-csp@1.2.2:GHSA-c3m8-x3cg-qm2c",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "helmet-csp",
+  "installed": "1.2.2",
+  "vuln_id": "GHSA-c3m8-x3cg-qm2c",
+  "ghsa": "GHSA-c3m8-x3cg-qm2c",
+  "cve": null,
+  "aliases": [
+   "GHSA-c3m8-x3cg-qm2c"
+  ],
+  "summary": "Configuration Override in helmet-csp",
+  "fix_versions": [
+   "2.9.1"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": ">=1.2.2 <2.9.1",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 6.5,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+  "severity": "MODERATE",
+  "cwe": [],
+  "evidence": [
+   {
+    "id": "osv:GHSA-c3m8-x3cg-qm2c",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-c3m8-x3cg-qm2c",
+    "fact": "CVSS 6.5 MODERATE, fixed in 2.9.1"
+   }
+  ],
+  "details": "Versions of `helmet-csp` before to 2.9.1 are vulnerable to a Configuration Override affecting the application's Content Security Policy (CSP). The package's browser sniffing for Firefox deletes the `default-src` CSP policy, which is the fallback policy. This allows an attacker to remove an application's default CSP, possibly rendering the application vulnerable to Cross-Site Scripting.\n\n\n## Recommendation\n\nUpgrade to version 2.9.1 or later. Setting the `browserSniff` configuration to `false` in vulnerable versions also mitigates the issue.",
+  "published": "2020-09-03T20:39:53Z",
+  "references": [
+   "https://github.com/helmetjs/csp/commit/67a69baafa8198a154f0505a0cf0875f76f6186a",
+   "https://github.com/helmetjs/csp",
+   "https://snyk.io/vuln/SNYK-JS-HELMETCSP-469436",
+   "https://www.npmjs.com/advisories/1176"
+  ],
+  "epss": null,
+  "epss_percentile": null,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.0,
+   "cvss": 13.0,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 33.0,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 20
+ },
+ {
+  "finding_id": "nodegoat:npm:mongodb@2.2.36:GHSA-mh5c-679w-hh4r",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "mongodb",
+  "installed": "2.2.36",
+  "vuln_id": "GHSA-mh5c-679w-hh4r",
+  "ghsa": "GHSA-mh5c-679w-hh4r",
+  "cve": null,
+  "aliases": [
+   "GHSA-mh5c-679w-hh4r"
+  ],
+  "summary": "Denial of Service in mongodb",
+  "fix_versions": [
+   "3.1.13"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<3.1.13",
+  "direct": true,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": "HIGH",
+  "cwe": [],
+  "evidence": [
+   {
+    "id": "osv:GHSA-mh5c-679w-hh4r",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-mh5c-679w-hh4r",
+    "fact": "CVSS None HIGH, fixed in 3.1.13"
+   },
+   {
+    "id": "code:mongodb",
+    "source": "code_search",
+    "url": null,
+    "fact": "1st-party 코드 2곳에서 import, 예: server.js:11"
+   }
+  ],
+  "details": "Versions of `mongodb` prior to 3.1.13 are vulnerable to Denial of Service. The package fails to properly catch an exception when a collection name is invalid and the DB does not exist, crashing the application.\n\n\n## Recommendation\n\nUpgrade to version 3.1.13 or later.",
+  "published": "2020-09-03T21:12:01Z",
+  "references": [
+   "https://www.npmjs.com/advisories/1203"
+  ],
+  "epss": null,
+  "epss_percentile": null,
+  "kev": null,
+  "reach": "direct+imported",
+  "import_sites": [
+   "server.js:11",
+   "artifacts/db-reset.js:9"
+  ],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.0,
+   "cvss": 0.0,
+   "reach": 15.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 32.0,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 21
+ },
+ {
+  "finding_id": "nodegoat:npm:minimist@0.0.10:GHSA-vh95-rmgr-6w4m",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimist",
+  "installed": "0.0.10",
+  "vuln_id": "GHSA-vh95-rmgr-6w4m",
+  "ghsa": "GHSA-vh95-rmgr-6w4m",
+  "cve": "CVE-2020-7598",
+  "aliases": [
+   "CVE-2020-7598",
+   "GHSA-vh95-rmgr-6w4m"
+  ],
+  "summary": "Prototype Pollution in minimist",
+  "fix_versions": [
+   "0.2.1",
+   "1.2.3"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<0.2.1",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 5.6,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+  "severity": "MODERATE",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-vh95-rmgr-6w4m",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-vh95-rmgr-6w4m",
+    "fact": "CVSS 5.6 MODERATE, fixed in 0.2.1, 1.2.3"
+   },
+   {
+    "id": "epss:CVE-2020-7598",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2020-7598",
+    "fact": "악용 확률 0.0193, 백분위 0.799"
+   }
+  ],
+  "details": "Affected versions of `minimist` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  \nParsing the argument `--__proto__.y=Polluted` adds a `y` property with value `Polluted` to all objects. The argument `--__proto__=Polluted` raises and uncaught error and crashes the application.  \nThis is exploitable if attackers have control over the arguments being passed to `minimist`.\n\n\n## Recommendation\n\nUpgrade to versions 0.2.1, 1.2.3 or later.",
+  "published": "2020-04-03T21:48:32Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2020-7598",
+   "https://github.com/minimistjs/minimist/commit/10bd4cdf49d9686d48214be9d579a9cdfda37c68",
+   "https://github.com/minimistjs/minimist/commit/38a4d1caead72ef99e824bb420a2528eec03d9ab",
+   "https://github.com/minimistjs/minimist/commit/4cf1354839cb972e38496d35e12f806eea92c11f#diff-a1e0ee62c91705696ddb71aa30ad4f95",
+   "https://github.com/minimistjs/minimist/commit/63e7ed05aa4b1889ec2f3b196426db4500cbda94",
+   "https://github.com/substack/minimist",
+   "https://snyk.io/vuln/SNYK-JS-MINIMIST-559764",
+   "https://www.npmjs.com/advisories/1179"
+  ],
+  "epss": 0.01931,
+  "epss_percentile": 0.79909,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.77,
+   "cvss": 11.2,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 31.97,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 22
+ },
+ {
+  "finding_id": "nodegoat:npm:minimist@0.0.8:GHSA-vh95-rmgr-6w4m",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimist",
+  "installed": "0.0.8",
+  "vuln_id": "GHSA-vh95-rmgr-6w4m",
+  "ghsa": "GHSA-vh95-rmgr-6w4m",
+  "cve": "CVE-2020-7598",
+  "aliases": [
+   "CVE-2020-7598",
+   "GHSA-vh95-rmgr-6w4m"
+  ],
+  "summary": "Prototype Pollution in minimist",
+  "fix_versions": [
+   "0.2.1",
+   "1.2.3"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<0.2.1",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 5.6,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+  "severity": "MODERATE",
+  "cwe": [
+   "CWE-1321"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-vh95-rmgr-6w4m",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-vh95-rmgr-6w4m",
+    "fact": "CVSS 5.6 MODERATE, fixed in 0.2.1, 1.2.3"
+   },
+   {
+    "id": "epss:CVE-2020-7598",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2020-7598",
+    "fact": "악용 확률 0.0193, 백분위 0.799"
+   }
+  ],
+  "details": "Affected versions of `minimist` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  \nParsing the argument `--__proto__.y=Polluted` adds a `y` property with value `Polluted` to all objects. The argument `--__proto__=Polluted` raises and uncaught error and crashes the application.  \nThis is exploitable if attackers have control over the arguments being passed to `minimist`.\n\n\n## Recommendation\n\nUpgrade to versions 0.2.1, 1.2.3 or later.",
+  "published": "2020-04-03T21:48:32Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2020-7598",
+   "https://github.com/minimistjs/minimist/commit/10bd4cdf49d9686d48214be9d579a9cdfda37c68",
+   "https://github.com/minimistjs/minimist/commit/38a4d1caead72ef99e824bb420a2528eec03d9ab",
+   "https://github.com/minimistjs/minimist/commit/4cf1354839cb972e38496d35e12f806eea92c11f#diff-a1e0ee62c91705696ddb71aa30ad4f95",
+   "https://github.com/minimistjs/minimist/commit/63e7ed05aa4b1889ec2f3b196426db4500cbda94",
+   "https://github.com/substack/minimist",
+   "https://snyk.io/vuln/SNYK-JS-MINIMIST-559764",
+   "https://www.npmjs.com/advisories/1179"
+  ],
+  "epss": 0.01931,
+  "epss_percentile": 0.79909,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.77,
+   "cvss": 11.2,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 31.97,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 23
+ },
+ {
+  "finding_id": "nodegoat:npm:micromatch@3.1.10:GHSA-952p-6rrq-rcjv",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "micromatch",
+  "installed": "3.1.10",
+  "vuln_id": "GHSA-952p-6rrq-rcjv",
+  "ghsa": "GHSA-952p-6rrq-rcjv",
+  "cve": "CVE-2024-4067",
+  "aliases": [
+   "CVE-2024-4067",
+   "GHSA-952p-6rrq-rcjv"
+  ],
+  "summary": "Regular Expression Denial of Service (ReDoS) in micromatch",
+  "fix_versions": [
+   "4.0.8"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<4.0.8",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 5.3,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "severity": "MODERATE",
+  "cwe": [
+   "CWE-1333"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-952p-6rrq-rcjv",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-952p-6rrq-rcjv",
+    "fact": "CVSS 5.3 MODERATE, fixed in 4.0.8"
+   },
+   {
+    "id": "epss:CVE-2024-4067",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2024-4067",
+    "fact": "악용 확률 0.0143, 백분위 0.729"
+   }
+  ],
+  "details": "The NPM package `micromatch` prior to version 4.0.8 is vulnerable to Regular Expression Denial of Service (ReDoS). The vulnerability occurs in `micromatch.braces()` in `index.js` because the pattern `.*` will greedily match anything. By passing a malicious payload, the pattern matching will keep backtracking to the input while it doesn't find the closing bracket. As the input size increases, the consumption time will also increase until it causes the application to hang or slow down. There was a merged fix but further testing shows the issue persisted prior to https://github.com/micromatch/micromatch/pull/266. This issue should be mitigated by using a safe pattern that won't start backtracking the regular expression due to greedy matching.\n",
+  "published": "2024-05-14T18:30:54Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2024-4067",
+   "https://github.com/micromatch/micromatch/issues/243",
+   "https://github.com/micromatch/micromatch/pull/247",
+   "https://github.com/micromatch/micromatch/pull/266",
+   "https://github.com/micromatch/micromatch/commit/03aa8052171e878897eee5d7bb2ae0ae83ec2ade",
+   "https://github.com/micromatch/micromatch/commit/500d5d6f42f0e8dfa1cb5464c6cb420b1b6aaaa0",
+   "https://advisory.checkmarx.net/advisory/CVE-2024-4067",
+   "https://devhub.checkmarx.com/cve-details/CVE-2024-4067"
+  ],
+  "epss": 0.01429,
+  "epss_percentile": 0.72856,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.57,
+   "cvss": 10.6,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 31.17,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 24
+ },
+ {
+  "finding_id": "nodegoat:npm:bson@1.0.9:GHSA-4jwp-vfvf-657p",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "bson",
+  "installed": "1.0.9",
+  "vuln_id": "GHSA-4jwp-vfvf-657p",
+  "ghsa": "GHSA-4jwp-vfvf-657p",
+  "cve": "CVE-2019-2391",
+  "aliases": [
+   "CVE-2019-2391",
+   "GHSA-4jwp-vfvf-657p"
+  ],
+  "summary": "Deserialization of Untrusted Data in bson",
+  "fix_versions": [
+   "1.1.4"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<1.1.4",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 5.4,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "severity": "MODERATE",
+  "cwe": [
+   "CWE-502"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-4jwp-vfvf-657p",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-4jwp-vfvf-657p",
+    "fact": "CVSS 5.4 MODERATE, fixed in 1.1.4"
+   },
+   {
+    "id": "epss:CVE-2019-2391",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2019-2391",
+    "fact": "악용 확률 0.0077, 백분위 0.553"
+   }
+  ],
+  "details": "Incorrect parsing of certain JSON input may result in js-bson not correctly serializing BSON. This may cause unexpected application behaviour including data disclosure.",
+  "published": "2022-02-10T23:30:20Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2019-2391",
+   "https://github.com/mongodb/js-bson",
+   "https://github.com/mongodb/js-bson/releases/tag/v1.1.4"
+  ],
+  "epss": 0.00766,
+  "epss_percentile": 0.55275,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.31,
+   "cvss": 10.8,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 31.11,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 25
+ },
+ {
+  "finding_id": "nodegoat:npm:ms@0.7.1:GHSA-w9mr-4mfr-499f",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "ms",
+  "installed": "0.7.1",
+  "vuln_id": "GHSA-w9mr-4mfr-499f",
+  "ghsa": "GHSA-w9mr-4mfr-499f",
+  "cve": "CVE-2017-20162",
+  "aliases": [
+   "CVE-2017-20162",
+   "GHSA-w9mr-4mfr-499f"
+  ],
+  "summary": "Vercel ms Inefficient Regular Expression Complexity vulnerability",
+  "fix_versions": [
+   "2.0.0"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<2.0.0",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 5.3,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "severity": "MODERATE",
+  "cwe": [
+   "CWE-1333"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-w9mr-4mfr-499f",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-w9mr-4mfr-499f",
+    "fact": "CVSS 5.3 MODERATE, fixed in 2.0.0"
+   },
+   {
+    "id": "epss:CVE-2017-20162",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2017-20162",
+    "fact": "악용 확률 0.0102, 백분위 0.632"
+   }
+  ],
+  "details": "A vulnerability, which was classified as problematic, has been found in vercel ms up to 1.x. This issue affects the function parse of the file index.js. The manipulation of the argument str leads to inefficient regular expression complexity. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2.0.0 is able to address this issue. The name of the patch is caae2988ba2a37765d055c4eee63d383320ee662. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-217451.",
+  "published": "2023-01-05T12:30:27Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2017-20162",
+   "https://github.com/vercel/ms/pull/89",
+   "https://github.com/vercel/ms/commit/caae2988ba2a37765d055c4eee63d383320ee662",
+   "https://github.com/vercel/ms",
+   "https://github.com/vercel/ms/releases/tag/2.0.0",
+   "https://security.netapp.com/advisory/ntap-20241108-0002",
+   "https://vuldb.com/?ctiid.217451",
+   "https://vuldb.com/?id.217451"
+  ],
+  "epss": 0.01018,
+  "epss_percentile": 0.63165,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.41,
+   "cvss": 10.6,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 31.01,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 26
+ },
+ {
+  "finding_id": "nodegoat:npm:debug@2.2.0:GHSA-gxpj-cx7g-858c",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "debug",
+  "installed": "2.2.0",
+  "vuln_id": "GHSA-gxpj-cx7g-858c",
+  "ghsa": "GHSA-gxpj-cx7g-858c",
+  "cve": "CVE-2017-16137",
+  "aliases": [
+   "CVE-2017-16137",
+   "GHSA-gxpj-cx7g-858c"
+  ],
+  "summary": "Regular Expression Denial of Service in debug",
+  "fix_versions": [
+   "2.6.9",
+   "3.1.0",
+   "3.2.7",
+   "4.3.1"
+  ],
+  "fix_available": true,
+  "fix_is_major": false,
+  "vulnerable_range": "<2.6.9",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": 3.7,
+  "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "severity": "LOW",
+  "cwe": [
+   "CWE-400"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-gxpj-cx7g-858c",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-gxpj-cx7g-858c",
+    "fact": "CVSS 3.7 LOW, fixed in 2.6.9, 3.1.0, 3.2.7, 4.3.1"
+   },
+   {
+    "id": "epss:CVE-2017-16137",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2017-16137",
+    "fact": "악용 확률 0.0283, 백분위 0.866"
+   }
+  ],
+  "details": "Affected versions of `debug` are vulnerable to regular expression denial of service when untrusted user input is passed into the `o` formatter. \n\nAs it takes 50,000 characters to block the event loop for 2 seconds, this issue is a low severity issue.\n\nThis was later re-introduced in version v3.2.0, and then repatched in versions 3.2.7 and 4.3.1.\n\n## Recommendation\n\nVersion 2.x.x: Update to version 2.6.9 or later.\nVersion 3.1.x: Update to version 3.1.0 or later.\nVersion 3.2.x: Update to version 3.2.7 or later.\nVersion 4.x.x: Update to version 4.3.1 or later.",
+  "published": "2018-08-09T20:18:07Z",
+  "references": [
+   "https://nvd.nist.gov/vuln/detail/CVE-2017-16137",
+   "https://github.com/debug-js/debug/issues/797",
+   "https://github.com/visionmedia/debug/issues/501",
+   "https://github.com/visionmedia/debug/pull/504",
+   "https://github.com/debug-js/debug/commit/4e2150207c568adb9ead8f4c4528016081c88020",
+   "https://github.com/debug-js/debug/commit/71169065b5262f9858ac78cc0b688c84a438f290",
+   "https://github.com/debug-js/debug/commit/b6d12fdbc63b483e5c969da33ea6adc09946b5ac",
+   "https://github.com/debug-js/debug/commit/f53962e944a87e6ca9bb622a2a12dffc22a9bb5a"
+  ],
+  "epss": 0.02832,
+  "epss_percentile": 0.86558,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 1.13,
+   "cvss": 7.4,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 28.53,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 27
+ },
+ {
+  "finding_id": "nodegoat:npm:cookie@0.4.0:GHSA-pxg6-pf52-xh8x",
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "cookie",
+  "installed": "0.4.0",
+  "vuln_id": "GHSA-pxg6-pf52-xh8x",
+  "ghsa": "GHSA-pxg6-pf52-xh8x",
+  "cve": "CVE-2024-47764",
+  "aliases": [
+   "CVE-2024-47764",
+   "GHSA-pxg6-pf52-xh8x"
+  ],
+  "summary": "cookie accepts cookie name, path, and domain with out of bounds characters",
+  "fix_versions": [
+   "0.7.0"
+  ],
+  "fix_available": true,
+  "fix_is_major": true,
+  "vulnerable_range": "<0.7.0",
+  "direct": false,
+  "scanner": "npm audit 10.9.9 (npm registry)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": "LOW",
+  "cwe": [
+   "CWE-74"
+  ],
+  "evidence": [
+   {
+    "id": "osv:GHSA-pxg6-pf52-xh8x",
+    "source": "OSV.dev",
+    "url": "https://osv.dev/vulnerability/GHSA-pxg6-pf52-xh8x",
+    "fact": "CVSS None LOW, fixed in 0.7.0"
+   },
+   {
+    "id": "epss:CVE-2024-47764",
+    "source": "FIRST EPSS 2026-10-27",
+    "url": "https://api.first.org/data/v1/epss?cve=CVE-2024-47764",
+    "fact": "악용 확률 0.0074, 백분위 0.546"
+   }
+  ],
+  "details": "### Impact\n\nThe cookie name could be used to set other fields of the cookie, resulting in an unexpected cookie value. For example, `serialize(\"userName=<script>alert('XSS3')</script>; Max-Age=2592000; a\", value)` would result in `\"userName=<script>alert('XSS3')</script>; Max-Age=2592000; a=test\"`, setting `userName` cookie to `<script>` and ignoring `value`.\n\nA similar escape can be used for `path` and `domain`, which could be abused to alter other fields of the cookie.\n\n### Patches\n\nUpgrade to 0.7.0, which updates the validation for `name`, `path`, and `domain`.\n\n### Workarounds\n\nAvoid passing untrusted or arbitrary values for these fields, ensure they are set by the application instead of user input.\n\n### References\n\n* https://github.com/jshttp/cookie/pull/167",
+  "published": "2024-10-04T20:31:00Z",
+  "references": [
+   "https://github.com/jshttp/cookie/security/advisories/GHSA-pxg6-pf52-xh8x",
+   "https://github.com/jshttp/cookie/pull/167",
+   "https://github.com/jshttp/cookie/commit/e10042845354fea83bd8f34af72475eed1dadf5c",
+   "https://github.com/jshttp/cookie"
+  ],
+  "epss": 0.00744,
+  "epss_percentile": 0.54556,
+  "kev": null,
+  "reach": "transitive",
+  "import_sites": [],
+  "score_parts": {
+   "kev": 0.0,
+   "epss": 0.3,
+   "cvss": 0.0,
+   "reach": 3.0,
+   "exposure": 10.0,
+   "criticality": 2.0,
+   "fix": 5.0
+  },
+  "priority": 20.3,
+  "service": "nodegoat-portal",
+  "owner": "디지털채널팀",
+  "exposure": "internet",
+  "criticality": "low",
+  "rank": 28
+ }
+]

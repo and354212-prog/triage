@@ -1,0 +1,1273 @@
+[
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "y18n",
+  "installed": "3.2.1",
+  "target": "3.2.2",
+  "change": "minor/patch",
+  "in_major_target": "3.2.2",
+  "resolves": [
+   "nodegoat:npm:y18n@3.2.1:GHSA-c4w7-xm78-47vh"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:y18n@3.2.1:GHSA-c4w7-xm78-47vh"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 62.35,
+  "max_rank": 1,
+  "kev": false,
+  "max_epss": 0.69377,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:y18n@3.2.1:GHSA-c4w7-xm78-47vh"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "underscore",
+  "installed": "1.9.1",
+  "target": "1.13.8",
+  "change": "minor/patch",
+  "in_major_target": "1.13.8",
+  "resolves": [
+   "nodegoat:npm:underscore@1.9.1:GHSA-cf4h-3jhx-xvhq",
+   "nodegoat:npm:underscore@1.9.1:GHSA-qpx9-hpmf-5gmw"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:underscore@1.9.1:GHSA-cf4h-3jhx-xvhq",
+   "nodegoat:npm:underscore@1.9.1:GHSA-qpx9-hpmf-5gmw"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 53.28,
+  "max_rank": 2,
+  "kev": false,
+  "max_epss": 0.042,
+  "findings": 2,
+  "direct": true,
+  "reach": "direct+imported",
+  "resolved_by_rescan": [
+   "nodegoat:npm:underscore@1.9.1:GHSA-cf4h-3jhx-xvhq",
+   "nodegoat:npm:underscore@1.9.1:GHSA-qpx9-hpmf-5gmw"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "marked",
+  "installed": "0.3.5",
+  "target": "4.0.10",
+  "change": "major",
+  "in_major_target": "0.3.17",
+  "resolves": [
+   "nodegoat:npm:marked@0.3.5:GHSA-rrrm-qjm4-v8hf",
+   "nodegoat:npm:marked@0.3.5:GHSA-5v2h-r2cx-5xgj",
+   "nodegoat:npm:marked@0.3.5:GHSA-x5pg-88wf-qq4p",
+   "nodegoat:npm:marked@0.3.5:GHSA-p9wx-2529-fp83",
+   "nodegoat:npm:marked@0.3.5:GHSA-7px7-7xjx-hxm8",
+   "nodegoat:npm:marked@0.3.5:GHSA-vfvf-mqq8-rwqc"
+  ],
+  "resolves_count": 6,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 48.14,
+  "max_rank": 3,
+  "kev": false,
+  "max_epss": 0.02852,
+  "findings": 6,
+  "direct": true,
+  "reach": "direct+imported",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "body-parser",
+  "installed": "1.18.3",
+  "target": "1.20.9",
+  "change": "minor/patch",
+  "in_major_target": "1.20.9",
+  "resolves": [
+   "nodegoat:npm:body-parser@1.18.3:GHSA-qwcr-r2fm-qrc7",
+   "nodegoat:npm:body-parser@1.18.3:GHSA-27r3-jxmh-p828",
+   "nodegoat:npm:body-parser@1.18.3:GHSA-v422-hmwv-36x6"
+  ],
+  "resolves_count": 3,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:body-parser@1.18.3:GHSA-qwcr-r2fm-qrc7",
+   "nodegoat:npm:body-parser@1.18.3:GHSA-27r3-jxmh-p828",
+   "nodegoat:npm:body-parser@1.18.3:GHSA-v422-hmwv-36x6"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 47.33,
+  "max_rank": 6,
+  "kev": false,
+  "max_epss": 0.00824,
+  "findings": 3,
+  "direct": true,
+  "reach": "direct+imported",
+  "resolved_by_rescan": [
+   "nodegoat:npm:body-parser@1.18.3:GHSA-qwcr-r2fm-qrc7",
+   "nodegoat:npm:body-parser@1.18.3:GHSA-27r3-jxmh-p828",
+   "nodegoat:npm:body-parser@1.18.3:GHSA-v422-hmwv-36x6"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "express",
+  "installed": "4.16.4",
+  "target": "4.20.0",
+  "change": "minor/patch",
+  "in_major_target": "4.20.0",
+  "resolves": [
+   "nodegoat:npm:express@4.16.4:GHSA-rv95-896h-c2vc",
+   "nodegoat:npm:express@4.16.4:GHSA-qw6h-vgh9-j6wx"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:express@4.16.4:GHSA-rv95-896h-c2vc",
+   "nodegoat:npm:express@4.16.4:GHSA-qw6h-vgh9-j6wx"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 44.51,
+  "max_rank": 11,
+  "kev": false,
+  "max_epss": 0.00786,
+  "findings": 2,
+  "direct": true,
+  "reach": "direct+imported",
+  "resolved_by_rescan": [
+   "nodegoat:npm:express@4.16.4:GHSA-rv95-896h-c2vc",
+   "nodegoat:npm:express@4.16.4:GHSA-qw6h-vgh9-j6wx"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "decode-uri-component",
+  "installed": "0.2.0",
+  "target": "0.5.0",
+  "change": "minor/patch",
+  "in_major_target": "0.5.0",
+  "resolves": [
+   "nodegoat:npm:decode-uri-component@0.2.0:GHSA-w573-4hg7-7wgq",
+   "nodegoat:npm:decode-uri-component@0.2.0:GHSA-vcc3-ghjq-m6fr"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:decode-uri-component@0.2.0:GHSA-w573-4hg7-7wgq"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 44.44,
+  "max_rank": 12,
+  "kev": false,
+  "max_epss": 0.2361,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:decode-uri-component@0.2.0:GHSA-w573-4hg7-7wgq"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "tar",
+  "installed": "4.4.8",
+  "target": "7.5.21",
+  "change": "major",
+  "in_major_target": "4.4.18",
+  "resolves": [
+   "nodegoat:npm:tar@4.4.8:GHSA-3jfq-g458-7qm9",
+   "nodegoat:npm:tar@4.4.8:GHSA-r628-mhmh-qjhw",
+   "nodegoat:npm:tar@4.4.8:GHSA-r6q2-hw4h-h46w",
+   "nodegoat:npm:tar@4.4.8:GHSA-9r2w-394v-53qc",
+   "nodegoat:npm:tar@4.4.8:GHSA-qq89-hq3f-393p",
+   "nodegoat:npm:tar@4.4.8:GHSA-5955-9wpr-37jh",
+   "nodegoat:npm:tar@4.4.8:GHSA-34x7-hfp2-rc4v",
+   "nodegoat:npm:tar@4.4.8:GHSA-qffp-2rhf-9h96",
+   "nodegoat:npm:tar@4.4.8:GHSA-8qq5-rm4j-mr97",
+   "nodegoat:npm:tar@4.4.8:GHSA-9ppj-qmqm-q256",
+   "nodegoat:npm:tar@4.4.8:GHSA-23hp-3jrh-7fpw",
+   "nodegoat:npm:tar@4.4.8:GHSA-r292-9mhp-454m",
+   "nodegoat:npm:tar@4.4.8:GHSA-8x88-c5mf-7j5w",
+   "nodegoat:npm:tar@4.4.8:GHSA-83g3-92jg-28cx",
+   "nodegoat:npm:tar@4.4.8:GHSA-vmf3-w455-68vh",
+   "nodegoat:npm:tar@4.4.8:GHSA-f5x3-32g6-xq36",
+   "nodegoat:npm:tar@4.4.8:GHSA-w8wr-v893-vjvp",
+   "nodegoat:npm:tar@4.4.8:GHSA-gvwx-54wh-qm9j"
+  ],
+  "resolves_count": 18,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:tar@4.4.8:GHSA-3jfq-g458-7qm9",
+   "nodegoat:npm:tar@4.4.8:GHSA-r628-mhmh-qjhw",
+   "nodegoat:npm:tar@4.4.8:GHSA-r6q2-hw4h-h46w",
+   "nodegoat:npm:tar@4.4.8:GHSA-9r2w-394v-53qc",
+   "nodegoat:npm:tar@4.4.8:GHSA-qq89-hq3f-393p",
+   "nodegoat:npm:tar@4.4.8:GHSA-5955-9wpr-37jh",
+   "nodegoat:npm:tar@4.4.8:GHSA-34x7-hfp2-rc4v",
+   "nodegoat:npm:tar@4.4.8:GHSA-qffp-2rhf-9h96",
+   "nodegoat:npm:tar@4.4.8:GHSA-8qq5-rm4j-mr97",
+   "nodegoat:npm:tar@4.4.8:GHSA-9ppj-qmqm-q256",
+   "nodegoat:npm:tar@4.4.8:GHSA-23hp-3jrh-7fpw",
+   "nodegoat:npm:tar@4.4.8:GHSA-r292-9mhp-454m",
+   "nodegoat:npm:tar@4.4.8:GHSA-8x88-c5mf-7j5w",
+   "nodegoat:npm:tar@4.4.8:GHSA-83g3-92jg-28cx",
+   "nodegoat:npm:tar@4.4.8:GHSA-vmf3-w455-68vh",
+   "nodegoat:npm:tar@4.4.8:GHSA-f5x3-32g6-xq36",
+   "nodegoat:npm:tar@4.4.8:GHSA-w8wr-v893-vjvp",
+   "nodegoat:npm:tar@4.4.8:GHSA-gvwx-54wh-qm9j"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 42.43,
+  "max_rank": 14,
+  "kev": false,
+  "max_epss": 0.15067,
+  "findings": 18,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:tar@4.4.8:GHSA-3jfq-g458-7qm9",
+   "nodegoat:npm:tar@4.4.8:GHSA-r628-mhmh-qjhw",
+   "nodegoat:npm:tar@4.4.8:GHSA-r6q2-hw4h-h46w",
+   "nodegoat:npm:tar@4.4.8:GHSA-9r2w-394v-53qc",
+   "nodegoat:npm:tar@4.4.8:GHSA-qq89-hq3f-393p",
+   "nodegoat:npm:tar@4.4.8:GHSA-5955-9wpr-37jh",
+   "nodegoat:npm:tar@4.4.8:GHSA-34x7-hfp2-rc4v",
+   "nodegoat:npm:tar@4.4.8:GHSA-qffp-2rhf-9h96",
+   "nodegoat:npm:tar@4.4.8:GHSA-8qq5-rm4j-mr97",
+   "nodegoat:npm:tar@4.4.8:GHSA-9ppj-qmqm-q256",
+   "nodegoat:npm:tar@4.4.8:GHSA-23hp-3jrh-7fpw",
+   "nodegoat:npm:tar@4.4.8:GHSA-r292-9mhp-454m",
+   "nodegoat:npm:tar@4.4.8:GHSA-8x88-c5mf-7j5w",
+   "nodegoat:npm:tar@4.4.8:GHSA-83g3-92jg-28cx",
+   "nodegoat:npm:tar@4.4.8:GHSA-vmf3-w455-68vh",
+   "nodegoat:npm:tar@4.4.8:GHSA-f5x3-32g6-xq36",
+   "nodegoat:npm:tar@4.4.8:GHSA-w8wr-v893-vjvp",
+   "nodegoat:npm:tar@4.4.8:GHSA-gvwx-54wh-qm9j"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "swig",
+  "installed": "1.4.2",
+  "target": null,
+  "change": null,
+  "in_major_target": null,
+  "resolves": [],
+  "resolves_count": 0,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [],
+  "no_fix": [
+   "nodegoat:npm:swig@1.4.2:GHSA-2rq5-699j-x7p6"
+  ],
+  "top_priority": 42.42,
+  "max_rank": 15,
+  "kev": false,
+  "max_epss": 0.0105,
+  "findings": 1,
+  "direct": true,
+  "reach": "direct+imported",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimist",
+  "installed": "0.0.10",
+  "target": "0.2.4",
+  "change": "minor/patch",
+  "in_major_target": "0.2.4",
+  "resolves": [
+   "nodegoat:npm:minimist@0.0.10:GHSA-xvch-5gv4-984h",
+   "nodegoat:npm:minimist@0.0.10:GHSA-vh95-rmgr-6w4m"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:minimist@0.0.10:GHSA-xvch-5gv4-984h",
+    "cve": "CVE-2021-44906"
+   },
+   {
+    "finding_id": "nodegoat:npm:minimist@0.0.10:GHSA-vh95-rmgr-6w4m",
+    "cve": "CVE-2020-7598"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 41.43,
+  "max_rank": 17,
+  "kev": false,
+  "max_epss": 0.04581,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimist",
+  "installed": "0.0.8",
+  "target": "0.2.4",
+  "change": "minor/patch",
+  "in_major_target": "0.2.4",
+  "resolves": [
+   "nodegoat:npm:minimist@0.0.8:GHSA-xvch-5gv4-984h",
+   "nodegoat:npm:minimist@0.0.8:GHSA-vh95-rmgr-6w4m"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:minimist@0.0.8:GHSA-xvch-5gv4-984h",
+    "cve": "CVE-2021-44906"
+   },
+   {
+    "finding_id": "nodegoat:npm:minimist@0.0.8:GHSA-vh95-rmgr-6w4m",
+    "cve": "CVE-2020-7598"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 41.43,
+  "max_rank": 18,
+  "kev": false,
+  "max_epss": 0.04581,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimist",
+  "installed": "1.2.0",
+  "target": "1.2.6",
+  "change": "minor/patch",
+  "in_major_target": "1.2.6",
+  "resolves": [
+   "nodegoat:npm:minimist@1.2.0:GHSA-xvch-5gv4-984h",
+   "nodegoat:npm:minimist@1.2.0:GHSA-vh95-rmgr-6w4m"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:minimist@1.2.0:GHSA-xvch-5gv4-984h",
+    "cve": "CVE-2021-44906"
+   },
+   {
+    "finding_id": "nodegoat:npm:minimist@1.2.0:GHSA-vh95-rmgr-6w4m",
+    "cve": "CVE-2020-7598"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 41.43,
+  "max_rank": 19,
+  "kev": false,
+  "max_epss": 0.04581,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimist",
+  "installed": "1.2.5",
+  "target": "1.2.6",
+  "change": "minor/patch",
+  "in_major_target": "1.2.6",
+  "resolves": [
+   "nodegoat:npm:minimist@1.2.5:GHSA-xvch-5gv4-984h",
+   "nodegoat:npm:minimist@1.2.5:GHSA-vh95-rmgr-6w4m"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:minimist@1.2.5:GHSA-xvch-5gv4-984h",
+    "cve": "CVE-2021-44906"
+   },
+   {
+    "finding_id": "nodegoat:npm:minimist@1.2.5:GHSA-vh95-rmgr-6w4m",
+    "cve": "CVE-2020-7598"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 41.43,
+  "max_rank": 20,
+  "kev": false,
+  "max_epss": 0.04581,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "qs",
+  "installed": "6.5.2",
+  "target": "6.16.0",
+  "change": "minor/patch",
+  "in_major_target": "6.16.0",
+  "resolves": [
+   "nodegoat:npm:qs@6.5.2:GHSA-hrpp-h998-j3pp",
+   "nodegoat:npm:qs@6.5.2:GHSA-4mjr-xmp4-gh2g",
+   "nodegoat:npm:qs@6.5.2:GHSA-6rw7-vpxm-498p"
+  ],
+  "resolves_count": 3,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:qs@6.5.2:GHSA-hrpp-h998-j3pp",
+   "nodegoat:npm:qs@6.5.2:GHSA-4mjr-xmp4-gh2g",
+   "nodegoat:npm:qs@6.5.2:GHSA-6rw7-vpxm-498p"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 41.25,
+  "max_rank": 21,
+  "kev": false,
+  "max_epss": 0.15622,
+  "findings": 3,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:qs@6.5.2:GHSA-hrpp-h998-j3pp",
+   "nodegoat:npm:qs@6.5.2:GHSA-4mjr-xmp4-gh2g",
+   "nodegoat:npm:qs@6.5.2:GHSA-6rw7-vpxm-498p"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "mixin-deep",
+  "installed": "1.3.1",
+  "target": "1.3.2",
+  "change": "minor/patch",
+  "in_major_target": "1.3.2",
+  "resolves": [
+   "nodegoat:npm:mixin-deep@1.3.1:GHSA-fhjf-83wg-r2j9"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:mixin-deep@1.3.1:GHSA-fhjf-83wg-r2j9"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 41.06,
+  "max_rank": 22,
+  "kev": false,
+  "max_epss": 0.03651,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:mixin-deep@1.3.1:GHSA-fhjf-83wg-r2j9"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "set-value",
+  "installed": "0.4.3",
+  "target": "2.0.1",
+  "change": "major",
+  "in_major_target": null,
+  "resolves": [
+   "nodegoat:npm:set-value@0.4.3:GHSA-4g88-fppr-53pp",
+   "nodegoat:npm:set-value@0.4.3:GHSA-4jqc-8m5r-9rpr"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:set-value@0.4.3:GHSA-4g88-fppr-53pp",
+   "nodegoat:npm:set-value@0.4.3:GHSA-4jqc-8m5r-9rpr"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 40.59,
+  "max_rank": 23,
+  "kev": false,
+  "max_epss": 0.02475,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:set-value@0.4.3:GHSA-4g88-fppr-53pp",
+   "nodegoat:npm:set-value@0.4.3:GHSA-4jqc-8m5r-9rpr"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "set-value",
+  "installed": "2.0.0",
+  "target": "2.0.1",
+  "change": "minor/patch",
+  "in_major_target": "2.0.1",
+  "resolves": [
+   "nodegoat:npm:set-value@2.0.0:GHSA-4g88-fppr-53pp",
+   "nodegoat:npm:set-value@2.0.0:GHSA-4jqc-8m5r-9rpr"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:set-value@2.0.0:GHSA-4g88-fppr-53pp",
+   "nodegoat:npm:set-value@2.0.0:GHSA-4jqc-8m5r-9rpr"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 40.59,
+  "max_rank": 24,
+  "kev": false,
+  "max_epss": 0.02475,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:set-value@2.0.0:GHSA-4g88-fppr-53pp",
+   "nodegoat:npm:set-value@2.0.0:GHSA-4jqc-8m5r-9rpr"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "bson",
+  "installed": "1.0.9",
+  "target": "1.1.4",
+  "change": "minor/patch",
+  "in_major_target": "1.1.4",
+  "resolves": [
+   "nodegoat:npm:bson@1.0.9:GHSA-v8w9-2789-6hhr",
+   "nodegoat:npm:bson@1.0.9:GHSA-4jwp-vfvf-657p"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:bson@1.0.9:GHSA-v8w9-2789-6hhr",
+    "cve": "CVE-2020-7610"
+   },
+   {
+    "finding_id": "nodegoat:npm:bson@1.0.9:GHSA-4jwp-vfvf-657p",
+    "cve": "CVE-2019-2391"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 40.51,
+  "max_rank": 25,
+  "kev": false,
+  "max_epss": 0.02265,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "fsevents",
+  "installed": "1.2.9",
+  "target": "1.2.11",
+  "change": "minor/patch",
+  "in_major_target": "1.2.11",
+  "resolves": [
+   "nodegoat:npm:fsevents@1.2.9:GHSA-8r6j-v8pm-fqw3"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:fsevents@1.2.9:GHSA-8r6j-v8pm-fqw3",
+   "nodegoat:npm:fsevents@1.2.9:GHSA-xv2f-5jw4-v95m"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 40.28,
+  "max_rank": 26,
+  "kev": false,
+  "max_epss": 0.01704,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:fsevents@1.2.9:GHSA-8r6j-v8pm-fqw3",
+   "nodegoat:npm:fsevents@1.2.9:GHSA-xv2f-5jw4-v95m"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "proxy-addr",
+  "installed": "2.0.4",
+  "target": "2.0.8",
+  "change": "minor/patch",
+  "in_major_target": "2.0.8",
+  "resolves": [
+   "nodegoat:npm:proxy-addr@2.0.4:GHSA-jqcg-44mw-7w3h"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:proxy-addr@2.0.4:GHSA-jqcg-44mw-7w3h"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 38.3,
+  "max_rank": 29,
+  "kev": false,
+  "max_epss": 0.0026,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:proxy-addr@2.0.4:GHSA-jqcg-44mw-7w3h"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "minimatch",
+  "installed": "3.0.4",
+  "target": "3.1.4",
+  "change": "minor/patch",
+  "in_major_target": "3.1.4",
+  "resolves": [
+   "nodegoat:npm:minimatch@3.0.4:GHSA-3ppc-4f35-3m26",
+   "nodegoat:npm:minimatch@3.0.4:GHSA-f8q6-p94x-37v3",
+   "nodegoat:npm:minimatch@3.0.4:GHSA-7r86-cg39-jmmj",
+   "nodegoat:npm:minimatch@3.0.4:GHSA-23c5-xmqv-rm74"
+  ],
+  "resolves_count": 4,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:minimatch@3.0.4:GHSA-f8q6-p94x-37v3"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 37.63,
+  "max_rank": 32,
+  "kev": false,
+  "max_epss": 0.02279,
+  "findings": 4,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:minimatch@3.0.4:GHSA-f8q6-p94x-37v3"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "semver",
+  "installed": "5.6.0",
+  "target": "5.7.2",
+  "change": "minor/patch",
+  "in_major_target": "5.7.2",
+  "resolves": [
+   "nodegoat:npm:semver@5.6.0:GHSA-c2qf-rxjj-qqgw"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:semver@5.6.0:GHSA-c2qf-rxjj-qqgw"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 36.1,
+  "max_rank": 39,
+  "kev": false,
+  "max_epss": 0.02761,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:semver@5.6.0:GHSA-c2qf-rxjj-qqgw"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "semver",
+  "installed": "5.7.0",
+  "target": "5.7.2",
+  "change": "minor/patch",
+  "in_major_target": "5.7.2",
+  "resolves": [
+   "nodegoat:npm:semver@5.7.0:GHSA-c2qf-rxjj-qqgw"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:semver@5.7.0:GHSA-c2qf-rxjj-qqgw"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 36.1,
+  "max_rank": 40,
+  "kev": false,
+  "max_epss": 0.02761,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:semver@5.7.0:GHSA-c2qf-rxjj-qqgw"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "ini",
+  "installed": "1.3.5",
+  "target": "1.3.6",
+  "change": "minor/patch",
+  "in_major_target": "1.3.6",
+  "resolves": [
+   "nodegoat:npm:ini@1.3.5:GHSA-qqgx-2p2h-9c37"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:ini@1.3.5:GHSA-qqgx-2p2h-9c37"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 36.06,
+  "max_rank": 41,
+  "kev": false,
+  "max_epss": 0.03655,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:ini@1.3.5:GHSA-qqgx-2p2h-9c37"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "kind-of",
+  "installed": "6.0.2",
+  "target": "6.0.3",
+  "change": "minor/patch",
+  "in_major_target": "6.0.3",
+  "resolves": [
+   "nodegoat:npm:kind-of@6.0.2:GHSA-6c8f-qphg-qjgp"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:kind-of@6.0.2:GHSA-6c8f-qphg-qjgp"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 35.94,
+  "max_rank": 42,
+  "kev": false,
+  "max_epss": 0.02342,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:kind-of@6.0.2:GHSA-6c8f-qphg-qjgp"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "uglify-js",
+  "installed": "2.4.24",
+  "target": "2.6.0",
+  "change": "minor/patch",
+  "in_major_target": "2.6.0",
+  "resolves": [
+   "nodegoat:npm:uglify-js@2.4.24:GHSA-c9f4-xj24-8jqx"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 35.94,
+  "max_rank": 43,
+  "kev": false,
+  "max_epss": 0.02358,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "debug",
+  "installed": "2.2.0",
+  "target": "2.6.9",
+  "change": "minor/patch",
+  "in_major_target": "2.6.9",
+  "resolves": [
+   "nodegoat:npm:debug@2.2.0:GHSA-9vvw-cc9w-f27h",
+   "nodegoat:npm:debug@2.2.0:GHSA-gxpj-cx7g-858c"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 35.84,
+  "max_rank": 45,
+  "kev": false,
+  "max_epss": 0.02832,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "debug",
+  "installed": "4.1.1",
+  "target": "4.3.1",
+  "change": "minor/patch",
+  "in_major_target": "4.3.1",
+  "resolves": [
+   "nodegoat:npm:debug@4.1.1:GHSA-9vvw-cc9w-f27h",
+   "nodegoat:npm:debug@4.1.1:GHSA-gxpj-cx7g-858c"
+  ],
+  "resolves_count": 2,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 35.84,
+  "max_rank": 46,
+  "kev": false,
+  "max_epss": 0.02832,
+  "findings": 2,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "braces",
+  "installed": "2.3.2",
+  "target": "3.0.3",
+  "change": "major",
+  "in_major_target": null,
+  "resolves": [
+   "nodegoat:npm:braces@2.3.2:GHSA-grv7-fg5c-xmjg"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:braces@2.3.2:GHSA-grv7-fg5c-xmjg",
+    "cve": "CVE-2024-4068"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 35.59,
+  "max_rank": 47,
+  "kev": false,
+  "max_epss": 0.01471,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "i",
+  "installed": "0.3.6",
+  "target": "0.3.7",
+  "change": "minor/patch",
+  "in_major_target": "0.3.7",
+  "resolves": [
+   "nodegoat:npm:i@0.3.6:GHSA-x55w-vjjp-222r"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:i@0.3.6:GHSA-x55w-vjjp-222r"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 35.49,
+  "max_rank": 48,
+  "kev": false,
+  "max_epss": 0.01222,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:i@0.3.6:GHSA-x55w-vjjp-222r"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "path-to-regexp",
+  "installed": "0.1.7",
+  "target": "0.1.13",
+  "change": "minor/patch",
+  "in_major_target": "0.1.13",
+  "resolves": [
+   "nodegoat:npm:path-to-regexp@0.1.7:GHSA-9wv6-86v2-598j",
+   "nodegoat:npm:path-to-regexp@0.1.7:GHSA-37ch-88jc-xwx2",
+   "nodegoat:npm:path-to-regexp@0.1.7:GHSA-rhx6-c78j-4q9w"
+  ],
+  "resolves_count": 3,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:path-to-regexp@0.1.7:GHSA-9wv6-86v2-598j",
+   "nodegoat:npm:path-to-regexp@0.1.7:GHSA-37ch-88jc-xwx2",
+   "nodegoat:npm:path-to-regexp@0.1.7:GHSA-rhx6-c78j-4q9w"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 35.37,
+  "max_rank": 51,
+  "kev": false,
+  "max_epss": 0.00932,
+  "findings": 3,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:path-to-regexp@0.1.7:GHSA-9wv6-86v2-598j",
+   "nodegoat:npm:path-to-regexp@0.1.7:GHSA-37ch-88jc-xwx2",
+   "nodegoat:npm:path-to-regexp@0.1.7:GHSA-rhx6-c78j-4q9w"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "nconf",
+  "installed": "0.10.0",
+  "target": "0.11.4",
+  "change": "minor/patch",
+  "in_major_target": "0.11.4",
+  "resolves": [
+   "nodegoat:npm:nconf@0.10.0:GHSA-6xwr-q98w-rvg7"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:nconf@0.10.0:GHSA-6xwr-q98w-rvg7",
+    "cve": "CVE-2022-21803"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 35.31,
+  "max_rank": 54,
+  "kev": false,
+  "max_epss": 0.0178,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "nconf",
+  "installed": "0.6.9",
+  "target": "0.11.4",
+  "change": "minor/patch",
+  "in_major_target": "0.11.4",
+  "resolves": [
+   "nodegoat:npm:nconf@0.6.9:GHSA-6xwr-q98w-rvg7"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:nconf@0.6.9:GHSA-6xwr-q98w-rvg7",
+    "cve": "CVE-2022-21803"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 35.31,
+  "max_rank": 55,
+  "kev": false,
+  "max_epss": 0.0178,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "brace-expansion",
+  "installed": "1.1.11",
+  "target": "1.1.21",
+  "change": "minor/patch",
+  "in_major_target": "1.1.21",
+  "resolves": [
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-mh99-v99m-4gvg",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-rgw5-rvv9-x895",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-qhr7-859c-m2p7",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-6j4f-fj2g-mc7p",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-f886-m6hf-6m8v",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-q2hr-2g5m-vwhr",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-3jxr-9vmj-r5cp",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-v6h2-p8h4-qcjw"
+  ],
+  "resolves_count": 8,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-mh99-v99m-4gvg",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-rgw5-rvv9-x895",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-qhr7-859c-m2p7",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-6j4f-fj2g-mc7p",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-f886-m6hf-6m8v",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-q2hr-2g5m-vwhr",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-3jxr-9vmj-r5cp",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-v6h2-p8h4-qcjw"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 35.26,
+  "max_rank": 56,
+  "kev": false,
+  "max_epss": 0.00647,
+  "findings": 8,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-mh99-v99m-4gvg",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-rgw5-rvv9-x895",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-qhr7-859c-m2p7",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-6j4f-fj2g-mc7p",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-f886-m6hf-6m8v",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-q2hr-2g5m-vwhr",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-3jxr-9vmj-r5cp",
+   "nodegoat:npm:brace-expansion@1.1.11:GHSA-v6h2-p8h4-qcjw"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "helmet-csp",
+  "installed": "1.2.2",
+  "target": "2.9.1",
+  "change": "major",
+  "in_major_target": null,
+  "resolves": [
+   "nodegoat:npm:helmet-csp@1.2.2:GHSA-c3m8-x3cg-qm2c"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 33.0,
+  "max_rank": 70,
+  "kev": false,
+  "max_epss": 0,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "mongodb",
+  "installed": "2.2.36",
+  "target": "3.1.13",
+  "change": "major",
+  "in_major_target": null,
+  "resolves": [
+   "nodegoat:npm:mongodb@2.2.36:GHSA-mh5c-679w-hh4r"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:mongodb@2.2.36:GHSA-mh5c-679w-hh4r",
+    "cve": null
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 32.0,
+  "max_rank": 71,
+  "kev": false,
+  "max_epss": 0,
+  "findings": 1,
+  "direct": true,
+  "reach": "direct+imported",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "micromatch",
+  "installed": "3.1.10",
+  "target": "4.0.8",
+  "change": "major",
+  "in_major_target": null,
+  "resolves": [
+   "nodegoat:npm:micromatch@3.1.10:GHSA-952p-6rrq-rcjv"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:micromatch@3.1.10:GHSA-952p-6rrq-rcjv",
+    "cve": "CVE-2024-4067"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 31.17,
+  "max_rank": 76,
+  "kev": false,
+  "max_epss": 0.01429,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "ms",
+  "installed": "0.7.1",
+  "target": "2.0.0",
+  "change": "major",
+  "in_major_target": null,
+  "resolves": [
+   "nodegoat:npm:ms@0.7.1:GHSA-w9mr-4mfr-499f"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 31.01,
+  "max_rank": 78,
+  "kev": false,
+  "max_epss": 0.01018,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "serve-static",
+  "installed": "1.13.2",
+  "target": "1.16.0",
+  "change": "minor/patch",
+  "in_major_target": "1.16.0",
+  "resolves": [
+   "nodegoat:npm:serve-static@1.13.2:GHSA-cm22-4g7w-348p"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:serve-static@1.13.2:GHSA-cm22-4g7w-348p"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 30.25,
+  "max_rank": 84,
+  "kev": false,
+  "max_epss": 0.00631,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:serve-static@1.13.2:GHSA-cm22-4g7w-348p"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "send",
+  "installed": "0.16.2",
+  "target": "0.19.0",
+  "change": "minor/patch",
+  "in_major_target": "0.19.0",
+  "resolves": [
+   "nodegoat:npm:send@0.16.2:GHSA-m6fv-jmcg-4jfg"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:send@0.16.2:GHSA-m6fv-jmcg-4jfg"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 30.22,
+  "max_rank": 85,
+  "kev": false,
+  "max_epss": 0.00541,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:send@0.16.2:GHSA-m6fv-jmcg-4jfg"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "on-headers",
+  "installed": "1.0.1",
+  "target": "1.1.0",
+  "change": "minor/patch",
+  "in_major_target": "1.1.0",
+  "resolves": [
+   "nodegoat:npm:on-headers@1.0.1:GHSA-76c9-3jph-rj3q"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [
+   "nodegoat:npm:on-headers@1.0.1:GHSA-76c9-3jph-rj3q"
+  ],
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 26.88,
+  "max_rank": 89,
+  "kev": false,
+  "max_epss": 0.00208,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": [
+   "nodegoat:npm:on-headers@1.0.1:GHSA-76c9-3jph-rj3q"
+  ]
+ },
+ {
+  "project": "nodegoat",
+  "ecosystem": "npm",
+  "package": "cookie",
+  "installed": "0.3.1",
+  "target": "0.7.0",
+  "change": "minor/patch",
+  "in_major_target": "0.7.0",
+  "resolves": [
+   "nodegoat:npm:cookie@0.3.1:GHSA-pxg6-pf52-xh8x"
+  ],
+  "resolves_count": 1,
+  "resolved_by_nonbreaking_fix": [],
+  "needs_major": [
+   {
+    "finding_id": "nodegoat:npm:cookie@0.3.1:GHSA-pxg6-pf52-xh8x",
+    "cve": "CVE-2024-47764"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 20.3,
+  "max_rank": 91,
+  "kev": false,
+  "max_epss": 0.00744,
+  "findings": 1,
+  "direct": false,
+  "reach": "transitive",
+  "resolved_by_rescan": []
+ }
+]

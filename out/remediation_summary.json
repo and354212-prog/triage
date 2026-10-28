@@ -1,0 +1,35 @@
+{
+ "pygoat": {
+  "before": 187,
+  "after": 84,
+  "actions": 11,
+  "needs_major": 84,
+  "no_fix": 1
+ },
+ "netbox": {
+  "before": 105,
+  "after": 70,
+  "actions": 7,
+  "needs_major": 70,
+  "no_fix": 0
+ },
+ "nodegoat": {
+  "before_meta": {
+   "info": 0,
+   "low": 8,
+   "moderate": 33,
+   "high": 66,
+   "critical": 39,
+   "total": 146
+  },
+  "after_meta": {
+   "info": 0,
+   "low": 8,
+   "moderate": 33,
+   "high": 66,
+   "critical": 39,
+   "total": 146
+  },
+  "after_findings": 369
+ }
+}

@@ -1,0 +1,1089 @@
+{
+ "evidence": {
+  "action:netbox:pillow@8.3.1": {
+   "id": "action:netbox:pillow@8.3.1",
+   "source": "triage.remediate",
+   "fact": "pillow 8.3.1 → 10.0.1 (major · KEV 규칙), 해결 10/55",
+   "url": null
+  },
+  "osv:GHSA-j7hp-h8jx-5ppr": {
+   "id": "osv:GHSA-j7hp-h8jx-5ppr",
+   "source": "OSV.dev",
+   "fact": "CVSS 8.8 HIGH, fixed in 10.0.1",
+   "url": "https://osv.dev/vulnerability/GHSA-j7hp-h8jx-5ppr"
+  },
+  "epss:CVE-2023-4863": {
+   "id": "epss:CVE-2023-4863",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.9998, 백분위 1.000",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2023-4863"
+  },
+  "kev:CVE-2023-4863": {
+   "id": "kev:CVE-2023-4863",
+   "source": "CISA KEV 2026.10.27",
+   "fact": "악용 확인 목록 등재 2023-09-13, 랜섬웨어 사용 Unknown",
+   "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+  },
+  "osv:GHSA-8vj2-vxx3-667w": {
+   "id": "osv:GHSA-8vj2-vxx3-667w",
+   "source": "OSV.dev",
+   "fact": "CVSS 9.3 CRITICAL, fixed in 9.0.1",
+   "url": "https://osv.dev/vulnerability/GHSA-8vj2-vxx3-667w"
+  },
+  "epss:CVE-2022-22817": {
+   "id": "epss:CVE-2022-22817",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0333, 백분위 0.886",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2022-22817"
+  },
+  "osv:GHSA-98vv-pw6r-q6q4": {
+   "id": "osv:GHSA-98vv-pw6r-q6q4",
+   "source": "OSV.dev",
+   "fact": "CVSS 8.7 HIGH, fixed in 8.3.2",
+   "url": "https://osv.dev/vulnerability/GHSA-98vv-pw6r-q6q4"
+  },
+  "epss:CVE-2021-23437": {
+   "id": "epss:CVE-2021-23437",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0324, 백분위 0.882",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2021-23437"
+  },
+  "rescan:netbox:pillow@8.3.1": {
+   "id": "rescan:netbox:pillow@8.3.1",
+   "source": "rescan",
+   "fact": "목표 버전 적용 후 재스캔: 예상 10건 중 10건 소멸, 잔존 0건",
+   "url": null
+  },
+  "release:PyPI:pillow@10.0.1": {
+   "id": "release:PyPI:pillow@10.0.1",
+   "source": "registry",
+   "fact": "{\"version\": \"10.0.1\", \"released\": \"2023-09-15\", \"requires_python\": \">=3.8\", \"changelog\": \"https://github.com/python-pillow/Pillow/blob/main/CHANGES.rst\", \"homepage\": \"https://python-pillow.org\"}",
+   "url": null
+  },
+  "action:netbox:django@3.2.6": {
+   "id": "action:netbox:django@3.2.6",
+   "source": "triage.remediate",
+   "fact": "django 3.2.6 → 3.2.25 (minor/patch), 해결 20/33",
+   "url": null
+  },
+  "osv:GHSA-p64x-8rxx-wf6q": {
+   "id": "osv:GHSA-p64x-8rxx-wf6q",
+   "source": "OSV.dev",
+   "fact": "CVSS 9.3 CRITICAL, fixed in 3.2.14, 4.0.6",
+   "url": "https://osv.dev/vulnerability/GHSA-p64x-8rxx-wf6q"
+  },
+  "epss:CVE-2022-34265": {
+   "id": "epss:CVE-2022-34265",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.7361, 백분위 0.995",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2022-34265"
+  },
+  "code:django": {
+   "id": "code:django",
+   "source": "code_search",
+   "fact": "1st-party 코드 128곳에서 import, 예: manage.py:11",
+   "url": null
+  },
+  "osv:GHSA-2hrw-hx67-34x6": {
+   "id": "osv:GHSA-2hrw-hx67-34x6",
+   "source": "OSV.dev",
+   "fact": "CVSS 8.7 HIGH, fixed in 3.2.18, 4.0.10, 4.1.7",
+   "url": "https://osv.dev/vulnerability/GHSA-2hrw-hx67-34x6"
+  },
+  "epss:CVE-2023-24580": {
+   "id": "epss:CVE-2023-24580",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.6258, 백분위 0.992",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2023-24580"
+  },
+  "osv:GHSA-qmf9-6jqf-j8fq": {
+   "id": "osv:GHSA-qmf9-6jqf-j8fq",
+   "source": "OSV.dev",
+   "fact": "CVSS 8.7 HIGH, fixed in 3.2.23, 4.1.13, 4.2.7",
+   "url": "https://osv.dev/vulnerability/GHSA-qmf9-6jqf-j8fq"
+  },
+  "epss:CVE-2023-46695": {
+   "id": "epss:CVE-2023-46695",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.4977, 백분위 0.989",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2023-46695"
+  },
+  "rescan:netbox:django@3.2.6": {
+   "id": "rescan:netbox:django@3.2.6",
+   "source": "rescan",
+   "fact": "목표 버전 적용 후 재스캔: 예상 20건 중 20건 소멸, 잔존 0건",
+   "url": null
+  },
+  "release:PyPI:django@3.2.25": {
+   "id": "release:PyPI:django@3.2.25",
+   "source": "registry",
+   "fact": "{\"version\": \"3.2.25\", \"released\": \"2024-03-04\", \"requires_python\": \">=3.6\", \"changelog\": \"https://docs.djangoproject.com/en/stable/releases/\", \"homepage\": \"https://www.djangoproject.com/\"}",
+   "url": null
+  },
+  "action:pygoat:django@4.2": {
+   "id": "action:pygoat:django@4.2",
+   "source": "triage.remediate",
+   "fact": "django 4.2 → 4.2.30 (minor/patch), 해결 43/51",
+   "url": null
+  },
+  "osv:GHSA-f6f8-9mx6-9mx2": {
+   "id": "osv:GHSA-f6f8-9mx6-9mx2",
+   "source": "OSV.dev",
+   "fact": "CVSS 8.7 HIGH, fixed in 4.2.14, 5.0.7",
+   "url": "https://osv.dev/vulnerability/GHSA-f6f8-9mx6-9mx2"
+  },
+  "epss:CVE-2024-39614": {
+   "id": "epss:CVE-2024-39614",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.2864, 백분위 0.981",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2024-39614"
+  },
+  "osv:GHSA-frmv-pr5f-9mcr": {
+   "id": "osv:GHSA-frmv-pr5f-9mcr",
+   "source": "OSV.dev",
+   "fact": "CVSS 9.1 CRITICAL, fixed in 4.2.26, 5.1.14, 5.2.8",
+   "url": "https://osv.dev/vulnerability/GHSA-frmv-pr5f-9mcr"
+  },
+  "epss:CVE-2025-64459": {
+   "id": "epss:CVE-2025-64459",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.1926, 백분위 0.973",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2025-64459"
+  },
+  "rescan:pygoat:django@4.2": {
+   "id": "rescan:pygoat:django@4.2",
+   "source": "rescan",
+   "fact": "목표 버전 적용 후 재스캔: 예상 43건 중 43건 소멸, 잔존 0건",
+   "url": null
+  },
+  "release:PyPI:django@4.2.30": {
+   "id": "release:PyPI:django@4.2.30",
+   "source": "registry",
+   "fact": "{\"version\": \"4.2.30\", \"released\": \"2026-04-07\", \"requires_python\": \">=3.8\", \"changelog\": \"https://docs.djangoproject.com/en/stable/releases/\", \"homepage\": \"https://www.djangoproject.com/\"}",
+   "url": null
+  },
+  "action:nodegoat:y18n@3.2.1": {
+   "id": "action:nodegoat:y18n@3.2.1",
+   "source": "triage.remediate",
+   "fact": "y18n 3.2.1 → 3.2.2 (minor/patch), 해결 1/1",
+   "url": null
+  },
+  "osv:GHSA-c4w7-xm78-47vh": {
+   "id": "osv:GHSA-c4w7-xm78-47vh",
+   "source": "OSV.dev",
+   "fact": "CVSS 7.3 HIGH, fixed in 3.2.2, 4.0.1, 5.0.5",
+   "url": "https://osv.dev/vulnerability/GHSA-c4w7-xm78-47vh"
+  },
+  "epss:CVE-2020-7774": {
+   "id": "epss:CVE-2020-7774",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.6938, 백분위 0.994",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2020-7774"
+  },
+  "rescan:nodegoat:y18n@3.2.1": {
+   "id": "rescan:nodegoat:y18n@3.2.1",
+   "source": "rescan",
+   "fact": "목표 버전 적용 후 재스캔: 예상 1건 중 1건 소멸, 잔존 0건",
+   "url": null
+  },
+  "release:npm:y18n@3.2.2": {
+   "id": "release:npm:y18n@3.2.2",
+   "source": "registry",
+   "fact": "{\"version\": \"3.2.2\", \"deprecated\": null, \"engines\": null, \"homepage\": \"https://github.com/yargs/y18n\", \"repository\": \"git+ssh://git@github.com/yargs/y18n.git\"}",
+   "url": null
+  },
+  "action:pygoat:pyyaml@5.1": {
+   "id": "action:pygoat:pyyaml@5.1",
+   "source": "triage.remediate",
+   "fact": "pyyaml 5.1 → 5.4 (minor/patch), 해결 3/3",
+   "url": null
+  },
+  "osv:GHSA-8q59-q68h-6hv4": {
+   "id": "osv:GHSA-8q59-q68h-6hv4",
+   "source": "OSV.dev",
+   "fact": "CVSS 9.3 CRITICAL, fixed in 5.4",
+   "url": "https://osv.dev/vulnerability/GHSA-8q59-q68h-6hv4"
+  },
+  "epss:CVE-2020-14343": {
+   "id": "epss:CVE-2020-14343",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0598, 백분위 0.933",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2020-14343"
+  },
+  "code:pyyaml": {
+   "id": "code:pyyaml",
+   "source": "code_search",
+   "fact": "1st-party 코드 1곳에서 import, 예: dockerized_labs/a9_uckv_lab/app.py:3",
+   "url": null
+  },
+  "osv:GHSA-6757-jp84-gxfx": {
+   "id": "osv:GHSA-6757-jp84-gxfx",
+   "source": "OSV.dev",
+   "fact": "CVSS 9.3 CRITICAL, fixed in 5.3.1",
+   "url": "https://osv.dev/vulnerability/GHSA-6757-jp84-gxfx"
+  },
+  "epss:CVE-2020-1747": {
+   "id": "epss:CVE-2020-1747",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0544, 백분위 0.927",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2020-1747"
+  },
+  "osv:GHSA-3pqx-4fqf-j49f": {
+   "id": "osv:GHSA-3pqx-4fqf-j49f",
+   "source": "OSV.dev",
+   "fact": "CVSS 9.3 CRITICAL, fixed in 5.2",
+   "url": "https://osv.dev/vulnerability/GHSA-3pqx-4fqf-j49f"
+  },
+  "epss:CVE-2019-20477": {
+   "id": "epss:CVE-2019-20477",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0511, 백분위 0.923",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2019-20477"
+  },
+  "rescan:pygoat:pyyaml@5.1": {
+   "id": "rescan:pygoat:pyyaml@5.1",
+   "source": "rescan",
+   "fact": "목표 버전 적용 후 재스캔: 예상 3건 중 3건 소멸, 잔존 0건",
+   "url": null
+  },
+  "release:PyPI:pyyaml@5.4": {
+   "id": "release:PyPI:pyyaml@5.4",
+   "source": "registry",
+   "fact": "{\"version\": \"5.4\", \"released\": \"2021-01-19\", \"requires_python\": \">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*\", \"changelog\": null, \"homepage\": \"https://pyyaml.org/\"}",
+   "url": null
+  },
+  "action:pygoat:pillow@12.1.0": {
+   "id": "action:pygoat:pillow@12.1.0",
+   "source": "triage.remediate",
+   "fact": "pillow 12.1.0 → 12.3.0 (minor/patch), 해결 19/60",
+   "url": null
+  },
+  "osv:GHSA-whj4-6x5x-4v2j": {
+   "id": "osv:GHSA-whj4-6x5x-4v2j",
+   "source": "OSV.dev",
+   "fact": "CVSS 8.7 HIGH, fixed in 12.2.0",
+   "url": "https://osv.dev/vulnerability/GHSA-whj4-6x5x-4v2j"
+  },
+  "epss:CVE-2026-40192": {
+   "id": "epss:CVE-2026-40192",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0067, 백분위 0.518",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-40192"
+  },
+  "code:pillow": {
+   "id": "code:pillow",
+   "source": "code_search",
+   "fact": "1st-party 코드 1곳에서 import, 예: dockerized_labs/a9_uckv_lab/app.py:4",
+   "url": null
+  },
+  "osv:GHSA-vjc4-5qp5-m44j": {
+   "id": "osv:GHSA-vjc4-5qp5-m44j",
+   "source": "OSV.dev",
+   "fact": "CVSS 8.7 HIGH, fixed in 12.3.0",
+   "url": "https://osv.dev/vulnerability/GHSA-vjc4-5qp5-m44j"
+  },
+  "epss:CVE-2026-59204": {
+   "id": "epss:CVE-2026-59204",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0039, 백분위 0.324",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-59204"
+  },
+  "osv:GHSA-cfh3-3jmp-rvhc": {
+   "id": "osv:GHSA-cfh3-3jmp-rvhc",
+   "source": "OSV.dev",
+   "fact": "CVSS 8.6 HIGH, fixed in 12.1.1",
+   "url": "https://osv.dev/vulnerability/GHSA-cfh3-3jmp-rvhc"
+  },
+  "epss:CVE-2026-25990": {
+   "id": "epss:CVE-2026-25990",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0041, 백분위 0.349",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-25990"
+  },
+  "rescan:pygoat:pillow@12.1.0": {
+   "id": "rescan:pygoat:pillow@12.1.0",
+   "source": "rescan",
+   "fact": "목표 버전 적용 후 재스캔: 예상 19건 중 19건 소멸, 잔존 0건",
+   "url": null
+  },
+  "release:PyPI:pillow@12.3.0": {
+   "id": "release:PyPI:pillow@12.3.0",
+   "source": "registry",
+   "fact": "{\"version\": \"12.3.0\", \"released\": \"2026-07-01\", \"requires_python\": \">=3.10\", \"changelog\": \"https://github.com/python-pillow/Pillow/releases\", \"homepage\": \"https://python-pillow.github.io\"}",
+   "url": null
+  },
+  "action:pygoat:pyjwt@2.4.0": {
+   "id": "action:pygoat:pyjwt@2.4.0",
+   "source": "triage.remediate",
+   "fact": "pyjwt 2.4.0 → 2.15.0 (minor/patch), 해결 13/14",
+   "url": null
+  },
+  "osv:GHSA-ffc3-869f-jxw9": {
+   "id": "osv:GHSA-ffc3-869f-jxw9",
+   "source": "OSV.dev",
+   "fact": "CVSS 9.1 CRITICAL, fixed in 2.14.0",
+   "url": "https://osv.dev/vulnerability/GHSA-ffc3-869f-jxw9"
+  },
+  "epss:CVE-2026-102268": {
+   "id": "epss:CVE-2026-102268",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0024, 백분위 0.145",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-102268"
+  },
+  "code:pyjwt": {
+   "id": "code:pyjwt",
+   "source": "code_search",
+   "fact": "1st-party 코드 1곳에서 import, 예: dockerized_labs/sec_misconfig/app.py:4",
+   "url": null
+  },
+  "osv:GHSA-752w-5fwx-jx9f": {
+   "id": "osv:GHSA-752w-5fwx-jx9f",
+   "source": "OSV.dev",
+   "fact": "CVSS 7.5 HIGH, fixed in 2.12.0",
+   "url": "https://osv.dev/vulnerability/GHSA-752w-5fwx-jx9f"
+  },
+  "epss:CVE-2026-32597": {
+   "id": "epss:CVE-2026-32597",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0027, 백분위 0.196",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-32597"
+  },
+  "osv:GHSA-xgmm-8j9v-c9wx": {
+   "id": "osv:GHSA-xgmm-8j9v-c9wx",
+   "source": "OSV.dev",
+   "fact": "CVSS 7.4 HIGH, fixed in 2.13.0",
+   "url": "https://osv.dev/vulnerability/GHSA-xgmm-8j9v-c9wx"
+  },
+  "epss:CVE-2026-48526": {
+   "id": "epss:CVE-2026-48526",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0043, 백분위 0.368",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-48526"
+  },
+  "rescan:pygoat:pyjwt@2.4.0": {
+   "id": "rescan:pygoat:pyjwt@2.4.0",
+   "source": "rescan",
+   "fact": "목표 버전 적용 후 재스캔: 예상 13건 중 13건 소멸, 잔존 0건",
+   "url": null
+  },
+  "release:PyPI:pyjwt@2.15.0": {
+   "id": "release:PyPI:pyjwt@2.15.0",
+   "source": "registry",
+   "fact": "{\"version\": \"2.15.0\", \"released\": \"2026-09-23\", \"requires_python\": \">=3.9\", \"changelog\": null, \"homepage\": \"https://github.com/jpadilla/pyjwt\"}",
+   "url": null
+  },
+  "action:nodegoat:underscore@1.9.1": {
+   "id": "action:nodegoat:underscore@1.9.1",
+   "source": "triage.remediate",
+   "fact": "underscore 1.9.1 → 1.13.8 (minor/patch), 해결 2/2",
+   "url": null
+  },
+  "osv:GHSA-cf4h-3jhx-xvhq": {
+   "id": "osv:GHSA-cf4h-3jhx-xvhq",
+   "source": "OSV.dev",
+   "fact": "CVSS 9.8 CRITICAL, fixed in 1.12.1",
+   "url": "https://osv.dev/vulnerability/GHSA-cf4h-3jhx-xvhq"
+  },
+  "epss:CVE-2021-23358": {
+   "id": "epss:CVE-2021-23358",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0420, 백분위 0.909",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2021-23358"
+  },
+  "code:underscore": {
+   "id": "code:underscore",
+   "source": "code_search",
+   "fact": "1st-party 코드 1곳에서 import, 예: config/config.js:1",
+   "url": null
+  },
+  "osv:GHSA-qpx9-hpmf-5gmw": {
+   "id": "osv:GHSA-qpx9-hpmf-5gmw",
+   "source": "OSV.dev",
+   "fact": "CVSS 5.9 HIGH, fixed in 1.13.8",
+   "url": "https://osv.dev/vulnerability/GHSA-qpx9-hpmf-5gmw"
+  },
+  "epss:CVE-2026-27601": {
+   "id": "epss:CVE-2026-27601",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0096, 백분위 0.614",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-27601"
+  },
+  "rescan:nodegoat:underscore@1.9.1": {
+   "id": "rescan:nodegoat:underscore@1.9.1",
+   "source": "rescan",
+   "fact": "목표 버전 적용 후 재스캔: 예상 2건 중 2건 소멸, 잔존 0건",
+   "url": null
+  },
+  "release:npm:underscore@1.13.8": {
+   "id": "release:npm:underscore@1.13.8",
+   "source": "registry",
+   "fact": "{\"version\": \"1.13.8\", \"deprecated\": null, \"engines\": null, \"homepage\": \"https://underscorejs.org\", \"repository\": \"git://github.com/jashkenas/underscore.git\"}",
+   "url": null
+  },
+  "action:pygoat:requests@2.28.2": {
+   "id": "action:pygoat:requests@2.28.2",
+   "source": "triage.remediate",
+   "fact": "requests 2.28.2 → 2.33.0 (minor/patch), 해결 4/4",
+   "url": null
+  },
+  "osv:GHSA-j8r2-6x86-q33q": {
+   "id": "osv:GHSA-j8r2-6x86-q33q",
+   "source": "OSV.dev",
+   "fact": "CVSS 6.1 MEDIUM, fixed in 2.31.0",
+   "url": "https://osv.dev/vulnerability/GHSA-j8r2-6x86-q33q"
+  },
+  "epss:CVE-2023-32681": {
+   "id": "epss:CVE-2023-32681",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0297, 백분위 0.872",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2023-32681"
+  },
+  "code:requests": {
+   "id": "code:requests",
+   "source": "code_search",
+   "fact": "1st-party 코드 2곳에서 import, 예: challenge/views.py:23",
+   "url": null
+  },
+  "osv:GHSA-9wx4-h78v-vm56": {
+   "id": "osv:GHSA-9wx4-h78v-vm56",
+   "source": "OSV.dev",
+   "fact": "CVSS 5.6 MEDIUM, fixed in 2.32.0",
+   "url": "https://osv.dev/vulnerability/GHSA-9wx4-h78v-vm56"
+  },
+  "epss:CVE-2024-35195": {
+   "id": "epss:CVE-2024-35195",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0034, 백분위 0.273",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2024-35195"
+  },
+  "osv:GHSA-9hjg-9r4m-mvj7": {
+   "id": "osv:GHSA-9hjg-9r4m-mvj7",
+   "source": "OSV.dev",
+   "fact": "CVSS 5.3 MEDIUM, fixed in 2.32.4",
+   "url": "https://osv.dev/vulnerability/GHSA-9hjg-9r4m-mvj7"
+  },
+  "epss:CVE-2024-47081": {
+   "id": "epss:CVE-2024-47081",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0098, 백분위 0.620",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2024-47081"
+  },
+  "rescan:pygoat:requests@2.28.2": {
+   "id": "rescan:pygoat:requests@2.28.2",
+   "source": "rescan",
+   "fact": "목표 버전 적용 후 재스캔: 예상 4건 중 4건 소멸, 잔존 0건",
+   "url": null
+  },
+  "release:PyPI:requests@2.33.0": {
+   "id": "release:PyPI:requests@2.33.0",
+   "source": "registry",
+   "fact": "{\"version\": \"2.33.0\", \"released\": \"2026-03-25\", \"requires_python\": \">=3.10\", \"changelog\": null, \"homepage\": null}",
+   "url": null
+  },
+  "action:netbox:djangorestframework@3.12.4": {
+   "id": "action:netbox:djangorestframework@3.12.4",
+   "source": "triage.remediate",
+   "fact": "djangorestframework 3.12.4 → 3.18.2 (minor/patch), 해결 6/6",
+   "url": null
+  },
+  "osv:GHSA-33wh-fxxf-88vv": {
+   "id": "osv:GHSA-33wh-fxxf-88vv",
+   "source": "OSV.dev",
+   "fact": "CVSS 7.5 HIGH, fixed in 3.18.2",
+   "url": "https://osv.dev/vulnerability/GHSA-33wh-fxxf-88vv"
+  },
+  "epss:CVE-2026-114138": {
+   "id": "epss:CVE-2026-114138",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0052, 백분위 0.440",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-114138"
+  },
+  "code:djangorestframework": {
+   "id": "code:djangorestframework",
+   "source": "code_search",
+   "fact": "1st-party 코드 76곳에서 import, 예: netbox/netbox/graphql/views.py:6",
+   "url": null
+  },
+  "osv:GHSA-3547-9m27-7rxg": {
+   "id": "osv:GHSA-3547-9m27-7rxg",
+   "source": "OSV.dev",
+   "fact": "CVSS 7.5 HIGH, fixed in 3.18.2",
+   "url": "https://osv.dev/vulnerability/GHSA-3547-9m27-7rxg"
+  },
+  "epss:CVE-2026-114136": {
+   "id": "epss:CVE-2026-114136",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0044, 백분위 0.381",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-114136"
+  },
+  "osv:GHSA-xw6w-gcfp-cf8m": {
+   "id": "osv:GHSA-xw6w-gcfp-cf8m",
+   "source": "OSV.dev",
+   "fact": "CVSS 7.4 HIGH, fixed in 3.18.2",
+   "url": "https://osv.dev/vulnerability/GHSA-xw6w-gcfp-cf8m"
+  },
+  "epss:CVE-2026-114137": {
+   "id": "epss:CVE-2026-114137",
+   "source": "FIRST EPSS 2026-10-27",
+   "fact": "악용 확률 0.0047, 백분위 0.408",
+   "url": "https://api.first.org/data/v1/epss?cve=CVE-2026-114137"
+  },
+  "rescan:netbox:djangorestframework@3.12.4": {
+   "id": "rescan:netbox:djangorestframework@3.12.4",
+   "source": "rescan",
+   "fact": "목표 버전 적용 후 재스캔: 예상 6건 중 6건 소멸, 잔존 0건",
+   "url": null
+  },
+  "release:PyPI:djangorestframework@3.18.2": {
+   "id": "release:PyPI:djangorestframework@3.18.2",
+   "source": "registry",
+   "fact": "{\"version\": \"3.18.2\", \"released\": \"2026-10-06\", \"requires_python\": \">=3.10\", \"changelog\": \"https://www.django-rest-framework.org/community/release-notes/\", \"homepage\": \"https://www.django-rest-framewo",
+   "url": null
+  }
+ },
+ "results": [
+  {
+   "action_id": "netbox:pillow@8.3.1",
+   "decision": "major_upgrade",
+   "target_version": "10.0.1",
+   "rationale": [
+    {
+     "text": "CVE-2023-4863: libwebp: OOB write in BuildHuffmanTable — CISA 악용 확인 목록에 2023-09-13 등재, EPSS 1.000, CVSS 8.8 HIGH, 도달성 direct",
+     "evidence_ids": [
+      "osv:GHSA-j7hp-h8jx-5ppr",
+      "epss:CVE-2023-4863",
+      "kev:CVE-2023-4863"
+     ]
+    },
+    {
+     "text": "CVE-2022-22817: Arbitrary expression injection in Pillow — EPSS 0.033, CVSS 9.3 CRITICAL, 도달성 direct",
+     "evidence_ids": [
+      "osv:GHSA-8vj2-vxx3-667w",
+      "epss:CVE-2022-22817"
+     ]
+    },
+    {
+     "text": "CVE-2021-23437: Uncontrolled Resource Consumption in pillow — EPSS 0.032, CVSS 8.7 HIGH, 도달성 direct",
+     "evidence_ids": [
+      "osv:GHSA-98vv-pw6r-q6q4",
+      "epss:CVE-2021-23437"
+     ]
+    },
+    {
+     "text": "목표 버전 적용 후 재스캔에서 예상 10건 중 10건이 소멸했다.",
+     "evidence_ids": [
+      "rescan:netbox:pillow@8.3.1"
+     ]
+    }
+   ],
+   "compatibility_risk": {
+    "level": "medium",
+    "notes": "메이저 변경이므로 제거된 API 사용 여부를 code_search 로 확인하고 스테이징에서 회귀 테스트 후 병합한다.",
+    "evidence_ids": [
+     "action:netbox:pillow@8.3.1",
+     "release:PyPI:pillow@10.0.1"
+    ]
+   },
+   "mitigation": null,
+   "pr": {
+    "title": "chore: pillow 8.3.1 → 10.0.1 · 취약점 10건 조치",
+    "body": "트리아지가 제안한 조치안입니다.\n\n- 해결 대상 10건 / 해당 패키지 전체 55건\n- 근거: CVE-2023-4863: libwebp: OOB write in BuildHuffmanTable — CISA 악용 확인 목록에 2023-09-13 등재, EPSS 1.000, CVSS 8.8 HIGH, 도달성 direct; CVE-2022-22817: Arbitrary expression injection in Pillow — EPSS 0.033, CVSS 9.3 CRITICAL, 도달성 direct; CVE-2021-23437: Uncontrolled Resource Consumption in pillow — EPSS 0.032, CVSS 8.7 HIGH, 도달성 direct; 목표 버전 적용 후 재스캔에서 예상 10건 중 10건이 소멸했다.\n- 병합 전 체크: CI 통과, 스테이징 배포, 재스캔 0건 확인"
+   },
+   "owner": "인프라운영팀",
+   "estimated_effort": "하루",
+   "_validation": {
+    "ok": true,
+    "errors": [],
+    "mode": "dry-run(rule-based)"
+   }
+  },
+  {
+   "action_id": "netbox:django@3.2.6",
+   "decision": "upgrade",
+   "target_version": "3.2.25",
+   "rationale": [
+    {
+     "text": "CVE-2022-34265: Django `Trunc()` and `Extract()` database functions vulnerable to SQL Injection — EPSS 0.736, CVSS 9.3 CRITICAL, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-p64x-8rxx-wf6q",
+      "epss:CVE-2022-34265",
+      "code:django"
+     ]
+    },
+    {
+     "text": "CVE-2023-24580: Resource exhaustion in Django — EPSS 0.626, CVSS 8.7 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-2hrw-hx67-34x6",
+      "epss:CVE-2023-24580",
+      "code:django"
+     ]
+    },
+    {
+     "text": "CVE-2023-46695: Django potential denial of service vulnerability in UsernameField on Windows — EPSS 0.498, CVSS 8.7 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-qmf9-6jqf-j8fq",
+      "epss:CVE-2023-46695",
+      "code:django"
+     ]
+    },
+    {
+     "text": "목표 버전 적용 후 재스캔에서 예상 20건 중 20건이 소멸했다.",
+     "evidence_ids": [
+      "rescan:netbox:django@3.2.6"
+     ]
+    }
+   ],
+   "compatibility_risk": {
+    "level": "low",
+    "notes": "같은 메이저 안의 패치 변경이라 호환성 위험은 낮다. 테스트 통과 후 병합한다.",
+    "evidence_ids": [
+     "action:netbox:django@3.2.6",
+     "release:PyPI:django@3.2.25"
+    ]
+   },
+   "mitigation": null,
+   "pr": {
+    "title": "chore: django 3.2.6 → 3.2.25 · 취약점 20건 조치",
+    "body": "트리아지가 제안한 조치안입니다.\n\n- 해결 대상 20건 / 해당 패키지 전체 33건\n- 근거: CVE-2022-34265: Django `Trunc()` and `Extract()` database functions vulnerable to SQL Injection — EPSS 0.736, CVSS 9.3 CRITICAL, 도달성 direct+imported; CVE-2023-24580: Resource exhaustion in Django — EPSS 0.626, CVSS 8.7 HIGH, 도달성 direct+imported; CVE-2023-46695: Django potential denial of service vulnerability in UsernameField on Windows — EPSS 0.498, CVSS 8.7 HIGH, 도달성 direct+imported; 목표 버전 적용 후 재스캔에서 예상 20건 중 20건이 소멸했다.\n- 병합 전 체크: CI 통과, 스테이징 배포, 재스캔 0건 확인"
+   },
+   "owner": "인프라운영팀",
+   "estimated_effort": "1시간 이내",
+   "_validation": {
+    "ok": true,
+    "errors": [],
+    "mode": "dry-run(rule-based)"
+   }
+  },
+  {
+   "action_id": "pygoat:django@4.2",
+   "decision": "upgrade",
+   "target_version": "4.2.30",
+   "rationale": [
+    {
+     "text": "CVE-2023-46695: Django potential denial of service vulnerability in UsernameField on Windows — EPSS 0.498, CVSS 8.7 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-qmf9-6jqf-j8fq",
+      "epss:CVE-2023-46695",
+      "code:django"
+     ]
+    },
+    {
+     "text": "CVE-2024-39614: Django vulnerable to Denial of Service — EPSS 0.286, CVSS 8.7 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-f6f8-9mx6-9mx2",
+      "epss:CVE-2024-39614",
+      "code:django"
+     ]
+    },
+    {
+     "text": "CVE-2025-64459: Django vulnerable to SQL injection via _connector keyword argument in QuerySet a — EPSS 0.193, CVSS 9.1 CRITICAL, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-frmv-pr5f-9mcr",
+      "epss:CVE-2025-64459",
+      "code:django"
+     ]
+    },
+    {
+     "text": "목표 버전 적용 후 재스캔에서 예상 43건 중 43건이 소멸했다.",
+     "evidence_ids": [
+      "rescan:pygoat:django@4.2"
+     ]
+    }
+   ],
+   "compatibility_risk": {
+    "level": "low",
+    "notes": "같은 메이저 안의 패치 변경이라 호환성 위험은 낮다. 테스트 통과 후 병합한다.",
+    "evidence_ids": [
+     "action:pygoat:django@4.2",
+     "release:PyPI:django@4.2.30"
+    ]
+   },
+   "mitigation": null,
+   "pr": {
+    "title": "chore: django 4.2 → 4.2.30 · 취약점 43건 조치",
+    "body": "트리아지가 제안한 조치안입니다.\n\n- 해결 대상 43건 / 해당 패키지 전체 51건\n- 근거: CVE-2023-46695: Django potential denial of service vulnerability in UsernameField on Windows — EPSS 0.498, CVSS 8.7 HIGH, 도달성 direct+imported; CVE-2024-39614: Django vulnerable to Denial of Service — EPSS 0.286, CVSS 8.7 HIGH, 도달성 direct+imported; CVE-2025-64459: Django vulnerable to SQL injection via _connector keyword argument in QuerySet a — EPSS 0.193, CVSS 9.1 CRITICAL, 도달성 direct+imported; 목표 버전 적용 후 재스캔에서 예상 43건 중 43건이 소멸했다.\n- 병합 전 체크: CI 통과, 스테이징 배포, 재스캔 0건 확인"
+   },
+   "owner": "웹서비스개발팀",
+   "estimated_effort": "1시간 이내",
+   "_validation": {
+    "ok": true,
+    "errors": [],
+    "mode": "dry-run(rule-based)"
+   }
+  },
+  {
+   "action_id": "nodegoat:y18n@3.2.1",
+   "decision": "upgrade",
+   "target_version": "3.2.2",
+   "rationale": [
+    {
+     "text": "CVE-2020-7774: Prototype Pollution in y18n — EPSS 0.694, CVSS 7.3 HIGH, 도달성 transitive",
+     "evidence_ids": [
+      "osv:GHSA-c4w7-xm78-47vh",
+      "epss:CVE-2020-7774"
+     ]
+    },
+    {
+     "text": "목표 버전 적용 후 재스캔에서 예상 1건 중 1건이 소멸했다.",
+     "evidence_ids": [
+      "rescan:nodegoat:y18n@3.2.1"
+     ]
+    }
+   ],
+   "compatibility_risk": {
+    "level": "low",
+    "notes": "같은 메이저 안의 패치 변경이라 호환성 위험은 낮다. 테스트 통과 후 병합한다.",
+    "evidence_ids": [
+     "action:nodegoat:y18n@3.2.1",
+     "release:npm:y18n@3.2.2"
+    ]
+   },
+   "mitigation": null,
+   "pr": {
+    "title": "chore: y18n 3.2.1 → 3.2.2 · 취약점 1건 조치",
+    "body": "트리아지가 제안한 조치안입니다.\n\n- 해결 대상 1건 / 해당 패키지 전체 1건\n- 근거: CVE-2020-7774: Prototype Pollution in y18n — EPSS 0.694, CVSS 7.3 HIGH, 도달성 transitive; 목표 버전 적용 후 재스캔에서 예상 1건 중 1건이 소멸했다.\n- 병합 전 체크: CI 통과, 스테이징 배포, 재스캔 0건 확인"
+   },
+   "owner": "디지털채널팀",
+   "estimated_effort": "1시간 이내",
+   "_validation": {
+    "ok": true,
+    "errors": [],
+    "mode": "dry-run(rule-based)"
+   }
+  },
+  {
+   "action_id": "pygoat:pyyaml@5.1",
+   "decision": "upgrade",
+   "target_version": "5.4",
+   "rationale": [
+    {
+     "text": "CVE-2020-14343: Improper Input Validation in PyYAML — EPSS 0.060, CVSS 9.3 CRITICAL, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-8q59-q68h-6hv4",
+      "epss:CVE-2020-14343",
+      "code:pyyaml"
+     ]
+    },
+    {
+     "text": "CVE-2020-1747: Improper Input Validation in PyYAML — EPSS 0.054, CVSS 9.3 CRITICAL, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-6757-jp84-gxfx",
+      "epss:CVE-2020-1747",
+      "code:pyyaml"
+     ]
+    },
+    {
+     "text": "CVE-2019-20477: Deserialization of Untrusted Data in PyYAML — EPSS 0.051, CVSS 9.3 CRITICAL, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-3pqx-4fqf-j49f",
+      "epss:CVE-2019-20477",
+      "code:pyyaml"
+     ]
+    },
+    {
+     "text": "목표 버전 적용 후 재스캔에서 예상 3건 중 3건이 소멸했다.",
+     "evidence_ids": [
+      "rescan:pygoat:pyyaml@5.1"
+     ]
+    }
+   ],
+   "compatibility_risk": {
+    "level": "low",
+    "notes": "같은 메이저 안의 패치 변경이라 호환성 위험은 낮다. 테스트 통과 후 병합한다.",
+    "evidence_ids": [
+     "action:pygoat:pyyaml@5.1",
+     "release:PyPI:pyyaml@5.4"
+    ]
+   },
+   "mitigation": null,
+   "pr": {
+    "title": "chore: pyyaml 5.1 → 5.4 · 취약점 3건 조치",
+    "body": "트리아지가 제안한 조치안입니다.\n\n- 해결 대상 3건 / 해당 패키지 전체 3건\n- 근거: CVE-2020-14343: Improper Input Validation in PyYAML — EPSS 0.060, CVSS 9.3 CRITICAL, 도달성 direct+imported; CVE-2020-1747: Improper Input Validation in PyYAML — EPSS 0.054, CVSS 9.3 CRITICAL, 도달성 direct+imported; CVE-2019-20477: Deserialization of Untrusted Data in PyYAML — EPSS 0.051, CVSS 9.3 CRITICAL, 도달성 direct+imported; 목표 버전 적용 후 재스캔에서 예상 3건 중 3건이 소멸했다.\n- 병합 전 체크: CI 통과, 스테이징 배포, 재스캔 0건 확인"
+   },
+   "owner": "웹서비스개발팀",
+   "estimated_effort": "1시간 이내",
+   "_validation": {
+    "ok": true,
+    "errors": [],
+    "mode": "dry-run(rule-based)"
+   }
+  },
+  {
+   "action_id": "pygoat:pillow@12.1.0",
+   "decision": "upgrade",
+   "target_version": "12.3.0",
+   "rationale": [
+    {
+     "text": "CVE-2026-40192: FITS GZIP decompression bomb in Pillow — EPSS 0.007, CVSS 8.7 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-whj4-6x5x-4v2j",
+      "epss:CVE-2026-40192",
+      "code:pillow"
+     ]
+    },
+    {
+     "text": "CVE-2026-59204: Pillow JPEG2000 tiled decode retains a growing scratch buffer and can be used fo — EPSS 0.004, CVSS 8.7 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-vjc4-5qp5-m44j",
+      "epss:CVE-2026-59204",
+      "code:pillow"
+     ]
+    },
+    {
+     "text": "CVE-2026-25990: Pillow affected by out-of-bounds write when loading PSD images — EPSS 0.004, CVSS 8.6 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-cfh3-3jmp-rvhc",
+      "epss:CVE-2026-25990",
+      "code:pillow"
+     ]
+    },
+    {
+     "text": "목표 버전 적용 후 재스캔에서 예상 19건 중 19건이 소멸했다.",
+     "evidence_ids": [
+      "rescan:pygoat:pillow@12.1.0"
+     ]
+    }
+   ],
+   "compatibility_risk": {
+    "level": "low",
+    "notes": "같은 메이저 안의 패치 변경이라 호환성 위험은 낮다. 테스트 통과 후 병합한다.",
+    "evidence_ids": [
+     "action:pygoat:pillow@12.1.0",
+     "release:PyPI:pillow@12.3.0"
+    ]
+   },
+   "mitigation": null,
+   "pr": {
+    "title": "chore: pillow 12.1.0 → 12.3.0 · 취약점 19건 조치",
+    "body": "트리아지가 제안한 조치안입니다.\n\n- 해결 대상 19건 / 해당 패키지 전체 60건\n- 근거: CVE-2026-40192: FITS GZIP decompression bomb in Pillow — EPSS 0.007, CVSS 8.7 HIGH, 도달성 direct+imported; CVE-2026-59204: Pillow JPEG2000 tiled decode retains a growing scratch buffer and can be used fo — EPSS 0.004, CVSS 8.7 HIGH, 도달성 direct+imported; CVE-2026-25990: Pillow affected by out-of-bounds write when loading PSD images — EPSS 0.004, CVSS 8.6 HIGH, 도달성 direct+imported; 목표 버전 적용 후 재스캔에서 예상 19건 중 19건이 소멸했다.\n- 병합 전 체크: CI 통과, 스테이징 배포, 재스캔 0건 확인"
+   },
+   "owner": "웹서비스개발팀",
+   "estimated_effort": "1시간 이내",
+   "_validation": {
+    "ok": true,
+    "errors": [],
+    "mode": "dry-run(rule-based)"
+   }
+  },
+  {
+   "action_id": "pygoat:pyjwt@2.4.0",
+   "decision": "upgrade",
+   "target_version": "2.15.0",
+   "rationale": [
+    {
+     "text": "CVE-2026-102268: PyJWT: Asymmetric-PEM detection bypass: whitespace/line-ending-mutated public ke — EPSS 0.002, CVSS 9.1 CRITICAL, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-ffc3-869f-jxw9",
+      "epss:CVE-2026-102268",
+      "code:pyjwt"
+     ]
+    },
+    {
+     "text": "CVE-2026-32597: PyJWT accepts unknown `crit` header extensions — EPSS 0.003, CVSS 7.5 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-752w-5fwx-jx9f",
+      "epss:CVE-2026-32597",
+      "code:pyjwt"
+     ]
+    },
+    {
+     "text": "CVE-2026-48526: PyJWT: Public-key JWK accepted as HMAC secret enables forged HS256 tokens when m — EPSS 0.004, CVSS 7.4 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-xgmm-8j9v-c9wx",
+      "epss:CVE-2026-48526",
+      "code:pyjwt"
+     ]
+    },
+    {
+     "text": "목표 버전 적용 후 재스캔에서 예상 13건 중 13건이 소멸했다.",
+     "evidence_ids": [
+      "rescan:pygoat:pyjwt@2.4.0"
+     ]
+    }
+   ],
+   "compatibility_risk": {
+    "level": "low",
+    "notes": "같은 메이저 안의 패치 변경이라 호환성 위험은 낮다. 테스트 통과 후 병합한다.",
+    "evidence_ids": [
+     "action:pygoat:pyjwt@2.4.0",
+     "release:PyPI:pyjwt@2.15.0"
+    ]
+   },
+   "mitigation": null,
+   "pr": {
+    "title": "chore: pyjwt 2.4.0 → 2.15.0 · 취약점 13건 조치",
+    "body": "트리아지가 제안한 조치안입니다.\n\n- 해결 대상 13건 / 해당 패키지 전체 14건\n- 근거: CVE-2026-102268: PyJWT: Asymmetric-PEM detection bypass: whitespace/line-ending-mutated public ke — EPSS 0.002, CVSS 9.1 CRITICAL, 도달성 direct+imported; CVE-2026-32597: PyJWT accepts unknown `crit` header extensions — EPSS 0.003, CVSS 7.5 HIGH, 도달성 direct+imported; CVE-2026-48526: PyJWT: Public-key JWK accepted as HMAC secret enables forged HS256 tokens when m — EPSS 0.004, CVSS 7.4 HIGH, 도달성 direct+imported; 목표 버전 적용 후 재스캔에서 예상 13건 중 13건이 소멸했다.\n- 병합 전 체크: CI 통과, 스테이징 배포, 재스캔 0건 확인"
+   },
+   "owner": "웹서비스개발팀",
+   "estimated_effort": "1시간 이내",
+   "_validation": {
+    "ok": true,
+    "errors": [],
+    "mode": "dry-run(rule-based)"
+   }
+  },
+  {
+   "action_id": "nodegoat:underscore@1.9.1",
+   "decision": "upgrade",
+   "target_version": "1.13.8",
+   "rationale": [
+    {
+     "text": "CVE-2021-23358: Arbitrary Code Execution in underscore — EPSS 0.042, CVSS 9.8 CRITICAL, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-cf4h-3jhx-xvhq",
+      "epss:CVE-2021-23358",
+      "code:underscore"
+     ]
+    },
+    {
+     "text": "CVE-2026-27601: Underscore has unlimited recursion in _.flatten and _.isEqual, potential for DoS — EPSS 0.010, CVSS 5.9 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-qpx9-hpmf-5gmw",
+      "epss:CVE-2026-27601",
+      "code:underscore"
+     ]
+    },
+    {
+     "text": "목표 버전 적용 후 재스캔에서 예상 2건 중 2건이 소멸했다.",
+     "evidence_ids": [
+      "rescan:nodegoat:underscore@1.9.1"
+     ]
+    }
+   ],
+   "compatibility_risk": {
+    "level": "low",
+    "notes": "같은 메이저 안의 패치 변경이라 호환성 위험은 낮다. 테스트 통과 후 병합한다.",
+    "evidence_ids": [
+     "action:nodegoat:underscore@1.9.1",
+     "release:npm:underscore@1.13.8"
+    ]
+   },
+   "mitigation": null,
+   "pr": {
+    "title": "chore: underscore 1.9.1 → 1.13.8 · 취약점 2건 조치",
+    "body": "트리아지가 제안한 조치안입니다.\n\n- 해결 대상 2건 / 해당 패키지 전체 2건\n- 근거: CVE-2021-23358: Arbitrary Code Execution in underscore — EPSS 0.042, CVSS 9.8 CRITICAL, 도달성 direct+imported; CVE-2026-27601: Underscore has unlimited recursion in _.flatten and _.isEqual, potential for DoS — EPSS 0.010, CVSS 5.9 HIGH, 도달성 direct+imported; 목표 버전 적용 후 재스캔에서 예상 2건 중 2건이 소멸했다.\n- 병합 전 체크: CI 통과, 스테이징 배포, 재스캔 0건 확인"
+   },
+   "owner": "디지털채널팀",
+   "estimated_effort": "1시간 이내",
+   "_validation": {
+    "ok": true,
+    "errors": [],
+    "mode": "dry-run(rule-based)"
+   }
+  },
+  {
+   "action_id": "pygoat:requests@2.28.2",
+   "decision": "upgrade",
+   "target_version": "2.33.0",
+   "rationale": [
+    {
+     "text": "CVE-2023-32681: Unintended leak of Proxy-Authorization header in requests — EPSS 0.030, CVSS 6.1 MEDIUM, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-j8r2-6x86-q33q",
+      "epss:CVE-2023-32681",
+      "code:requests"
+     ]
+    },
+    {
+     "text": "CVE-2024-35195: Requests `Session` object does not verify requests after making first request wi — EPSS 0.003, CVSS 5.6 MEDIUM, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-9wx4-h78v-vm56",
+      "epss:CVE-2024-35195",
+      "code:requests"
+     ]
+    },
+    {
+     "text": "CVE-2024-47081: Requests vulnerable to .netrc credentials leak via malicious URLs — EPSS 0.010, CVSS 5.3 MEDIUM, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-9hjg-9r4m-mvj7",
+      "epss:CVE-2024-47081",
+      "code:requests"
+     ]
+    },
+    {
+     "text": "목표 버전 적용 후 재스캔에서 예상 4건 중 4건이 소멸했다.",
+     "evidence_ids": [
+      "rescan:pygoat:requests@2.28.2"
+     ]
+    }
+   ],
+   "compatibility_risk": {
+    "level": "low",
+    "notes": "같은 메이저 안의 패치 변경이라 호환성 위험은 낮다. 테스트 통과 후 병합한다.",
+    "evidence_ids": [
+     "action:pygoat:requests@2.28.2",
+     "release:PyPI:requests@2.33.0"
+    ]
+   },
+   "mitigation": null,
+   "pr": {
+    "title": "chore: requests 2.28.2 → 2.33.0 · 취약점 4건 조치",
+    "body": "트리아지가 제안한 조치안입니다.\n\n- 해결 대상 4건 / 해당 패키지 전체 4건\n- 근거: CVE-2023-32681: Unintended leak of Proxy-Authorization header in requests — EPSS 0.030, CVSS 6.1 MEDIUM, 도달성 direct+imported; CVE-2024-35195: Requests `Session` object does not verify requests after making first request wi — EPSS 0.003, CVSS 5.6 MEDIUM, 도달성 direct+imported; CVE-2024-47081: Requests vulnerable to .netrc credentials leak via malicious URLs — EPSS 0.010, CVSS 5.3 MEDIUM, 도달성 direct+imported; 목표 버전 적용 후 재스캔에서 예상 4건 중 4건이 소멸했다.\n- 병합 전 체크: CI 통과, 스테이징 배포, 재스캔 0건 확인"
+   },
+   "owner": "웹서비스개발팀",
+   "estimated_effort": "1시간 이내",
+   "_validation": {
+    "ok": true,
+    "errors": [],
+    "mode": "dry-run(rule-based)"
+   }
+  },
+  {
+   "action_id": "netbox:djangorestframework@3.12.4",
+   "decision": "upgrade",
+   "target_version": "3.18.2",
+   "rationale": [
+    {
+     "text": "CVE-2026-114138: Django REST framework: Accept header with many large quoted parameters burns ~19 — EPSS 0.005, CVSS 7.5 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-33wh-fxxf-88vv",
+      "epss:CVE-2026-114138",
+      "code:djangorestframework"
+     ]
+    },
+    {
+     "text": "CVE-2026-114136: Django REST framework: JSONParser applies an attacker-named codec to the request — EPSS 0.004, CVSS 7.5 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-3547-9m27-7rxg",
+      "epss:CVE-2026-114136",
+      "code:djangorestframework"
+     ]
+    },
+    {
+     "text": "CVE-2026-114137: Django REST framework: TokenProxy.delete() reports success and revokes nothing — EPSS 0.005, CVSS 7.4 HIGH, 도달성 direct+imported",
+     "evidence_ids": [
+      "osv:GHSA-xw6w-gcfp-cf8m",
+      "epss:CVE-2026-114137",
+      "code:djangorestframework"
+     ]
+    },
+    {
+     "text": "목표 버전 적용 후 재스캔에서 예상 6건 중 6건이 소멸했다.",
+     "evidence_ids": [
+      "rescan:netbox:djangorestframework@3.12.4"
+     ]
+    }
+   ],
+   "compatibility_risk": {
+    "level": "low",
+    "notes": "같은 메이저 안의 패치 변경이라 호환성 위험은 낮다. 테스트 통과 후 병합한다.",
+    "evidence_ids": [
+     "action:netbox:djangorestframework@3.12.4",
+     "release:PyPI:djangorestframework@3.18.2"
+    ]
+   },
+   "mitigation": null,
+   "pr": {
+    "title": "chore: djangorestframework 3.12.4 → 3.18.2 · 취약점 6건 조치",
+    "body": "트리아지가 제안한 조치안입니다.\n\n- 해결 대상 6건 / 해당 패키지 전체 6건\n- 근거: CVE-2026-114138: Django REST framework: Accept header with many large quoted parameters burns ~19 — EPSS 0.005, CVSS 7.5 HIGH, 도달성 direct+imported; CVE-2026-114136: Django REST framework: JSONParser applies an attacker-named codec to the request — EPSS 0.004, CVSS 7.5 HIGH, 도달성 direct+imported; CVE-2026-114137: Django REST framework: TokenProxy.delete() reports success and revokes nothing — EPSS 0.005, CVSS 7.4 HIGH, 도달성 direct+imported; 목표 버전 적용 후 재스캔에서 예상 6건 중 6건이 소멸했다.\n- 병합 전 체크: CI 통과, 스테이징 배포, 재스캔 0건 확인"
+   },
+   "owner": "인프라운영팀",
+   "estimated_effort": "1시간 이내",
+   "_validation": {
+    "ok": true,
+    "errors": [],
+    "mode": "dry-run(rule-based)"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1698 @@
+[
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-3h9f-r86x-qvjx",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-3h9f-r86x-qvjx",
+  "ghsa": "GHSA-3h9f-r86x-qvjx",
+  "cve": "CVE-2026-48588",
+  "aliases": [
+   "BIT-django-2026-48588",
+   "CVE-2026-48588",
+   "GHSA-3h9f-r86x-qvjx",
+   "PYSEC-2026-2090"
+  ],
+  "summary": "Django: cache middleware may expose private responses when unrelated request cookies are present",
+  "fix_versions": [
+   "6.0.7"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-6w2r-r2m5-xq5w",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-6w2r-r2m5-xq5w",
+  "ghsa": "GHSA-6w2r-r2m5-xq5w",
+  "cve": "CVE-2025-57833",
+  "aliases": [
+   "BIT-django-2025-57833",
+   "CVE-2025-57833",
+   "GHSA-6w2r-r2m5-xq5w",
+   "PYSEC-2025-105"
+  ],
+  "summary": "Django is subject to SQL injection through its column aliases",
+  "fix_versions": [
+   "5.2.6"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-7xr5-9hcq-chf9",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-7xr5-9hcq-chf9",
+  "ghsa": "GHSA-7xr5-9hcq-chf9",
+  "cve": "CVE-2025-48432",
+  "aliases": [
+   "BIT-django-2025-48432",
+   "CVE-2025-48432",
+   "GHSA-7xr5-9hcq-chf9",
+   "PYSEC-2025-47"
+  ],
+  "summary": "Django Improper Output Neutralization for Logs vulnerability",
+  "fix_versions": [
+   "4.2.22"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-8cjm-8mp7-r2xf",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-8cjm-8mp7-r2xf",
+  "ghsa": "GHSA-8cjm-8mp7-r2xf",
+  "cve": "CVE-2026-8404",
+  "aliases": [
+   "BIT-django-2026-8404",
+   "CVE-2026-8404",
+   "GHSA-8cjm-8mp7-r2xf",
+   "PYSEC-2026-201"
+  ],
+  "summary": "Django: UpdateCacheMiddleware may disclose cached responses due to case-sensitive Cache-Control handling",
+  "fix_versions": [
+   "6.0.6"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-8qcx-xf44-272x",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-8qcx-xf44-272x",
+  "ghsa": "GHSA-8qcx-xf44-272x",
+  "cve": "CVE-2026-53878",
+  "aliases": [
+   "BIT-django-2026-53878",
+   "CVE-2026-53878",
+   "GHSA-8qcx-xf44-272x",
+   "PYSEC-2026-2092"
+  ],
+  "summary": "Django: DomainNameValidator permits newline characters that may enable HTTP header injection",
+  "fix_versions": [
+   "6.0.7"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-923m-gv2p-w5qp",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-923m-gv2p-w5qp",
+  "ghsa": "GHSA-923m-gv2p-w5qp",
+  "cve": "CVE-2026-48587",
+  "aliases": [
+   "BIT-django-2026-48587",
+   "CVE-2026-48587",
+   "GHSA-923m-gv2p-w5qp",
+   "PYSEC-2026-198"
+  ],
+  "summary": "Django: has_vary_header may expose cached responses when Vary values contain whitespace",
+  "fix_versions": [
+   "6.0.6"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-crhf-3pfg-w68w",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-crhf-3pfg-w68w",
+  "ghsa": "GHSA-crhf-3pfg-w68w",
+  "cve": "CVE-2026-53877",
+  "aliases": [
+   "BIT-django-2026-53877",
+   "CVE-2026-53877",
+   "GHSA-crhf-3pfg-w68w",
+   "PYSEC-2026-2091"
+  ],
+  "summary": "Django: GDALRaster may over-read heap memory when constructed from bytes",
+  "fix_versions": [
+   "6.0.7"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-frmv-pr5f-9mcr",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-frmv-pr5f-9mcr",
+  "ghsa": "GHSA-frmv-pr5f-9mcr",
+  "cve": "CVE-2025-64459",
+  "aliases": [
+   "BIT-django-2025-64459",
+   "CVE-2025-64459",
+   "GHSA-frmv-pr5f-9mcr",
+   "PYSEC-2025-108"
+  ],
+  "summary": "Django vulnerable to SQL injection via _connector keyword argument in QuerySet and Q objects.",
+  "fix_versions": [
+   "4.2.26"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-h7pc-vwp9-298g",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-h7pc-vwp9-298g",
+  "ghsa": "GHSA-h7pc-vwp9-298g",
+  "cve": "CVE-2026-6873",
+  "aliases": [
+   "BIT-django-2026-6873",
+   "CVE-2026-6873",
+   "GHSA-h7pc-vwp9-298g",
+   "PYSEC-2026-199"
+  ],
+  "summary": "Django: signed cookies are vulnerable to salt namespace collisions",
+  "fix_versions": [
+   "6.0.6"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-q238-5cxm-5c9h",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-q238-5cxm-5c9h",
+  "ghsa": "GHSA-q238-5cxm-5c9h",
+  "cve": "CVE-2026-15830",
+  "aliases": [
+   "BIT-django-2026-15830",
+   "CVE-2026-15830",
+   "GHSA-q238-5cxm-5c9h",
+   "PYSEC-2026-3717"
+  ],
+  "summary": "Django GeoDjango vulnerable to denial of service through deeply nested geometry collections",
+  "fix_versions": [
+   "6.1.1"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-qw25-v68c-qjf3",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-qw25-v68c-qjf3",
+  "ghsa": "GHSA-qw25-v68c-qjf3",
+  "cve": "CVE-2025-64458",
+  "aliases": [
+   "BIT-django-2025-64458",
+   "CVE-2025-64458",
+   "GHSA-qw25-v68c-qjf3",
+   "PYSEC-2025-107"
+  ],
+  "summary": "Django has a denial-of-service vulnerability in HttpResponseRedirect and HttpResponsePermanentRedirect on Windows",
+  "fix_versions": [
+   "4.2.26"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-rrqc-c2jx-6jgv",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-rrqc-c2jx-6jgv",
+  "ghsa": "GHSA-rrqc-c2jx-6jgv",
+  "cve": "CVE-2024-45231",
+  "aliases": [
+   "BIT-django-2024-45231",
+   "CVE-2024-45231",
+   "GHSA-rrqc-c2jx-6jgv",
+   "PYSEC-2026-1297"
+  ],
+  "summary": "Django allows enumeration of user e-mail addresses",
+  "fix_versions": [
+   "4.2.16"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:django@3.2.25:GHSA-wvqv-fj8w-qmhm",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "3.2.25",
+  "vuln_id": "GHSA-wvqv-fj8w-qmhm",
+  "ghsa": "GHSA-wvqv-fj8w-qmhm",
+  "cve": "CVE-2026-15307",
+  "aliases": [
+   "BIT-django-2026-15307",
+   "CVE-2026-15307",
+   "GHSA-wvqv-fj8w-qmhm",
+   "PYSEC-2026-4035"
+  ],
+  "summary": "Django GeoDjango spatial lookups allow file writes and outbound requests through GDAL raster parsing",
+  "fix_versions": [
+   "6.0.8"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:gunicorn@20.1.0:GHSA-hc5x-x2vx-497g",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "gunicorn",
+  "installed": "20.1.0",
+  "vuln_id": "GHSA-hc5x-x2vx-497g",
+  "ghsa": "GHSA-hc5x-x2vx-497g",
+  "cve": "CVE-2024-6827",
+  "aliases": [
+   "CVE-2024-6827",
+   "GHSA-hc5x-x2vx-497g",
+   "PYSEC-2026-1433"
+  ],
+  "summary": "Gunicorn HTTP Request/Response Smuggling vulnerability",
+  "fix_versions": [
+   "22.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:gunicorn@20.1.0:GHSA-w3h3-4rj7-4ph4",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "gunicorn",
+  "installed": "20.1.0",
+  "vuln_id": "GHSA-w3h3-4rj7-4ph4",
+  "ghsa": "GHSA-w3h3-4rj7-4ph4",
+  "cve": "CVE-2024-1135",
+  "aliases": [
+   "CVE-2024-1135",
+   "GHSA-w3h3-4rj7-4ph4",
+   "PYSEC-2026-1434"
+  ],
+  "summary": "Request smuggling leading to endpoint restriction bypass in Gunicorn",
+  "fix_versions": [
+   "22.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:mkdocs-material@7.2.5:GHSA-xvg9-69gf-fjrf",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "mkdocs-material",
+  "installed": "7.2.5",
+  "vuln_id": "GHSA-xvg9-69gf-fjrf",
+  "ghsa": "GHSA-xvg9-69gf-fjrf",
+  "cve": "CVE-2026-73295",
+  "aliases": [
+   "CVE-2026-73295",
+   "GHSA-xvg9-69gf-fjrf",
+   "PYSEC-2026-3864"
+  ],
+  "summary": "Material for MkDocs: DOM XSS in search suggestions via query parameter",
+  "fix_versions": [
+   "9.7.7"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-27h8-gf7j-v5hc",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-27h8-gf7j-v5hc",
+  "ghsa": "GHSA-27h8-gf7j-v5hc",
+  "cve": "CVE-2026-112392",
+  "aliases": [
+   "BIT-pillow-2026-112392",
+   "CVE-2026-112392",
+   "GHSA-27h8-gf7j-v5hc",
+   "PYSEC-2026-4326"
+  ],
+  "summary": "Pillow: NULL dereference in ImagingExpand via rank filters on zero-size images",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-3f63-hfp8-52jq",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-3f63-hfp8-52jq",
+  "ghsa": "GHSA-3f63-hfp8-52jq",
+  "cve": "CVE-2023-50447",
+  "aliases": [
+   "BIT-pillow-2023-50447",
+   "CVE-2023-50447",
+   "GHSA-3f63-hfp8-52jq",
+   "PYSEC-2026-457"
+  ],
+  "summary": "Arbitrary Code Execution in Pillow",
+  "fix_versions": [
+   "10.2.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-44wm-f244-xhp3",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-44wm-f244-xhp3",
+  "ghsa": "GHSA-44wm-f244-xhp3",
+  "cve": "CVE-2024-28219",
+  "aliases": [
+   "BIT-pillow-2024-28219",
+   "CVE-2024-28219",
+   "GHSA-44wm-f244-xhp3",
+   "PYSEC-2026-1793"
+  ],
+  "summary": "Pillow buffer overflow vulnerability",
+  "fix_versions": [
+   "10.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-4558-3h8r-v8xp",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-4558-3h8r-v8xp",
+  "ghsa": "GHSA-4558-3h8r-v8xp",
+  "cve": "CVE-2026-112394",
+  "aliases": [
+   "BIT-pillow-2026-112394",
+   "CVE-2026-112394",
+   "GHSA-4558-3h8r-v8xp",
+   "PYSEC-2026-4327"
+  ],
+  "summary": "Pillow: P;2L and P;4L decoders may read 1 to 3 bytes past the passed buffer size",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-45hq-cxwh-f6vc",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-45hq-cxwh-f6vc",
+  "ghsa": "GHSA-45hq-cxwh-f6vc",
+  "cve": "CVE-2026-55379",
+  "aliases": [
+   "BIT-pillow-2026-55379",
+   "CVE-2026-55379",
+   "GHSA-45hq-cxwh-f6vc",
+   "PYSEC-2026-2255"
+  ],
+  "summary": "Pillow `BdfFontFile`: `Image.new()` called without `_decompression_bomb_check()` — bomb protection bypass via font loading",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-4x4j-2g7c-83w6",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-4x4j-2g7c-83w6",
+  "ghsa": "GHSA-4x4j-2g7c-83w6",
+  "cve": "CVE-2026-55798",
+  "aliases": [
+   "BIT-pillow-2026-55798",
+   "CVE-2026-55798",
+   "GHSA-4x4j-2g7c-83w6",
+   "PYSEC-2026-2257"
+  ],
+  "summary": "Pillow: WindowsViewer.get_command() OS command injection via unescaped shell path",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-5x94-69rx-g8h2",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-5x94-69rx-g8h2",
+  "ghsa": "GHSA-5x94-69rx-g8h2",
+  "cve": "CVE-2026-54060",
+  "aliases": [
+   "BIT-pillow-2026-54060",
+   "CVE-2026-54060",
+   "GHSA-5x94-69rx-g8h2",
+   "PYSEC-2026-2254"
+  ],
+  "summary": "Pillow: `FontFile.compile()`: `Image.new()` called without `_decompression_bomb_check()`",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-62p4-gmf7-7g93",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-62p4-gmf7-7g93",
+  "ghsa": "GHSA-62p4-gmf7-7g93",
+  "cve": "CVE-2026-54058",
+  "aliases": [
+   "BIT-pillow-2026-54058",
+   "CVE-2026-54058",
+   "GHSA-62p4-gmf7-7g93",
+   "PYSEC-2026-3493"
+  ],
+  "summary": "Pillow: Out-of-bounds read via attacker-controlled row stride on Pillow's mmap path (McIdas AREA files)",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-6r8x-57c9-28j4",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-6r8x-57c9-28j4",
+  "ghsa": "GHSA-6r8x-57c9-28j4",
+  "cve": "CVE-2026-59199",
+  "aliases": [
+   "BIT-pillow-2026-59199",
+   "CVE-2026-59199",
+   "GHSA-6r8x-57c9-28j4",
+   "PYSEC-2026-3451"
+  ],
+  "summary": "Pillow: Heap out-of-bounds write `Image.paste()` / `Image.crop()` via signed coordinate overflow",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-8v84-f9pq-wr9x",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-8v84-f9pq-wr9x",
+  "ghsa": "GHSA-8v84-f9pq-wr9x",
+  "cve": "CVE-2026-54059",
+  "aliases": [
+   "BIT-pillow-2026-54059",
+   "CVE-2026-54059",
+   "GHSA-8v84-f9pq-wr9x",
+   "PYSEC-2026-2253"
+  ],
+  "summary": "Pillow `PcfFontFile._load_bitmaps()`: `Image.frombytes()` called without `_decompression_bomb_check()` — bomb protection bypass via PCF font loading",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-9hw9-ch79-4vh6",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-9hw9-ch79-4vh6",
+  "ghsa": "GHSA-9hw9-ch79-4vh6",
+  "cve": "CVE-2026-59205",
+  "aliases": [
+   "BIT-pillow-2026-59205",
+   "CVE-2026-59205",
+   "GHSA-9hw9-ch79-4vh6",
+   "PYSEC-2026-3453"
+  ],
+  "summary": "Pillow: Controlled heap out-of-bounds write in Pillow `ImageCmsTransform.apply()` via output mode mismatch",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-fj7v-r99m-22gq",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-fj7v-r99m-22gq",
+  "ghsa": "GHSA-fj7v-r99m-22gq",
+  "cve": "CVE-2026-59198",
+  "aliases": [
+   "BIT-pillow-2026-59198",
+   "CVE-2026-59198",
+   "GHSA-fj7v-r99m-22gq",
+   "PYSEC-2026-3494"
+  ],
+  "summary": "Pillow TGA RLE encoder can serialize up to ~57 KB of adjacent heap data into generated images",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-jjj6-mw9f-p565",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-jjj6-mw9f-p565",
+  "ghsa": "GHSA-jjj6-mw9f-p565",
+  "cve": "CVE-2026-59200",
+  "aliases": [
+   "BIT-pillow-2026-59200",
+   "CVE-2026-59200",
+   "GHSA-jjj6-mw9f-p565",
+   "PYSEC-2026-3495"
+  ],
+  "summary": "Pillow: Decompression Bomb DoS via PdfParser.PdfStream.decode()",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-phj9-mv4w-65pm",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-phj9-mv4w-65pm",
+  "ghsa": "GHSA-phj9-mv4w-65pm",
+  "cve": "CVE-2026-55380",
+  "aliases": [
+   "BIT-pillow-2026-55380",
+   "CVE-2026-55380",
+   "GHSA-phj9-mv4w-65pm",
+   "PYSEC-2026-2256"
+  ],
+  "summary": "Pillow `GdImageFile._open()`: image dimensions accepted without `_decompression_bomb_check()`",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-r73j-pqj5-w3x7",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-r73j-pqj5-w3x7",
+  "ghsa": "GHSA-r73j-pqj5-w3x7",
+  "cve": "CVE-2026-42310",
+  "aliases": [
+   "BIT-pillow-2026-42310",
+   "CVE-2026-42310",
+   "GHSA-r73j-pqj5-w3x7",
+   "PYSEC-2026-2874"
+  ],
+  "summary": "Pillow has a PDF Parsing Trailer Infinite Loop (DoS)",
+  "fix_versions": [
+   "12.2.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-vjc4-5qp5-m44j",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-vjc4-5qp5-m44j",
+  "ghsa": "GHSA-vjc4-5qp5-m44j",
+  "cve": "CVE-2026-59204",
+  "aliases": [
+   "BIT-pillow-2026-59204",
+   "CVE-2026-59204",
+   "GHSA-vjc4-5qp5-m44j",
+   "PYSEC-2026-3496"
+  ],
+  "summary": "Pillow JPEG2000 tiled decode retains a growing scratch buffer and can be used for denial of service",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-wjx4-4jcj-g98j",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-wjx4-4jcj-g98j",
+  "ghsa": "GHSA-wjx4-4jcj-g98j",
+  "cve": "CVE-2026-42308",
+  "aliases": [
+   "BIT-pillow-2026-42308",
+   "CVE-2026-42308",
+   "GHSA-wjx4-4jcj-g98j",
+   "PYSEC-2026-165"
+  ],
+  "summary": "Pillow has an integer overflow when processing fonts",
+  "fix_versions": [
+   "12.2.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-xj96-63gp-2gmr",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-xj96-63gp-2gmr",
+  "ghsa": "GHSA-xj96-63gp-2gmr",
+  "cve": "CVE-2026-59197",
+  "aliases": [
+   "BIT-pillow-2026-59197",
+   "CVE-2026-59197",
+   "GHSA-xj96-63gp-2gmr",
+   "PYSEC-2026-3454"
+  ],
+  "summary": "Pillow: Heap out-of-bounds write in `ImageFilter.RankFilter` via integer overflow in `ImagingExpand`",
+  "fix_versions": [
+   "12.3.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-22hg-r758-rrw9",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-22hg-r758-rrw9",
+  "ghsa": "GHSA-22hg-r758-rrw9",
+  "cve": "CVE-2026-112390",
+  "aliases": [
+   "BIT-pillow-2026-112390",
+   "CVE-2026-112390",
+   "GHSA-22hg-r758-rrw9"
+  ],
+  "summary": "Pillow: Infinite loop in MIC n_frames when the embedded TIFF",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-24rc-8hj2-v98c",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-24rc-8hj2-v98c",
+  "ghsa": "GHSA-24rc-8hj2-v98c",
+  "cve": "CVE-2026-96638",
+  "aliases": [
+   "CVE-2026-96638",
+   "GHSA-24rc-8hj2-v98c"
+  ],
+  "summary": "Pillow: BMP RLE decoder memory-amplification DoS via unbounded delta escape / absolute mode",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-254f-3936-288h",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-254f-3936-288h",
+  "ghsa": "GHSA-254f-3936-288h",
+  "cve": "CVE-2026-112391",
+  "aliases": [
+   "BIT-pillow-2026-112391",
+   "CVE-2026-112391",
+   "GHSA-254f-3936-288h"
+  ],
+  "summary": "Pillow: PdfParser can recurse without limit in get_value() and linearize_page_tree()",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-332p-7hrc-92wf",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-332p-7hrc-92wf",
+  "ghsa": "GHSA-332p-7hrc-92wf",
+  "cve": "CVE-2026-112393",
+  "aliases": [
+   "BIT-pillow-2026-112393",
+   "CVE-2026-112393",
+   "GHSA-332p-7hrc-92wf"
+  ],
+  "summary": "Pillow: Heap buffer overflow in _tiffWriteProc when saving TIFF to BytesIO",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-3j72-p6qg-6xp7",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-3j72-p6qg-6xp7",
+  "ghsa": "GHSA-3j72-p6qg-6xp7",
+  "cve": "CVE-2026-96642",
+  "aliases": [
+   "CVE-2026-96642",
+   "GHSA-3j72-p6qg-6xp7"
+  ],
+  "summary": "Pillow: TarIO negative size field causes infinite CPU-spin loop",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-462x-pgg6-55fp",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-462x-pgg6-55fp",
+  "ghsa": "GHSA-462x-pgg6-55fp",
+  "cve": "CVE-2026-112395",
+  "aliases": [
+   "BIT-pillow-2026-112395",
+   "CVE-2026-112395",
+   "GHSA-462x-pgg6-55fp"
+  ],
+  "summary": "Pillow tiled-TIFF decoder reads past tile buffer in copy4 (Unpack.c:1290)",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-4rm8-3hmm-39fg",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-4rm8-3hmm-39fg",
+  "ghsa": "GHSA-4rm8-3hmm-39fg",
+  "cve": "CVE-2026-96641",
+  "aliases": [
+   "CVE-2026-96641",
+   "GHSA-4rm8-3hmm-39fg"
+  ],
+  "summary": "Pillow: Reachable undefined behavior in native integer operations, potentially leading to denial of service or logic integrity compromise",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-58r4-6rv3-gfh8",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-58r4-6rv3-gfh8",
+  "ghsa": "GHSA-58r4-6rv3-gfh8",
+  "cve": "CVE-2026-112397",
+  "aliases": [
+   "BIT-pillow-2026-112397",
+   "CVE-2026-112397",
+   "GHSA-58r4-6rv3-gfh8"
+  ],
+  "summary": "Pillow: Out-of-bounds access in _imagingmorph on a zero-width image",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-5x8w-8jj5-q52h",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-5x8w-8jj5-q52h",
+  "ghsa": "GHSA-5x8w-8jj5-q52h",
+  "cve": "CVE-2026-112398",
+  "aliases": [
+   "BIT-pillow-2026-112398",
+   "CVE-2026-112398",
+   "GHSA-5x8w-8jj5-q52h"
+  ],
+  "summary": "Pillow: Heap buffer overflow in FlashPix (FPX) JPEG decoding leads to code execution",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-5xm2-6676-qcp9",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-5xm2-6676-qcp9",
+  "ghsa": "GHSA-5xm2-6676-qcp9",
+  "cve": "CVE-2026-112399",
+  "aliases": [
+   "BIT-pillow-2026-112399",
+   "CVE-2026-112399",
+   "GHSA-5xm2-6676-qcp9"
+  ],
+  "summary": "Pillow: APNG background disposal allocates full canvas before decompression bomb check",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-65qm-jvmh-6pqg",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-65qm-jvmh-6pqg",
+  "ghsa": "GHSA-65qm-jvmh-6pqg",
+  "cve": "CVE-2026-112400",
+  "aliases": [
+   "BIT-pillow-2026-112400",
+   "CVE-2026-112400",
+   "GHSA-65qm-jvmh-6pqg"
+  ],
+  "summary": "Pillow: GIF seek keeps rejected size after DecompressionBombError, allowing DoS",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-74r2-7ff9-mjj2",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-74r2-7ff9-mjj2",
+  "ghsa": "GHSA-74r2-7ff9-mjj2",
+  "cve": "CVE-2026-112401",
+  "aliases": [
+   "BIT-pillow-2026-112401",
+   "CVE-2026-112401",
+   "GHSA-74r2-7ff9-mjj2"
+  ],
+  "summary": "Pillow: Quadratic GIF comment concatenation allows DoS in Image.open()",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-7mwm-ghpf-9vrm",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-7mwm-ghpf-9vrm",
+  "ghsa": "GHSA-7mwm-ghpf-9vrm",
+  "cve": "CVE-2026-112402",
+  "aliases": [
+   "BIT-pillow-2026-112402",
+   "CVE-2026-112402",
+   "GHSA-7mwm-ghpf-9vrm"
+  ],
+  "summary": "Pillow: Double free in ImagingScaleAffine on calloc failure via Image.transform",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-8g5g-8vmr-9782",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-8g5g-8vmr-9782",
+  "ghsa": "GHSA-8g5g-8vmr-9782",
+  "cve": "CVE-2026-112403",
+  "aliases": [
+   "BIT-pillow-2026-112403",
+   "CVE-2026-112403",
+   "GHSA-8g5g-8vmr-9782"
+  ],
+  "summary": "Pillow: Heap buffer overflow in ImagingJpegDecode",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-9v9v-9qvf-h2hj",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-9v9v-9qvf-h2hj",
+  "ghsa": "GHSA-9v9v-9qvf-h2hj",
+  "cve": "CVE-2026-96644",
+  "aliases": [
+   "CVE-2026-96644",
+   "GHSA-9v9v-9qvf-h2hj"
+  ],
+  "summary": "Pillow: Heap over-read in WMF/EMF rendering via 16-bit dimension truncation (Windows builds)",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-c6hw-5grf-ff96",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-c6hw-5grf-ff96",
+  "ghsa": "GHSA-c6hw-5grf-ff96",
+  "cve": "CVE-2026-112404",
+  "aliases": [
+   "BIT-pillow-2026-112404",
+   "CVE-2026-112404",
+   "GHSA-c6hw-5grf-ff96"
+  ],
+  "summary": "Pillow: OOB read in TiffDecode.c tile and RGBA paths leaks heap memory into pixels",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-f2g6-542v-9j58",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-f2g6-542v-9j58",
+  "ghsa": "GHSA-f2g6-542v-9j58",
+  "cve": "CVE-2026-112406",
+  "aliases": [
+   "BIT-pillow-2026-112406",
+   "CVE-2026-112406",
+   "GHSA-f2g6-542v-9j58"
+  ],
+  "summary": "Pillow: Infinite loop in PdfParser.rewrite_pages on page tree Parent cycle",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-fc9g-5qg7-mf45",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-fc9g-5qg7-mf45",
+  "ghsa": "GHSA-fc9g-5qg7-mf45",
+  "cve": "CVE-2026-112891",
+  "aliases": [
+   "BIT-pillow-2026-112891",
+   "CVE-2026-112891",
+   "GHSA-fc9g-5qg7-mf45"
+  ],
+  "summary": "Pillow: Quadratic GIF comment copying during save",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-g7cr-3p24-7wf7",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-g7cr-3p24-7wf7",
+  "ghsa": "GHSA-g7cr-3p24-7wf7",
+  "cve": "CVE-2026-96778",
+  "aliases": [
+   "CVE-2026-96778",
+   "GHSA-g7cr-3p24-7wf7"
+  ],
+  "summary": "Pillow: Heap buffer overflow writing JPEG comment after ICC profile fills buffer",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-g842-9rc4-69pw",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-g842-9rc4-69pw",
+  "ghsa": "GHSA-g842-9rc4-69pw",
+  "cve": "CVE-2026-96637",
+  "aliases": [
+   "CVE-2026-96637",
+   "GHSA-g842-9rc4-69pw"
+  ],
+  "summary": "Pillow: Decompression bomb check bypass in SpiderImagePlugin.seek() leads to unbounded allocation DoS",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-gg2r-wvfm-q9rx",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-gg2r-wvfm-q9rx",
+  "ghsa": "GHSA-gg2r-wvfm-q9rx",
+  "cve": "CVE-2026-112892",
+  "aliases": [
+   "BIT-pillow-2026-112892",
+   "CVE-2026-112892",
+   "GHSA-gg2r-wvfm-q9rx"
+  ],
+  "summary": "Pillow: MSP RLE decoder expands a tiny file into unbounded memory",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-j4m9-6w36-pw47",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-j4m9-6w36-pw47",
+  "ghsa": "GHSA-j4m9-6w36-pw47",
+  "cve": "CVE-2026-112893",
+  "aliases": [
+   "BIT-pillow-2026-112893",
+   "CVE-2026-112893",
+   "GHSA-j4m9-6w36-pw47"
+  ],
+  "summary": "Pillow: Invalid free in FreeType glyph rendering when a stroker is active",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-jg86-v3jv-hrpm",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-jg86-v3jv-hrpm",
+  "ghsa": "GHSA-jg86-v3jv-hrpm",
+  "cve": "CVE-2026-112894",
+  "aliases": [
+   "BIT-pillow-2026-112894",
+   "CVE-2026-112894",
+   "GHSA-jg86-v3jv-hrpm"
+  ],
+  "summary": "Pillow: Quadratic-time DoS in PDF save_all (PdfParser.next_object_id)",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-mrfp-p49p-3hf2",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-mrfp-p49p-3hf2",
+  "ghsa": "GHSA-mrfp-p49p-3hf2",
+  "cve": "CVE-2026-96640",
+  "aliases": [
+   "CVE-2026-96640",
+   "GHSA-mrfp-p49p-3hf2"
+  ],
+  "summary": "Pillow PDF append accepts malformed shared page-tree DAG causing resource exhaustion",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-p4wg-p73j-c528",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-p4wg-p73j-c528",
+  "ghsa": "GHSA-p4wg-p73j-c528",
+  "cve": "CVE-2026-112895",
+  "aliases": [
+   "BIT-pillow-2026-112895",
+   "CVE-2026-112895",
+   "GHSA-p4wg-p73j-c528"
+  ],
+  "summary": "Pillow: Unbounded recursion parsing a PDF page tree or trailer chain (incomplete fix for CVE-2026-42310)",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-p8hx-v2p6-rp84",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-p8hx-v2p6-rp84",
+  "ghsa": "GHSA-p8hx-v2p6-rp84",
+  "cve": "CVE-2026-96636",
+  "aliases": [
+   "CVE-2026-96636",
+   "GHSA-p8hx-v2p6-rp84"
+  ],
+  "summary": "Pillow: Decompression-bomb protection bypass via multi-frame seek() in MPO and DCX (MpoImageFile.seek / DcxImageFile.seek)",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-pchr-8j38-3x4p",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-pchr-8j38-3x4p",
+  "ghsa": "GHSA-pchr-8j38-3x4p",
+  "cve": "CVE-2026-112896",
+  "aliases": [
+   "BIT-pillow-2026-112896",
+   "CVE-2026-112896",
+   "GHSA-pchr-8j38-3x4p"
+  ],
+  "summary": "Pillow: TIFF encoder ColorMap plane-size mismatch causes a heap out-of-bounds read",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-q45j-58j2-45rg",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-q45j-58j2-45rg",
+  "ghsa": "GHSA-q45j-58j2-45rg",
+  "cve": "CVE-2026-112897",
+  "aliases": [
+   "BIT-pillow-2026-112897",
+   "CVE-2026-112897",
+   "GHSA-q45j-58j2-45rg"
+  ],
+  "summary": "Pillow: TiffDecode returns uninitialized memory as pixels for short JPEG strips",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-rfgq-q3w2-pmv2",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-rfgq-q3w2-pmv2",
+  "ghsa": "GHSA-rfgq-q3w2-pmv2",
+  "cve": "CVE-2026-112898",
+  "aliases": [
+   "BIT-pillow-2026-112898",
+   "CVE-2026-112898",
+   "GHSA-rfgq-q3w2-pmv2"
+  ],
+  "summary": "Pillow: Image.quantize() with empty palette leaks uninitialized stack memory",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-vx6w-vv9f-6gvg",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-vx6w-vv9f-6gvg",
+  "ghsa": "GHSA-vx6w-vv9f-6gvg",
+  "cve": "CVE-2026-112899",
+  "aliases": [
+   "CVE-2026-112899",
+   "GHSA-vx6w-vv9f-6gvg"
+  ],
+  "summary": "Pillow: EPS load(scale) lets Ghostscript render past the decompression bomb limit",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-w889-685w-c8fh",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-w889-685w-c8fh",
+  "ghsa": "GHSA-w889-685w-c8fh",
+  "cve": "CVE-2026-112900",
+  "aliases": [
+   "BIT-pillow-2026-112900",
+   "CVE-2026-112900",
+   "GHSA-w889-685w-c8fh"
+  ],
+  "summary": "Pillow: Argument Injection in Ghostscript call, potentially leading into RCE",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-xgh8-jp6q-p5x8",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-xgh8-jp6q-p5x8",
+  "ghsa": "GHSA-xgh8-jp6q-p5x8",
+  "cve": "CVE-2026-112901",
+  "aliases": [
+   "BIT-pillow-2026-112901",
+   "CVE-2026-112901",
+   "GHSA-xgh8-jp6q-p5x8"
+  ],
+  "summary": "Pillow: ReDoS in XbmImagePlugin: 512-byte file stalls Image.open() for minutes",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ },
+ {
+  "finding_id": "netbox:PyPI:pillow@10.0.1:GHSA-xvh5-g6gv-559v",
+  "project": "netbox",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "10.0.1",
+  "vuln_id": "GHSA-xvh5-g6gv-559v",
+  "ghsa": "GHSA-xvh5-g6gv-559v",
+  "cve": "CVE-2026-112902",
+  "aliases": [
+   "CVE-2026-112902",
+   "GHSA-xvh5-g6gv-559v"
+  ],
+  "summary": "Pillow: Memory disclosure and segfault in libtiff encoder via crafted TIFF tags",
+  "fix_versions": [
+   "13.0.0"
+  ],
+  "direct": true,
+  "scanner": "pip-audit 2.10.1 (OSV)",
+  "cvss_score": null,
+  "cvss_vector": null,
+  "severity": null,
+  "cwe": []
+ }
+]

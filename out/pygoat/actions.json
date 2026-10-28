@@ -1,0 +1,800 @@
+[
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "django",
+  "installed": "4.2",
+  "target": "4.2.30",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:django@4.2:GHSA-qmf9-6jqf-j8fq",
+   "pygoat:PyPI:django@4.2:GHSA-f6f8-9mx6-9mx2",
+   "pygoat:PyPI:django@4.2:GHSA-frmv-pr5f-9mcr",
+   "pygoat:PyPI:django@4.2:GHSA-6w2r-r2m5-xq5w",
+   "pygoat:PyPI:django@4.2:GHSA-5hgc-2vfp-mqvc",
+   "pygoat:PyPI:django@4.2:GHSA-mwm9-4648-f68q",
+   "pygoat:PyPI:django@4.2:GHSA-pv4p-cwwg-4rph",
+   "pygoat:PyPI:django@4.2:GHSA-r3xc-prgr-mg9p",
+   "pygoat:PyPI:django@4.2:GHSA-jh3w-4vvf-mjgr",
+   "pygoat:PyPI:django@4.2:GHSA-h8gc-pgj2-vjm3",
+   "pygoat:PyPI:django@4.2:GHSA-qg2p-9jwr-mmqf",
+   "pygoat:PyPI:django@4.2:GHSA-9jmf-237g-qf46",
+   "pygoat:PyPI:django@4.2:GHSA-xxj9-f6rv-m3x4",
+   "pygoat:PyPI:django@4.2:GHSA-gvg8-93h5-g6qq",
+   "pygoat:PyPI:django@4.2:GHSA-8j24-cjrq-gr2m",
+   "pygoat:PyPI:django@4.2:GHSA-qw25-v68c-qjf3",
+   "pygoat:PyPI:django@4.2:GHSA-8p8v-wh79-9r56",
+   "pygoat:PyPI:django@4.2:GHSA-933h-hp56-hf7m",
+   "pygoat:PyPI:django@4.2:GHSA-mvfq-ggxm-9mc5",
+   "pygoat:PyPI:django@4.2:GHSA-m9g8-fxxm-xg86",
+   "pygoat:PyPI:django@4.2:GHSA-hpr9-3m2g-3j9p",
+   "pygoat:PyPI:django@4.2:GHSA-7h4p-27mh-hmrw",
+   "pygoat:PyPI:django@4.2:GHSA-795c-9xpc-xw6g",
+   "pygoat:PyPI:django@4.2:GHSA-jh75-99hh-qvx9",
+   "pygoat:PyPI:django@4.2:GHSA-r836-hh6v-rg5g",
+   "pygoat:PyPI:django@4.2:GHSA-x7q2-wr7g-xqmf",
+   "pygoat:PyPI:django@4.2:GHSA-8498-2h75-472j",
+   "pygoat:PyPI:django@4.2:GHSA-vrcr-9hj9-jcg6",
+   "pygoat:PyPI:django@4.2:GHSA-5mf9-h53q-7mhq",
+   "pygoat:PyPI:django@4.2:GHSA-rrqc-c2jx-6jgv",
+   "pygoat:PyPI:django@4.2:GHSA-qcgg-j2x8-h9g8",
+   "pygoat:PyPI:django@4.2:GHSA-vm8q-m57g-pff3",
+   "pygoat:PyPI:django@4.2:GHSA-6426-9fv3-65x8",
+   "pygoat:PyPI:django@4.2:GHSA-p3fp-8748-vqfq",
+   "pygoat:PyPI:django@4.2:GHSA-rqw2-ghq9-44m7",
+   "pygoat:PyPI:django@4.2:GHSA-7xr5-9hcq-chf9",
+   "pygoat:PyPI:django@4.2:GHSA-mjgh-79qc-68w3",
+   "pygoat:PyPI:django@4.2:GHSA-q95w-c7qg-hrff",
+   "pygoat:PyPI:django@4.2:GHSA-33mw-q7rj-mjwj",
+   "pygoat:PyPI:django@4.2:GHSA-4rrr-2h4v-f3j9",
+   "pygoat:PyPI:django@4.2:GHSA-2mcm-79hx-8fxw",
+   "pygoat:PyPI:django@4.2:GHSA-mmwr-2jhp-mc7j",
+   "pygoat:PyPI:django@4.2:GHSA-pwjp-ccjc-ghwg"
+  ],
+  "resolves_count": 43,
+  "needs_major": [
+   {
+    "finding_id": "pygoat:PyPI:django@4.2:GHSA-wvqv-fj8w-qmhm",
+    "cve": "CVE-2026-15307",
+    "min_fix": "5.2.17"
+   },
+   {
+    "finding_id": "pygoat:PyPI:django@4.2:GHSA-q238-5cxm-5c9h",
+    "cve": "CVE-2026-15830",
+    "min_fix": "5.2.17"
+   },
+   {
+    "finding_id": "pygoat:PyPI:django@4.2:GHSA-crhf-3pfg-w68w",
+    "cve": "CVE-2026-53877",
+    "min_fix": "5.2.16"
+   },
+   {
+    "finding_id": "pygoat:PyPI:django@4.2:GHSA-8qcx-xf44-272x",
+    "cve": "CVE-2026-53878",
+    "min_fix": "5.2.16"
+   },
+   {
+    "finding_id": "pygoat:PyPI:django@4.2:GHSA-3h9f-r86x-qvjx",
+    "cve": "CVE-2026-48588",
+    "min_fix": "5.2.16"
+   },
+   {
+    "finding_id": "pygoat:PyPI:django@4.2:GHSA-923m-gv2p-w5qp",
+    "cve": "CVE-2026-48587",
+    "min_fix": "5.2.15"
+   },
+   {
+    "finding_id": "pygoat:PyPI:django@4.2:GHSA-8cjm-8mp7-r2xf",
+    "cve": "CVE-2026-8404",
+    "min_fix": "5.2.15"
+   },
+   {
+    "finding_id": "pygoat:PyPI:django@4.2:GHSA-h7pc-vwp9-298g",
+    "cve": "CVE-2026-6873",
+    "min_fix": "5.2.15"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 72.31,
+  "max_rank": 1,
+  "kev": false,
+  "max_epss": 0.49774,
+  "findings": 51
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "pyyaml",
+  "installed": "5.1",
+  "target": "5.4",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:pyyaml@5.1:GHSA-8q59-q68h-6hv4",
+   "pygoat:PyPI:pyyaml@5.1:GHSA-6757-jp84-gxfx",
+   "pygoat:PyPI:pyyaml@5.1:GHSA-3pqx-4fqf-j49f"
+  ],
+  "resolves_count": 3,
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 55.99,
+  "max_rank": 7,
+  "kev": false,
+  "max_epss": 0.05984,
+  "findings": 3
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "pillow",
+  "installed": "12.1.0",
+  "target": "12.3.0",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:pillow@12.1.0:GHSA-whj4-6x5x-4v2j",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-vjc4-5qp5-m44j",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-cfh3-3jmp-rvhc",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-pwv6-vv43-88gr",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-62p4-gmf7-7g93",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-xj96-63gp-2gmr",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-45hq-cxwh-f6vc",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-phj9-mv4w-65pm",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-5x94-69rx-g8h2",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-8v84-f9pq-wr9x",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-6r8x-57c9-28j4",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-9hw9-ch79-4vh6",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-jjj6-mw9f-p565",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-fj7v-r99m-22gq",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-pg7v-jwj7-p798",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-r73j-pqj5-w3x7",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-5xmw-vc9v-4wf2",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-wjx4-4jcj-g98j",
+   "pygoat:PyPI:pillow@12.1.0:GHSA-4x4j-2g7c-83w6"
+  ],
+  "resolves_count": 19,
+  "needs_major": [
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-v9pv-5gc8-w2m6",
+    "cve": "CVE-2026-96639",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-w889-685w-c8fh",
+    "cve": "CVE-2026-112900",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-332p-7hrc-92wf",
+    "cve": "CVE-2026-112393",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-8g5g-8vmr-9782",
+    "cve": "CVE-2026-112403",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-5x8w-8jj5-q52h",
+    "cve": "CVE-2026-112398",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-pchr-8j38-3x4p",
+    "cve": "CVE-2026-112896",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-c6hw-5grf-ff96",
+    "cve": "CVE-2026-112404",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-xvh5-g6gv-559v",
+    "cve": "CVE-2026-112902",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-58r4-6rv3-gfh8",
+    "cve": "CVE-2026-112397",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-65qm-jvmh-6pqg",
+    "cve": "CVE-2026-112400",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-7mwm-ghpf-9vrm",
+    "cve": "CVE-2026-112402",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-jg86-v3jv-hrpm",
+    "cve": "CVE-2026-112894",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-q45j-58j2-45rg",
+    "cve": "CVE-2026-112897",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-cp9v-662q-vvx9",
+    "cve": "CVE-2026-112405",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-f2g6-542v-9j58",
+    "cve": "CVE-2026-112406",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-gg2r-wvfm-q9rx",
+    "cve": "CVE-2026-112892",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-p4wg-p73j-c528",
+    "cve": "CVE-2026-112895",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-5xm2-6676-qcp9",
+    "cve": "CVE-2026-112399",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-27h8-gf7j-v5hc",
+    "cve": "CVE-2026-112392",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-22hg-r758-rrw9",
+    "cve": "CVE-2026-112390",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-mrfp-p49p-3hf2",
+    "cve": "CVE-2026-96640",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-j4m9-6w36-pw47",
+    "cve": "CVE-2026-112893",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-78g4-xqwv-q3g8",
+    "cve": null,
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-g7cr-3p24-7wf7",
+    "cve": "CVE-2026-96778",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-g4qv-2jxx-769h",
+    "cve": "CVE-2026-96643",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-g842-9rc4-69pw",
+    "cve": "CVE-2026-96637",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-3j72-p6qg-6xp7",
+    "cve": "CVE-2026-96642",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-9v9v-9qvf-h2hj",
+    "cve": "CVE-2026-96644",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-74r2-7ff9-mjj2",
+    "cve": "CVE-2026-112401",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-fc9g-5qg7-mf45",
+    "cve": "CVE-2026-112891",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-xgh8-jp6q-p5x8",
+    "cve": "CVE-2026-112901",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-rfgq-q3w2-pmv2",
+    "cve": "CVE-2026-112898",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-vx6w-vv9f-6gvg",
+    "cve": "CVE-2026-112899",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-462x-pgg6-55fp",
+    "cve": "CVE-2026-112395",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-24rc-8hj2-v98c",
+    "cve": "CVE-2026-96638",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-4rm8-3hmm-39fg",
+    "cve": "CVE-2026-96641",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-p8hx-v2p6-rp84",
+    "cve": "CVE-2026-96636",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-254f-3936-288h",
+    "cve": "CVE-2026-112391",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-4558-3h8r-v8xp",
+    "cve": "CVE-2026-112394",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-654x-cwwv-5j9c",
+    "cve": "CVE-2026-114501",
+    "min_fix": "13.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:pillow@12.1.0:GHSA-4rr5-89j8-mwwm",
+    "cve": "CVE-2026-112396",
+    "min_fix": "13.0.0"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 54.87,
+  "max_rank": 10,
+  "kev": false,
+  "max_epss": 0.01064,
+  "findings": 60
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "pyjwt",
+  "installed": "2.4.0",
+  "target": "2.15.0",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-ffc3-869f-jxw9",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-752w-5fwx-jx9f",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-xgmm-8j9v-c9wx",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-p4g4-x82p-q773",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-9v7f-9g4p-ffgj",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-pxh4-856f-4h89",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-x33g-cr3x-6449",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-2gx3-rcp4-g85q",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-42vr-xj54-vc7v",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-hxm8-2xgr-2p9m",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-jwrc-g2q2-pq5p",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-993g-76c3-p5m4",
+   "pygoat:PyPI:pyjwt@2.4.0:GHSA-fhv5-28vv-h8m8"
+  ],
+  "resolves_count": 13,
+  "needs_major": [],
+  "no_fix": [
+   "pygoat:PyPI:pyjwt@2.4.0:PYSEC-2025-183"
+  ],
+  "top_priority": 53.29,
+  "max_rank": 18,
+  "kev": false,
+  "max_epss": 0.00428,
+  "findings": 14
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "requests",
+  "installed": "2.28.2",
+  "target": "2.33.0",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:requests@2.28.2:GHSA-j8r2-6x86-q33q",
+   "pygoat:PyPI:requests@2.28.2:GHSA-9wx4-h78v-vm56",
+   "pygoat:PyPI:requests@2.28.2:GHSA-9hjg-9r4m-mvj7",
+   "pygoat:PyPI:requests@2.28.2:GHSA-gc5v-m9x4-r6x2"
+  ],
+  "resolves_count": 4,
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 48.39,
+  "max_rank": 86,
+  "kev": false,
+  "max_epss": 0.02974,
+  "findings": 4
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "urllib3",
+  "installed": "1.26.9",
+  "target": "1.26.19",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:urllib3@1.26.9:GHSA-v845-jxx5-vc9f",
+   "pygoat:PyPI:urllib3@1.26.9:GHSA-g4mx-q9vg-27p4",
+   "pygoat:PyPI:urllib3@1.26.9:GHSA-34jh-p97f-mpxf"
+  ],
+  "resolves_count": 3,
+  "needs_major": [
+   {
+    "finding_id": "pygoat:PyPI:urllib3@1.26.9:GHSA-38jv-5279-wg99",
+    "cve": "CVE-2026-21441",
+    "min_fix": "2.6.3"
+   },
+   {
+    "finding_id": "pygoat:PyPI:urllib3@1.26.9:GHSA-2xpw-w6gg-jr37",
+    "cve": "CVE-2025-66471",
+    "min_fix": "2.6.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:urllib3@1.26.9:GHSA-gm62-xv2j-4w53",
+    "cve": "CVE-2025-66418",
+    "min_fix": "2.6.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:urllib3@1.26.9:GHSA-vxq7-64xx-v4gw",
+    "cve": "CVE-2026-97689",
+    "min_fix": "2.8.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:urllib3@1.26.9:GHSA-qccp-gfcp-xxvc",
+    "cve": "CVE-2026-44431",
+    "min_fix": "2.7.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:urllib3@1.26.9:GHSA-8988-9cw3-xx77",
+    "cve": "CVE-2026-97687",
+    "min_fix": "2.8.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:urllib3@1.26.9:GHSA-pq67-6m6q-mj2v",
+    "cve": "CVE-2025-50181",
+    "min_fix": "2.5.0"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 47.97,
+  "max_rank": 94,
+  "kev": false,
+  "max_epss": 0.02922,
+  "findings": 10
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "certifi",
+  "installed": "2022.12.7",
+  "target": null,
+  "change": null,
+  "resolves": [],
+  "resolves_count": 0,
+  "needs_major": [
+   {
+    "finding_id": "pygoat:PyPI:certifi@2022.12.7:GHSA-6q48-6c7w-9gw2",
+    "cve": null,
+    "min_fix": "2026.10.18"
+   },
+   {
+    "finding_id": "pygoat:PyPI:certifi@2022.12.7:GHSA-xqr8-7jwr-rhp7",
+    "cve": "CVE-2023-37920",
+    "min_fix": "2023.7.22"
+   },
+   {
+    "finding_id": "pygoat:PyPI:certifi@2022.12.7:GHSA-248v-346w-9cwc",
+    "cve": "CVE-2024-39689",
+    "min_fix": "2024.7.4"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 47.2,
+  "max_rank": 100,
+  "kev": false,
+  "max_epss": 0.01049,
+  "findings": 3
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "cryptography",
+  "installed": "39.0.1",
+  "target": null,
+  "change": null,
+  "resolves": [],
+  "resolves_count": 0,
+  "needs_major": [
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-3ww4-gg4f-jr7f",
+    "cve": "CVE-2023-50782",
+    "min_fix": "42.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-jwv3-5hgf-82ww",
+    "cve": "CVE-2026-69249",
+    "min_fix": "49.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-r6ph-v2qm-q3c2",
+    "cve": "CVE-2026-26007",
+    "min_fix": "46.0.5"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-6vqw-3v5j-54x4",
+    "cve": "CVE-2024-26130",
+    "min_fix": "42.0.4"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-537c-gmf6-5ccf",
+    "cve": null,
+    "min_fix": "48.0.1"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-m2h6-j472-rp4c",
+    "cve": "CVE-2026-69248",
+    "min_fix": "49.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-9v9h-cgj8-h64p",
+    "cve": "CVE-2024-0727",
+    "min_fix": "42.0.2"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-jfhm-5ghh-2f97",
+    "cve": "CVE-2023-49083",
+    "min_fix": "41.0.6"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-m959-cc7f-wv43",
+    "cve": "CVE-2026-34073",
+    "min_fix": "46.0.6"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-5cpq-8wj7-hf2v",
+    "cve": null,
+    "min_fix": "41.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-h4gh-qq45-vh27",
+    "cve": null,
+    "min_fix": "43.0.1"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-jm77-qphf-c4w8",
+    "cve": null,
+    "min_fix": "41.0.3"
+   },
+   {
+    "finding_id": "pygoat:PyPI:cryptography@39.0.1:GHSA-v8gr-m533-ghj9",
+    "cve": null,
+    "min_fix": "41.0.4"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 46.85,
+  "max_rank": 106,
+  "kev": false,
+  "max_epss": 0.03187,
+  "findings": 13
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "black",
+  "installed": "26.1.0",
+  "target": "26.10.1",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:black@26.1.0:GHSA-3936-cmfr-pm3m",
+   "pygoat:PyPI:black@26.1.0:GHSA-v53h-f6m7-xcgm",
+   "pygoat:PyPI:black@26.1.0:GHSA-cg8m-r9f2-5wm2"
+  ],
+  "resolves_count": 3,
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 46.65,
+  "max_rank": 107,
+  "kev": false,
+  "max_epss": 0.00632,
+  "findings": 3
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "sqlparse",
+  "installed": "0.3.1",
+  "target": "0.6.0",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:sqlparse@0.3.1:GHSA-pwgv-4x5q-6m9f",
+   "pygoat:PyPI:sqlparse@0.3.1:GHSA-f2ff-p2ww-7p4p",
+   "pygoat:PyPI:sqlparse@0.3.1:GHSA-2m57-hf25-phgg",
+   "pygoat:PyPI:sqlparse@0.3.1:GHSA-prg7-hcfm-mfcr",
+   "pygoat:PyPI:sqlparse@0.3.1:GHSA-rrm6-wvj7-cwh2",
+   "pygoat:PyPI:sqlparse@0.3.1:GHSA-27jp-wm6q-gp25",
+   "pygoat:PyPI:sqlparse@0.3.1:GHSA-3496-9g83-7v6x",
+   "pygoat:PyPI:sqlparse@0.3.1:GHSA-cfqr-cjx5-5jcm"
+  ],
+  "resolves_count": 8,
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 46.53,
+  "max_rank": 109,
+  "kev": false,
+  "max_epss": 0.03237,
+  "findings": 8
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "werkzeug",
+  "installed": "2.1.2",
+  "target": "2.3.8",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:werkzeug@2.1.2:GHSA-xg9f-g7g7-2323",
+   "pygoat:PyPI:werkzeug@2.1.2:GHSA-hrfv-mqp8-q5rw",
+   "pygoat:PyPI:werkzeug@2.1.2:GHSA-px8h-6qxv-m22q"
+  ],
+  "resolves_count": 3,
+  "needs_major": [
+   {
+    "finding_id": "pygoat:PyPI:werkzeug@2.1.2:GHSA-2g68-c3qc-8985",
+    "cve": "CVE-2024-34069",
+    "min_fix": "3.0.3"
+   },
+   {
+    "finding_id": "pygoat:PyPI:werkzeug@2.1.2:GHSA-q34m-jh98-gwm2",
+    "cve": "CVE-2024-49767",
+    "min_fix": "3.0.6"
+   },
+   {
+    "finding_id": "pygoat:PyPI:werkzeug@2.1.2:GHSA-f9vj-2wh5-fj8j",
+    "cve": "CVE-2024-49766",
+    "min_fix": "3.0.6"
+   },
+   {
+    "finding_id": "pygoat:PyPI:werkzeug@2.1.2:GHSA-29vq-49wr-vm6x",
+    "cve": "CVE-2026-27199",
+    "min_fix": "3.1.6"
+   },
+   {
+    "finding_id": "pygoat:PyPI:werkzeug@2.1.2:GHSA-hgf8-39gv-g3f2",
+    "cve": "CVE-2025-66221",
+    "min_fix": "3.1.4"
+   },
+   {
+    "finding_id": "pygoat:PyPI:werkzeug@2.1.2:GHSA-87hc-h4r5-73f7",
+    "cve": "CVE-2026-21860",
+    "min_fix": "3.1.5"
+   },
+   {
+    "finding_id": "pygoat:PyPI:werkzeug@2.1.2:GHSA-g6x2-hccm-hh4m",
+    "cve": "CVE-2026-102598",
+    "min_fix": "3.1.9"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 45.36,
+  "max_rank": 123,
+  "kev": false,
+  "max_epss": 0.03397,
+  "findings": 10
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "idna",
+  "installed": "3.4",
+  "target": "3.15",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:idna@3.4:GHSA-jjg7-2v4v-x38h",
+   "pygoat:PyPI:idna@3.4:GHSA-65pc-fj4g-8rjx"
+  ],
+  "resolves_count": 2,
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 43.35,
+  "max_rank": 143,
+  "kev": false,
+  "max_epss": 0.01386,
+  "findings": 2
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "zipp",
+  "installed": "3.8.0",
+  "target": "3.19.1",
+  "change": "minor/patch",
+  "resolves": [
+   "pygoat:PyPI:zipp@3.8.0:GHSA-jfmj-5v4g-7637"
+  ],
+  "resolves_count": 1,
+  "needs_major": [],
+  "no_fix": [],
+  "top_priority": 42.89,
+  "max_rank": 149,
+  "kev": false,
+  "max_epss": 0.00236,
+  "findings": 1
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "oauthlib",
+  "installed": "3.2.2",
+  "target": null,
+  "change": null,
+  "resolves": [],
+  "resolves_count": 0,
+  "needs_major": [
+   {
+    "finding_id": "pygoat:PyPI:oauthlib@3.2.2:GHSA-xpv3-w29h-x7cv",
+    "cve": "CVE-2026-49265",
+    "min_fix": "4.0.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:oauthlib@3.2.2:GHSA-hj66-6f7g-4r5v",
+    "cve": "CVE-2026-49264",
+    "min_fix": "4.0.0"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 42.7,
+  "max_rank": 151,
+  "kev": false,
+  "max_epss": 0.00242,
+  "findings": 2
+ },
+ {
+  "project": "pygoat",
+  "ecosystem": "PyPI",
+  "package": "django-allauth",
+  "installed": "0.52.0",
+  "target": null,
+  "change": null,
+  "resolves": [],
+  "resolves_count": 0,
+  "needs_major": [
+   {
+    "finding_id": "pygoat:PyPI:django-allauth@0.52.0:GHSA-8m3c-c723-h4p4",
+    "cve": "CVE-2025-65431",
+    "min_fix": "65.13.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:django-allauth@0.52.0:GHSA-qhmc-3mvr-f2j4",
+    "cve": "CVE-2025-65430",
+    "min_fix": "65.13.0"
+   },
+   {
+    "finding_id": "pygoat:PyPI:django-allauth@0.52.0:GHSA-2jpr-83rg-v67j",
+    "cve": "CVE-2026-27982",
+    "min_fix": "65.14.1"
+   }
+  ],
+  "no_fix": [],
+  "top_priority": 39.87,
+  "max_rank": 170,
+  "kev": false,
+  "max_epss": 0.00166,
+  "findings": 3
+ }
+]
