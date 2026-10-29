@@ -167,6 +167,15 @@ def scan_all(rescan_root: Path | None = None) -> dict[str, list[dict]]:
 
 
 if __name__ == "__main__":
+    # SBOM부터 만든다. 감사 결과처럼 이미 있으면 다시 만들지 않는다 → 새로 만들려면 out/<project>/sbom.cdx.json을 지운다
+    for p in SERVICES:
+        if (OUT / p / "sbom.cdx.json").exists():
+            continue
+        if SYFT.exists():
+            run_syft(p)
+            print(p, "SBOM 생성", OUT / p / "sbom.cdx.json")
+        else:
+            print(p, "SBOM 건너뜀: bin/syft 가 없다")
     res = scan_all()
     for p, f in res.items():
         print(p, len(f), "findings,", len({x['package'] for x in f}), "packages")

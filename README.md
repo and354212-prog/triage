@@ -21,27 +21,37 @@ P = 100·1[KEV] + 40·EPSS + 20·CVSS/10 + 15·R + 10·X + 10·C + 5·F
 ## 실행 순서
 
 ```
-pip install pip-audit cvss pyyaml packaging openai
+pip install pip-audit cvss packaging openai playwright
+# Node.js와 npm이 필요하다. NodeGoat 감사와 수정에 쓴다
 # Syft 바이너리를 bin/syft 에 둔다 (https://github.com/anchore/syft/releases)
 # data/kev.json  ← https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
 # data/epss.csv  ← https://epss.cyentia.com/epss_scores-current.csv.gz 를 풀어서 둔다
 # targets/ 에 대상 프로젝트를 클론한다 (아래 참고)
 
-python -m triage.scan        # SBOM 생성, pip-audit · npm audit 실행과 정규화 → out/<project>/findings_raw.json
+python -m triage.scan        # Syft SBOM 생성, pip-audit · npm audit 실행과 정규화 → out/<project>/sbom.cdx.json, findings_raw.json
 python -m triage.enrich      # OSV · EPSS · KEV 보강 → findings_enriched.json
-python -m triage.remediate   # 도달성·점수 계산 결과(priority.json)를 바탕으로 패치 버전 결정, 사본 적용, 재스캔
+python -m triage.prioritize  # 도달성 확인과 규칙 점수로 정렬 → priority.json, NodeGoat는 운영 의존성 기준 priority_prod.json도
+python -m triage.remediate   # priority.json을 바탕으로 패치 버전 결정, 사본 적용, 재스캔 → actions.json, rescan/
 python -m triage.report      # out/report.md, out/report.json — 오늘 고칠 열 건
 python -m triage.agent       # out/remediations.json — 조치안. OPENAI_API_KEY 가 없으면 --dry-run 규칙 기반 초안
 python portfolio/build_portfolio.py   # 포트폴리오 PDF
 ```
 
-도달성과 점수는 `triage.reach`, `triage.score` 에 있고 `triage.remediate` 와 `triage.report` 가 함께 부릅니다.
+도달성과 점수는 `triage.reach`, `triage.score` 에 있고 `triage.prioritize` 가 둘을 묶어 실행합니다. 점수 근거 문장을 만드는 `score.why` 는 `triage.report` 도 씁니다.
+
+저장소의 out/ 은 2026-10-28 실행 결과입니다. 아래 버전의 대상 프로젝트와 2026-10-27 일자 EPSS 파일 `epss_scores-2026-10-27.csv.gz` 를 쓰면, 저장된 감사 결과에서 scan · enrich · prioritize · report를 다시 돌려도 보고서 날짜 한 줄을 빼고 같은 파일이 나옵니다.
 
 ## 대상 프로젝트
 
-- OWASP PyGoat — https://github.com/adeyosemanputra/pygoat (main, 2026-10-22 커밋)
-- NetBox v3.0.0 — https://github.com/netbox-community/netbox (tag v3.0.0)
-- OWASP NodeGoat — https://github.com/OWASP/NodeGoat (main)
+- OWASP PyGoat — https://github.com/adeyosemanputra/pygoat · main 브랜치 2026-10-22 커밋 46fef968f3f4
+- NetBox v3.0.0 — https://github.com/netbox-community/netbox · tag v3.0.0, 커밋 fd16c47d2e1d
+- OWASP NodeGoat — https://github.com/OWASP/NodeGoat · main 브랜치 커밋 c5cb68a7084e
+
+```
+git clone https://github.com/adeyosemanputra/pygoat targets/pygoat && git -C targets/pygoat checkout 46fef968f3f4
+git clone --depth 1 --branch v3.0.0 https://github.com/netbox-community/netbox targets/netbox
+git clone https://github.com/OWASP/NodeGoat targets/NodeGoat && git -C targets/NodeGoat checkout c5cb68a7084e
+```
 
 ## 실측 결과 요약 (2026-10-28)
 
