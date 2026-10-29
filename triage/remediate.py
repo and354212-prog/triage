@@ -10,6 +10,7 @@ from pathlib import Path
 from packaging.version import InvalidVersion, Version
 
 from .config import OUT, SERVICES
+from .prioritize import prioritize, run_npm_audit_prod
 from .scan import normalize_npm_audit, normalize_pip_audit, run_npm_audit, run_pip_audit
 
 
@@ -107,9 +108,16 @@ def plan_and_apply_npm(project: str) -> dict:
     out = OUT / project / "rescan" / "npm_audit.json"
     run_npm_audit(dst, out)
     after = normalize_npm_audit(project, out, dst)
+    # 운영 의존성만 다시 감사해 priority_prod.json과 같은 기준으로 재스캔 결과를 남긴다 → report가 소멸 여부를 대조한다
+    from .enrich import enrich
+    prod_out = OUT / project / "rescan" / "npm_audit_prod.json"
+    run_npm_audit_prod(dst, prod_out)
+    after_prod = prioritize(enrich(normalize_npm_audit(project, prod_out, dst)))
+    (OUT / project / "rescan" / "findings_prod.json").write_text(json.dumps(after_prod, ensure_ascii=False, indent=1))
     before_meta = json.loads((OUT / project / "npm_audit.json").read_text()).get("metadata", {}).get("vulnerabilities", {})
     after_meta = json.loads(out.read_text()).get("metadata", {}).get("vulnerabilities", {})
-    return {"fix_stdout": fix.stdout[:2000], "before_meta": before_meta, "after_meta": after_meta, "after_findings": after}
+    return {"fix_stdout": fix.stdout[:2000], "before_meta": before_meta, "after_meta": after_meta, "after_findings": after,
+            "after_prod_findings": after_prod}
 
 
 if __name__ == "__main__":
@@ -130,6 +138,7 @@ if __name__ == "__main__":
         for a in actions[:6]:
             print(f"   {a['package']} {a['installed']} -> {a['target']} resolves {a['resolves_count']}/{a['findings']} major-only {len(a['needs_major'])} nofix {len(a['no_fix'])}")
     r = plan_and_apply_npm("nodegoat")
-    print("nodegoat", r["before_meta"], "->", r["after_meta"], "findings after:", len(r["after_findings"]))
+    print("nodegoat", r["before_meta"], "->", r["after_meta"], "findings after:", len(r["after_findings"]),
+          "운영 의존성 재감사:", len(r["after_prod_findings"]))
     summary["nodegoat"] = {"before_meta": r["before_meta"], "after_meta": r["after_meta"], "after_findings": len(r["after_findings"])}
     (OUT / "remediation_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1))
